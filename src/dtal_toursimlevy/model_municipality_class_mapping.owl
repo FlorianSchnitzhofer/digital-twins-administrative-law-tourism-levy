@@ -15,12 +15,12 @@
   <!-- datatype properties -->
   <owl:DatatypeProperty rdf:about="ex:municipalityName">
     <rdfs:domain rdf:resource="ex:MunicipalityClass"/>
-    <rdfs:range  rdf:resource="&xsd;string"/>
+    <rdfs:range  rdf:resource="xsd;string"/>
   </owl:DatatypeProperty>
 
   <owl:DatatypeProperty rdf:about="ex:ortsklasseCode">
     <rdfs:domain rdf:resource="ex:MunicipalityClass"/>
-    <rdfs:range  rdf:resource="&xsd;string"/>
+    <rdfs:range  rdf:resource="xsd;string"/>
   </owl:DatatypeProperty>
 
   <!-- object property that will contain the “array” -->

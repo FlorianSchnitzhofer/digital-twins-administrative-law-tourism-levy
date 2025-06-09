@@ -78,7 +78,6 @@ def get_municipality_class(municipality_name: str) -> str:
     
     escaped_name = json.dumps(municipality_name)
     query = f"""
-        PREFIX ex: <http://example.org/ontology#>
         SELECT ?clazz WHERE {{
             ?entry ex:municipalityName ?name ;
                    ex:municipalityClass ?clazz .
