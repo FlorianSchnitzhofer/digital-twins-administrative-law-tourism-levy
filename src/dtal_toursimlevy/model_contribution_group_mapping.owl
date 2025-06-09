@@ -187,7 +187,7 @@
         <contributionGroupZoneII rdf:datatype="xsd:integer">7</contributionGroupZoneII>
     </owl:NamedIndividual>
 	
-<!-- ===== VERARBEITENDES GEWERBE; INDUSTRIE – FOOD & BEVERAGES (31-319.8) ===== -->
+<!-- ===== VERARBEITENDES GEWERBE; INDUSTRIE – FOOD &amp; BEVERAGES (31-319.8) ===== -->
 
     <!-- 3/4/5 VERARBEITENDES GEWERBE; INDUSTRIE -->
     <owl:NamedIndividual rdf:about="#BA_345">
@@ -662,7 +662,7 @@
             <contributionGroupZoneII rdf:datatype="xsd:integer">6</contributionGroupZoneII>
         </owl:NamedIndividual>
 
-        <!-- 384 Drechsler- & Holzwaren -->
+        <!-- 384 Drechsler- &amp; Holzwaren -->
         <owl:NamedIndividual rdf:about="#BA_384">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Erzeugung von Drechslerwaren, Holzgeräten und sonstigen Holzwaren</rdfs:label>
@@ -673,7 +673,7 @@
             <owl:NamedIndividual rdf:about="#BA_384_1">
                 <rdf:type rdf:resource="#BusinessActivity"/>
                 <rdfs:label xml:lang="de">Erzeugung von gedrechselten und geschnitzten Waren; Vergolderei</rdfs:label>
-                <rdfs:label xml:lang="en">Turned- & Carved-Wood Products; Gilding</rdfs:label>
+                <rdfs:label xml:lang="en">Turned- &amp; Carved-Wood Products; Gilding</rdfs:label>
                 <contributionGroupA rdf:datatype="xsd:integer">4</contributionGroupA>
                 <contributionGroupB rdf:datatype="xsd:integer">4</contributionGroupB>
                 <contributionGroupC rdf:datatype="xsd:integer">5</contributionGroupC>
@@ -846,7 +846,7 @@
         <!-- umbrella – contribution groups defined per sub-code -->
     </owl:NamedIndividual>
 
-        <!-- 451  Chemische Grundstoffe & Kunstdünger -->
+        <!-- 451  Chemische Grundstoffe &amp; Kunstdünger -->
         <owl:NamedIndividual rdf:about="#BA_451">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Erzeugung von chemischen Grundstoffen und Kunstdünger</rdfs:label>
@@ -859,7 +859,7 @@
             <contributionGroupZoneII rdf:datatype="xsd:integer">7</contributionGroupZoneII>
         </owl:NamedIndividual>
 
-        <!-- 452  Kunststoffe & Kunstfasern -->
+        <!-- 452  Kunststoffe &amp; Kunstfasern -->
         <owl:NamedIndividual rdf:about="#BA_452">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Erzeugung von Kunststoffen und Kunstfasern</rdfs:label>
@@ -924,11 +924,11 @@
             <contributionGroupZoneII rdf:datatype="xsd:integer">6</contributionGroupZoneII>
         </owl:NamedIndividual>
 
-            <!-- 459.1  Haushaltsputz- & Pflegemittel, Kerzen -->
+            <!-- 459.1  Haushaltsputz- &amp; Pflegemittel, Kerzen -->
             <owl:NamedIndividual rdf:about="#BA_459_1">
                 <rdf:type rdf:resource="#BusinessActivity"/>
                 <rdfs:label xml:lang="de">Erzeugung von Haushaltsputz- und Pflegemitteln, Kerzen und Wachswaren</rdfs:label>
-                <rdfs:label xml:lang="en">Manufacture of Household Cleaning & Care Products, Candles and Wax Goods</rdfs:label>
+                <rdfs:label xml:lang="en">Manufacture of Household Cleaning &amp; Care Products, Candles and Wax Goods</rdfs:label>
                 <contributionGroupA rdf:datatype="xsd:integer">5</contributionGroupA>
                 <contributionGroupB rdf:datatype="xsd:integer">5</contributionGroupB>
                 <contributionGroupC rdf:datatype="xsd:integer">5</contributionGroupC>
@@ -1074,7 +1074,7 @@
         <contributionGroupZoneII rdf:datatype="xsd:integer">6</contributionGroupZoneII>
     </owl:NamedIndividual>
 
-        <!-- 541  Land­wirtschaftliche Maschinen & Ackerschlepper -->
+        <!-- 541  Land­wirtschaftliche Maschinen &amp; Ackerschlepper -->
         <owl:NamedIndividual rdf:about="#BA_541">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Erzeugung von landwirtschaftlichen Maschinen und Ackerschleppern</rdfs:label>
@@ -1100,7 +1100,7 @@
             <contributionGroupZoneII rdf:datatype="xsd:integer">7</contributionGroupZoneII>
         </owl:NamedIndividual>
 
-            <!--   – Seilbahnen & Lifte -->
+            <!--   – Seilbahnen &amp; Lifte -->
             <owl:NamedIndividual rdf:about="#BA_542_1_cableways">
                 <rdf:type rdf:resource="#BusinessActivity"/>
                 <rdfs:label xml:lang="de">Erzeugung von Seilbahnen und Liften</rdfs:label>
@@ -1113,7 +1113,7 @@
                 <contributionGroupZoneII rdf:datatype="xsd:integer">4</contributionGroupZoneII>
             </owl:NamedIndividual>
 
-        <!-- 552  Kälte­maschinen & Industrieöfen -->
+        <!-- 552  Kälte­maschinen &amp; Industrieöfen -->
         <owl:NamedIndividual rdf:about="#BA_552_1">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Erzeugung von Kältemaschinen</rdfs:label>
@@ -1178,11 +1178,11 @@
             <contributionGroupZoneII rdf:datatype="xsd:integer">5</contributionGroupZoneII>
         </owl:NamedIndividual>
 
-        <!-- 572  Radio- & Fernsehgeräte, Bauelemente -->
+        <!-- 572  Radio- &amp; Fernsehgeräte, Bauelemente -->
         <owl:NamedIndividual rdf:about="#BA_572">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Erzeugung von Radio- und Fernsehempfängern, elektroakustischen Geräten und Bauelementen</rdfs:label>
-            <rdfs:label xml:lang="en">Manufacture of Radio & TV Receivers, Electro-acoustic Devices and Components</rdfs:label>
+            <rdfs:label xml:lang="en">Manufacture of Radio &amp; TV Receivers, Electro-acoustic Devices and Components</rdfs:label>
             <contributionGroupA rdf:datatype="xsd:integer">5</contributionGroupA>
             <contributionGroupB rdf:datatype="xsd:integer">5</contributionGroupB>
             <contributionGroupC rdf:datatype="xsd:integer">5</contributionGroupC>
@@ -1264,7 +1264,7 @@
                 <contributionGroupZoneII rdf:datatype="xsd:integer">4</contributionGroupZoneII>
             </owl:NamedIndividual>
 
-        <!-- 584  Motorräder & Fahrräder -->
+        <!-- 584  Motorräder &amp; Fahrräder -->
         <owl:NamedIndividual rdf:about="#BA_584">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Erzeugung von Motorrädern und Fahrrädern (ausgenommen Reparatur)</rdfs:label>
@@ -1277,7 +1277,7 @@
             <contributionGroupZoneII rdf:datatype="xsd:integer">6</contributionGroupZoneII>
         </owl:NamedIndividual>
 
-        <!-- 585  Reparatur von Kraftfahrzeugen & Fahrrädern -->
+        <!-- 585  Reparatur von Kraftfahrzeugen &amp; Fahrrädern -->
         <owl:NamedIndividual rdf:about="#BA_585">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Reparatur von Kraftfahrzeugen und Fahrrädern</rdfs:label>
@@ -1294,7 +1294,7 @@
         <owl:NamedIndividual rdf:about="#BA_586">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Erzeugung von Luftfahrzeugen (einschließlich Ausbildungs- und Sicherheitsgeräte)</rdfs:label>
-            <rdfs:label xml:lang="en">Manufacture of Aircraft (incl. Training & Safety Devices)</rdfs:label>
+            <rdfs:label xml:lang="en">Manufacture of Aircraft (incl. Training &amp; Safety Devices)</rdfs:label>
             <contributionGroupA rdf:datatype="xsd:integer">6</contributionGroupA>
             <contributionGroupB rdf:datatype="xsd:integer">6</contributionGroupB>
             <contributionGroupC rdf:datatype="xsd:integer">6</contributionGroupC>
@@ -1316,12 +1316,12 @@
             <contributionGroupZoneII rdf:datatype="xsd:integer">6</contributionGroupZoneII>
         </owl:NamedIndividual>
 
-<!-- ===== 59  FEINMECHANISCHE, MEDIZINISCHE & OPTISCHE GERÄTE; UHREN; SCHMUCK ===== -->
+<!-- ===== 59  FEINMECHANISCHE, MEDIZINISCHE &amp; OPTISCHE GERÄTE; UHREN; SCHMUCK ===== -->
 
     <owl:NamedIndividual rdf:about="#BA_59">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">ERZEUGUNG VON FEINMECHANISCHEN, MEDIZINISCHEN UND OPTISCHEN GERÄTEN, UHREN UND SCHMUCKWAREN</rdfs:label>
-        <rdfs:label xml:lang="en">Manufacture of Precision, Medical & Optical Instruments, Watches and Jewellery</rdfs:label>
+        <rdfs:label xml:lang="en">Manufacture of Precision, Medical &amp; Optical Instruments, Watches and Jewellery</rdfs:label>
     </owl:NamedIndividual>
 
         <!-- 591  Feinmechanische Geräte -->
@@ -1337,7 +1337,7 @@
             <contributionGroupZoneII rdf:datatype="xsd:integer">6</contributionGroupZoneII>
         </owl:NamedIndividual>
 
-        <!-- 592  Medizinische & orthopädische Geräte -->
+        <!-- 592  Medizinische &amp; orthopädische Geräte -->
         <owl:NamedIndividual rdf:about="#BA_592_1">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Erzeugung von medizinischen Instrumenten und Geräten</rdfs:label>
@@ -1362,7 +1362,7 @@
             <contributionGroupZoneII rdf:datatype="xsd:integer">7</contributionGroupZoneII>
         </owl:NamedIndividual>
 
-        <!-- 593  Optische Geräte & Sehbehelfe -->
+        <!-- 593  Optische Geräte &amp; Sehbehelfe -->
         <owl:NamedIndividual rdf:about="#BA_593">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Erzeugung von optischen Geräten und Sehbehelfen</rdfs:label>
@@ -1375,7 +1375,7 @@
             <contributionGroupZoneII rdf:datatype="xsd:integer">5</contributionGroupZoneII>
         </owl:NamedIndividual>
 
-        <!-- 594  Uhren & Schmuckwaren -->
+        <!-- 594  Uhren &amp; Schmuckwaren -->
         <owl:NamedIndividual rdf:about="#BA_594_1">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Erzeugung und Reparatur von Uhren</rdfs:label>
@@ -1418,8 +1418,8 @@
 
     <owl:NamedIndividual rdf:about="#BA_7A">
         <rdf:type rdf:resource="#BusinessActivity"/>
-        <rdfs:label xml:lang="de">HANDEL; LAGERUNG (Groß- & Einzelhandel, Lagerung)</rdfs:label>
-        <rdfs:label xml:lang="en">Trade; Storage (Wholesale & Retail, Warehousing)</rdfs:label>
+        <rdfs:label xml:lang="de">HANDEL; LAGERUNG (Groß- &amp; Einzelhandel, Lagerung)</rdfs:label>
+        <rdfs:label xml:lang="en">Trade; Storage (Wholesale &amp; Retail, Warehousing)</rdfs:label>
     </owl:NamedIndividual>
 
 <!-- ===== 71/72/73  GROSSHANDEL  (umbrella node for wholesale) ===== -->
@@ -1430,7 +1430,7 @@
         <rdfs:label xml:lang="en">Wholesale Trade</rdfs:label>
     </owl:NamedIndividual>
 
-        <!-- 711  Landwirtschaftliche Produkte, Nutz- & Schlachtvieh -->
+        <!-- 711  Landwirtschaftliche Produkte, Nutz- &amp; Schlachtvieh -->
         <owl:NamedIndividual rdf:about="#BA_711">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Großhandel mit landwirtschaftlichen Produkten, Nutz- und Schlachtvieh</rdfs:label>
@@ -1443,7 +1443,7 @@
             <contributionGroupZoneII rdf:datatype="xsd:integer">7</contributionGroupZoneII>
         </owl:NamedIndividual>
 
-            <!-- 711.1  Agrarprodukte & Dünger -->
+            <!-- 711.1  Agrarprodukte &amp; Dünger -->
             <owl:NamedIndividual rdf:about="#BA_711_1">
                 <rdf:type rdf:resource="#BusinessActivity"/>
                 <rdfs:label xml:lang="de">Großhandel mit landwirtschaftlichen Produkten und Düngemitteln</rdfs:label>
@@ -1456,7 +1456,7 @@
                 <contributionGroupZoneII rdf:datatype="xsd:integer">7</contributionGroupZoneII>
             </owl:NamedIndividual>
 
-                <!-- Obst- & Gemüse-Großhandel -->
+                <!-- Obst- &amp; Gemüse-Großhandel -->
                 <owl:NamedIndividual rdf:about="#BA_711_1_fruitVeg">
                     <rdf:type rdf:resource="#BusinessActivity"/>
                     <rdfs:label xml:lang="de">Obst- und Gemüsegroßhandel</rdfs:label>
@@ -1469,7 +1469,7 @@
                     <contributionGroupZoneII rdf:datatype="xsd:integer">4</contributionGroupZoneII>
                 </owl:NamedIndividual>
 
-            <!-- 711.2  Schlacht- & Stechvieh -->
+            <!-- 711.2  Schlacht- &amp; Stechvieh -->
             <owl:NamedIndividual rdf:about="#BA_711_2">
                 <rdf:type rdf:resource="#BusinessActivity"/>
                 <rdfs:label xml:lang="de">Großhandel mit Schlacht- und Stechvieh</rdfs:label>
@@ -1616,7 +1616,7 @@
         <contributionGroupZoneII rdf:datatype="xsd:integer">4</contributionGroupZoneII>
     </owl:NamedIndividual>
 
-<!-- ===== 724  Bekleidung & Bettwäsche ===== -->
+<!-- ===== 724  Bekleidung &amp; Bettwäsche ===== -->
 
     <owl:NamedIndividual rdf:about="#BA_724">
         <rdf:type rdf:resource="#BusinessActivity"/>
@@ -1644,7 +1644,7 @@
         <contributionGroupZoneII rdf:datatype="xsd:integer">6</contributionGroupZoneII>
     </owl:NamedIndividual>
 
-<!-- ===== 726  Heil- & Kosmetikgroßhandel (Umbrella) ===== -->
+<!-- ===== 726  Heil- &amp; Kosmetikgroßhandel (Umbrella) ===== -->
 
     <owl:NamedIndividual rdf:about="#BA_726">
         <rdf:type rdf:resource="#BusinessActivity"/>
@@ -1665,7 +1665,7 @@
             <contributionGroupZoneII rdf:datatype="xsd:integer">6</contributionGroupZoneII>
         </owl:NamedIndividual>
 
-        <!-- 726.2  Kosmetik & Reinigungsmittel -->
+        <!-- 726.2  Kosmetik &amp; Reinigungsmittel -->
         <owl:NamedIndividual rdf:about="#BA_726_2">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Großhandel mit kosmetischen Erzeugnissen, Wasch-, Reinigungs- und Putzmitteln</rdfs:label>
@@ -1678,7 +1678,7 @@
             <contributionGroupZoneII rdf:datatype="xsd:integer">5</contributionGroupZoneII>
         </owl:NamedIndividual>
 
-<!-- ===== 731  Landmaschinen & Ackerschlepper ===== -->
+<!-- ===== 731  Landmaschinen &amp; Ackerschlepper ===== -->
 
     <owl:NamedIndividual rdf:about="#BA_731">
         <rdf:type rdf:resource="#BusinessActivity"/>
@@ -1734,7 +1734,7 @@
         <contributionGroupZoneII rdf:datatype="xsd:integer">6</contributionGroupZoneII>
     </owl:NamedIndividual>
 
-        <!-- 734.1  Optische & feinmechanische Erzeugnisse -->
+        <!-- 734.1  Optische &amp; feinmechanische Erzeugnisse -->
         <owl:NamedIndividual rdf:about="#BA_734_1">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Großhandel mit optischen und feinmechanischen Erzeugnissen</rdfs:label>
@@ -1786,7 +1786,7 @@
             <contributionGroupZoneII rdf:datatype="xsd:integer">6</contributionGroupZoneII>
         </owl:NamedIndividual>
 
-<!-- ===== 735  Möbel & Heimtextilien ===== -->
+<!-- ===== 735  Möbel &amp; Heimtextilien ===== -->
 
     <owl:NamedIndividual rdf:about="#BA_735">
         <rdf:type rdf:resource="#BusinessActivity"/>
@@ -1805,7 +1805,7 @@
     <owl:NamedIndividual rdf:about="#BA_736">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">Großhandel mit Metallwaren, Haushalts- und Küchengeräten, Glas-, Keramik- und Kunststoffwaren</rdfs:label>
-        <rdfs:label xml:lang="en">Wholesale of Metal Goods, Household & Kitchenware, Glass, Ceramics and Plastics</rdfs:label>
+        <rdfs:label xml:lang="en">Wholesale of Metal Goods, Household &amp; Kitchenware, Glass, Ceramics and Plastics</rdfs:label>
     </owl:NamedIndividual>
 
         <!-- 736.1 Metallwaren -->
@@ -1821,11 +1821,11 @@
             <contributionGroupZoneII rdf:datatype="xsd:integer">6</contributionGroupZoneII>
         </owl:NamedIndividual>
 
-        <!-- 736.2 Haushalts- & Küchengeräte, Glas- etc. -->
+        <!-- 736.2 Haushalts- &amp; Küchengeräte, Glas- etc. -->
         <owl:NamedIndividual rdf:about="#BA_736_2">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Großhandel mit Haushalts- und Küchengeräten, Glas-, Keramik- und Kunststoffwaren</rdfs:label>
-            <rdfs:label xml:lang="en">Wholesale of Household & Kitchen Appliances, Glass, Ceramic and Plastic Goods</rdfs:label>
+            <rdfs:label xml:lang="en">Wholesale of Household &amp; Kitchen Appliances, Glass, Ceramic and Plastic Goods</rdfs:label>
             <contributionGroupA rdf:datatype="xsd:integer">5</contributionGroupA>
             <contributionGroupB rdf:datatype="xsd:integer">5</contributionGroupB>
             <contributionGroupC rdf:datatype="xsd:integer">5</contributionGroupC>
@@ -1834,7 +1834,7 @@
             <contributionGroupZoneII rdf:datatype="xsd:integer">5</contributionGroupZoneII>
         </owl:NamedIndividual>
 
-<!-- ===== 737  Papier- & Schreibwaren ===== -->
+<!-- ===== 737  Papier- &amp; Schreibwaren ===== -->
 
     <owl:NamedIndividual rdf:about="#BA_737">
         <rdf:type rdf:resource="#BusinessActivity"/>
@@ -1981,7 +1981,7 @@
     <owl:NamedIndividual rdf:about="#BA_741_small">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">Einzelhandel mit Nahrungs- und Genussmitteln (≤ 250 m² Verkaufsfläche)</rdfs:label>
-        <rdfs:label xml:lang="en">Retail Sale of Food & Beverages (up to 250 m²)</rdfs:label>
+        <rdfs:label xml:lang="en">Retail Sale of Food &amp; Beverages (up to 250 m²)</rdfs:label>
         <contributionGroupA rdf:datatype="xsd:integer">5</contributionGroupA>
         <contributionGroupB rdf:datatype="xsd:integer">5</contributionGroupB>
         <contributionGroupC rdf:datatype="xsd:integer">5</contributionGroupC>
@@ -1993,7 +1993,7 @@
     <owl:NamedIndividual rdf:about="#BA_741_large">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">Einzelhandel mit Nahrungs- und Genussmitteln (> 250 m² Verkaufsfläche)</rdfs:label>
-        <rdfs:label xml:lang="en">Retail Sale of Food & Beverages (over 250 m²)</rdfs:label>
+        <rdfs:label xml:lang="en">Retail Sale of Food &amp; Beverages (over 250 m²)</rdfs:label>
         <contributionGroupA rdf:datatype="xsd:integer">5</contributionGroupA>
         <contributionGroupB rdf:datatype="xsd:integer">5</contributionGroupB>
         <contributionGroupC rdf:datatype="xsd:integer">5</contributionGroupC>
@@ -2102,7 +2102,7 @@
         <contributionGroupZoneII rdf:datatype="xsd:integer">5</contributionGroupZoneII>
     </owl:NamedIndividual>
 
-    <!-- 751  Möbel & Heimtextilien -->
+    <!-- 751  Möbel &amp; Heimtextilien -->
     <owl:NamedIndividual rdf:about="#BA_751">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">Einzelhandel mit Möbeln und Heimtextilien</rdfs:label>
@@ -2115,11 +2115,11 @@
         <contributionGroupZoneII rdf:datatype="xsd:integer">5</contributionGroupZoneII>
     </owl:NamedIndividual>
 
-    <!-- 752  Metall- & Haushaltswaren -->
+    <!-- 752  Metall- &amp; Haushaltswaren -->
     <owl:NamedIndividual rdf:about="#BA_752">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">Einzelhandel mit Metallwaren, Haushalts- und Küchengeräten, Glas- und Keramikwaren</rdfs:label>
-        <rdfs:label xml:lang="en">Retail Sale of Hardware, Household & Kitchenware, Glass and Ceramics</rdfs:label>
+        <rdfs:label xml:lang="en">Retail Sale of Hardware, Household &amp; Kitchenware, Glass and Ceramics</rdfs:label>
         <contributionGroupA rdf:datatype="xsd:integer">5</contributionGroupA>
         <contributionGroupB rdf:datatype="xsd:integer">5</contributionGroupB>
         <contributionGroupC rdf:datatype="xsd:integer">5</contributionGroupC>
@@ -2132,7 +2132,7 @@
     <owl:NamedIndividual rdf:about="#BA_753">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">Einzelhandel mit Gummi- und Kunststoffwaren (einschließlich Fußbodenbeläge)</rdfs:label>
-        <rdfs:label xml:lang="en">Retail Sale of Rubber & Plastic Goods (incl. Floor Coverings)</rdfs:label>
+        <rdfs:label xml:lang="en">Retail Sale of Rubber &amp; Plastic Goods (incl. Floor Coverings)</rdfs:label>
         <contributionGroupA rdf:datatype="xsd:integer">5</contributionGroupA>
         <contributionGroupB rdf:datatype="xsd:integer">5</contributionGroupB>
         <contributionGroupC rdf:datatype="xsd:integer">5</contributionGroupC>
@@ -2157,7 +2157,7 @@
         <owl:NamedIndividual rdf:about="#BA_754_1_agri">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Einzelhandel mit Ackerschleppern, landwirtschaftlichen Maschinen und Traktoren</rdfs:label>
-            <rdfs:label xml:lang="en">Retail Sale of Tractors & Agricultural Machinery</rdfs:label>
+            <rdfs:label xml:lang="en">Retail Sale of Tractors &amp; Agricultural Machinery</rdfs:label>
             <contributionGroupA rdf:datatype="xsd:integer">7</contributionGroupA>
             <contributionGroupB rdf:datatype="xsd:integer">7</contributionGroupB>
             <contributionGroupC rdf:datatype="xsd:integer">7</contributionGroupC>
@@ -2265,12 +2265,12 @@
         <contributionGroupZoneII rdf:datatype="xsd:integer">5</contributionGroupZoneII>
     </owl:NamedIndividual>
 		
-<!-- ===== 761  Papier- & Schreibwaren; Büro- & Schulbedarf ===== -->
+<!-- ===== 761  Papier- &amp; Schreibwaren; Büro- &amp; Schulbedarf ===== -->
 
     <owl:NamedIndividual rdf:about="#BA_761">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">Einzelhandel mit Papier- und Schreibwaren, Büro- und Schulbedarf</rdfs:label>
-        <rdfs:label xml:lang="en">Retail Sale of Stationery, Office & School Supplies</rdfs:label>
+        <rdfs:label xml:lang="en">Retail Sale of Stationery, Office &amp; School Supplies</rdfs:label>
         <contributionGroupA rdf:datatype="xsd:integer">5</contributionGroupA>
         <contributionGroupB rdf:datatype="xsd:integer">5</contributionGroupB>
         <contributionGroupC rdf:datatype="xsd:integer">5</contributionGroupC>
@@ -2284,7 +2284,7 @@
     <owl:NamedIndividual rdf:about="#BA_762">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">Einzelhandel mit Büchern, Zeitungen, Zeitschriften und Musikalien</rdfs:label>
-        <rdfs:label xml:lang="en">Retail Sale of Books, Newspapers, Magazines & Sheet-Music</rdfs:label>
+        <rdfs:label xml:lang="en">Retail Sale of Books, Newspapers, Magazines &amp; Sheet-Music</rdfs:label>
         <contributionGroupA rdf:datatype="xsd:integer">5</contributionGroupA>
         <contributionGroupB rdf:datatype="xsd:integer">5</contributionGroupB>
         <contributionGroupC rdf:datatype="xsd:integer">5</contributionGroupC>
@@ -2319,7 +2319,7 @@
             <contributionGroupZoneII rdf:datatype="xsd:integer">7</contributionGroupZoneII>
         </owl:NamedIndividual>
 
-<!-- ===== 763  Uhren & Schmuck ===== -->
+<!-- ===== 763  Uhren &amp; Schmuck ===== -->
 
     <owl:NamedIndividual rdf:about="#BA_763">
         <rdf:type rdf:resource="#BusinessActivity"/>
@@ -2402,7 +2402,7 @@
         <contributionGroupZoneII rdf:datatype="xsd:integer">5</contributionGroupZoneII>
     </owl:NamedIndividual>
 
-<!-- ===== 767  Blumen & Pflanzen ===== -->
+<!-- ===== 767  Blumen &amp; Pflanzen ===== -->
 
     <owl:NamedIndividual rdf:about="#BA_767">
         <rdf:type rdf:resource="#BusinessActivity"/>
@@ -2418,11 +2418,11 @@
 
 <!-- ===== 768  Einzelhandel ohne ausgeprägten Schwerpunkt ===== -->
 
-    <!-- 768.1  Waren- & Versandhäuser -->
+    <!-- 768.1  Waren- &amp; Versandhäuser -->
     <owl:NamedIndividual rdf:about="#BA_768_1">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">Waren- und Versandhäuser</rdfs:label>
-        <rdfs:label xml:lang="en">Department & Mail-order Stores</rdfs:label>
+        <rdfs:label xml:lang="en">Department &amp; Mail-order Stores</rdfs:label>
         <contributionGroupA rdf:datatype="xsd:integer">5</contributionGroupA>
         <contributionGroupB rdf:datatype="xsd:integer">5</contributionGroupB>
         <contributionGroupC rdf:datatype="xsd:integer">5</contributionGroupC>
@@ -2465,11 +2465,11 @@
         <rdfs:label xml:lang="en">Retail Sale of Other Goods n.e.c.</rdfs:label>
     </owl:NamedIndividual>
 
-        <!-- 769.1  Kunst & Kunstgewerbe -->
+        <!-- 769.1  Kunst &amp; Kunstgewerbe -->
         <owl:NamedIndividual rdf:about="#BA_769_1">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Einzelhandel mit Kunstgegenständen und kunstgewerblichen Erzeugnissen</rdfs:label>
-            <rdfs:label xml:lang="en">Retail Sale of Art & Handicrafts</rdfs:label>
+            <rdfs:label xml:lang="en">Retail Sale of Art &amp; Handicrafts</rdfs:label>
             <contributionGroupA rdf:datatype="xsd:integer">5</contributionGroupA>
             <contributionGroupB rdf:datatype="xsd:integer">5</contributionGroupB>
             <contributionGroupC rdf:datatype="xsd:integer">5</contributionGroupC>
@@ -2504,7 +2504,7 @@
             <contributionGroupZoneII rdf:datatype="xsd:integer">5</contributionGroupZoneII>
         </owl:NamedIndividual>
 
-        <!-- 769.3  Waffen & Munition -->
+        <!-- 769.3  Waffen &amp; Munition -->
         <owl:NamedIndividual rdf:about="#BA_769_3">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Einzelhandel mit Waffen und Munition</rdfs:label>
@@ -2583,7 +2583,7 @@
             <contributionGroupZoneII rdf:datatype="xsd:integer">4</contributionGroupZoneII>
         </owl:NamedIndividual>
 
-<!-- ===== 7 B  BEHERBERGUNGS- & GASTSTÄTTENWESEN (HOSPITALITY) ===== -->
+<!-- ===== 7 B  BEHERBERGUNGS- &amp; GASTSTÄTTENWESEN (HOSPITALITY) ===== -->
 
     <owl:NamedIndividual rdf:about="#BA_7B">
         <rdf:type rdf:resource="#BusinessActivity"/>
@@ -2605,7 +2605,7 @@
         <contributionGroupZoneII rdf:datatype="xsd:integer">1</contributionGroupZoneII>
     </owl:NamedIndividual>
 
-        <!-- 781.3  Schutzhütten & Herbergen -->
+        <!-- 781.3  Schutzhütten &amp; Herbergen -->
         <owl:NamedIndividual rdf:about="#BA_781_3">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Schutzhütten und Herbergen</rdfs:label>
@@ -2636,7 +2636,7 @@
     <owl:NamedIndividual rdf:about="#BA_782">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">Gaststättenwesen</rdfs:label>
-        <rdfs:label xml:lang="en">Food & Beverage Service Activities</rdfs:label>
+        <rdfs:label xml:lang="en">Food &amp; Beverage Service Activities</rdfs:label>
         <contributionGroupA rdf:datatype="xsd:integer">2</contributionGroupA>
         <contributionGroupB rdf:datatype="xsd:integer">2</contributionGroupB>
         <contributionGroupC rdf:datatype="xsd:integer">2</contributionGroupC>
@@ -2662,7 +2662,7 @@
         <owl:NamedIndividual rdf:about="#BA_782_canteen">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Betriebs- und Werksküche (Kantine)</rdfs:label>
-            <rdfs:label xml:lang="en">Company Canteens & Industrial Kitchens</rdfs:label>
+            <rdfs:label xml:lang="en">Company Canteens &amp; Industrial Kitchens</rdfs:label>
             <contributionGroupA rdf:datatype="xsd:integer">7</contributionGroupA>
             <contributionGroupB rdf:datatype="xsd:integer">7</contributionGroupB>
             <contributionGroupC rdf:datatype="xsd:integer">7</contributionGroupC>
@@ -2684,7 +2684,7 @@
             <contributionGroupZoneII rdf:datatype="xsd:integer">7</contributionGroupZoneII>
         </owl:NamedIndividual>
 		
-<!-- ===== 8  VERKEHR; NACHRICHTENÜBERMITTLUNG (TRANSPORT & COMMUNICATIONS) ===== -->
+<!-- ===== 8  VERKEHR; NACHRICHTENÜBERMITTLUNG (TRANSPORT &amp; COMMUNICATIONS) ===== -->
 
     <owl:NamedIndividual rdf:about="#BA_8">
         <rdf:type rdf:resource="#BusinessActivity"/>
@@ -2713,7 +2713,7 @@
             <contributionGroupZoneII rdf:datatype="xsd:integer">5</contributionGroupZoneII>
         </owl:NamedIndividual>
 
-        <!-- 812  Taxi & Mietwagen -->
+        <!-- 812  Taxi &amp; Mietwagen -->
         <owl:NamedIndividual rdf:about="#BA_812">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Taxi-, Mietwagenverkehr und sonstige Personenbeförderung</rdfs:label>
@@ -2730,7 +2730,7 @@
             <owl:NamedIndividual rdf:about="#BA_812_schoolkids">
                 <rdf:type rdf:resource="#BusinessActivity"/>
                 <rdfs:label xml:lang="de">Beförderung von Schülern und Kindergartenkindern</rdfs:label>
-                <rdfs:label xml:lang="en">Transport of Schoolchildren & Kindergarten Children</rdfs:label>
+                <rdfs:label xml:lang="en">Transport of Schoolchildren &amp; Kindergarten Children</rdfs:label>
                 <contributionGroupA rdf:datatype="xsd:integer">7</contributionGroupA>
                 <contributionGroupB rdf:datatype="xsd:integer">7</contributionGroupB>
                 <contributionGroupC rdf:datatype="xsd:integer">7</contributionGroupC>
@@ -2756,7 +2756,7 @@
         <owl:NamedIndividual rdf:about="#BA_813">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Lastfuhrwerksverkehr</rdfs:label>
-            <rdfs:label xml:lang="en">Cartage & Haulage Services</rdfs:label>
+            <rdfs:label xml:lang="en">Cartage &amp; Haulage Services</rdfs:label>
             <contributionGroupA rdf:datatype="xsd:integer">5</contributionGroupA>
             <contributionGroupB rdf:datatype="xsd:integer">5</contributionGroupB>
             <contributionGroupC rdf:datatype="xsd:integer">5</contributionGroupC>
@@ -2897,7 +2897,7 @@
             <contributionGroupZoneII rdf:datatype="xsd:integer">5</contributionGroupZoneII>
         </owl:NamedIndividual>
 
-        <!-- 822  Seil-, Sessel- & Schlepplifte -->
+        <!-- 822  Seil-, Sessel- &amp; Schlepplifte -->
         <owl:NamedIndividual rdf:about="#BA_822">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Seilbahn-, Sessel- und Schleppliftverkehr</rdfs:label>
@@ -2923,7 +2923,7 @@
             <contributionGroupZoneII rdf:datatype="xsd:integer">7</contributionGroupZoneII>
         </owl:NamedIndividual>
 
-            <!-- 829.1  Schlaf- & Speisewagen -->
+            <!-- 829.1  Schlaf- &amp; Speisewagen -->
             <owl:NamedIndividual rdf:about="#BA_829_1">
                 <rdf:type rdf:resource="#BusinessActivity"/>
                 <rdfs:label xml:lang="de">Betrieb von Schlaf- und Speisewagen</rdfs:label>
@@ -2974,7 +2974,7 @@
         <owl:NamedIndividual rdf:about="#BA_831_2">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Binnenseeschiffahrt</rdfs:label>
-            <rdfs:label xml:lang="en">Lake & Inland Sea Shipping</rdfs:label>
+            <rdfs:label xml:lang="en">Lake &amp; Inland Sea Shipping</rdfs:label>
             <contributionGroupA rdf:datatype="xsd:integer">1</contributionGroupA>
             <contributionGroupB rdf:datatype="xsd:integer">1</contributionGroupB>
             <contributionGroupC rdf:datatype="xsd:integer">1</contributionGroupC>
@@ -3000,7 +3000,7 @@
         <owl:NamedIndividual rdf:about="#BA_832">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Hafenbetrieb und sonstige Hilfseinrichtungen der Schiffahrt</rdfs:label>
-            <rdfs:label xml:lang="en">Port Operation & Other Shipping Support</rdfs:label>
+            <rdfs:label xml:lang="en">Port Operation &amp; Other Shipping Support</rdfs:label>
             <contributionGroupA rdf:datatype="xsd:integer">5</contributionGroupA>
             <contributionGroupB rdf:datatype="xsd:integer">5</contributionGroupB>
             <contributionGroupC rdf:datatype="xsd:integer">5</contributionGroupC>
@@ -3053,7 +3053,7 @@
         <owl:NamedIndividual rdf:about="#BA_842">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Flugplatzbetrieb und sonstige Hilfseinrichtungen des Luftverkehrs</rdfs:label>
-            <rdfs:label xml:lang="en">Airport Operation & Other Air-transport Support</rdfs:label>
+            <rdfs:label xml:lang="en">Airport Operation &amp; Other Air-transport Support</rdfs:label>
             <contributionGroupA rdf:datatype="xsd:integer">3</contributionGroupA>
             <contributionGroupB rdf:datatype="xsd:integer">3</contributionGroupB>
             <contributionGroupC rdf:datatype="xsd:integer">3</contributionGroupC>
@@ -3062,12 +3062,12 @@
             <contributionGroupZoneII rdf:datatype="xsd:integer">3</contributionGroupZoneII>
         </owl:NamedIndividual>
 
-<!-- === 85  SPEDITION & ÜBRIGE HILFSDIENSTE === -->
+<!-- === 85  SPEDITION &amp; ÜBRIGE HILFSDIENSTE === -->
 
     <owl:NamedIndividual rdf:about="#BA_85">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">SPEDITION UND ÜBRIGE HILFSDIENSTE DES VERKEHRS</rdfs:label>
-        <rdfs:label xml:lang="en">Forwarding & Other Transport Support</rdfs:label>
+        <rdfs:label xml:lang="en">Forwarding &amp; Other Transport Support</rdfs:label>
         <contributionGroupA rdf:datatype="xsd:integer">7</contributionGroupA>
         <contributionGroupB rdf:datatype="xsd:integer">7</contributionGroupB>
         <contributionGroupC rdf:datatype="xsd:integer">7</contributionGroupC>
@@ -3089,11 +3089,11 @@
             <contributionGroupZoneII rdf:datatype="xsd:integer">5</contributionGroupZoneII>
         </owl:NamedIndividual>
 
-        <!-- 853  Reise- & Verkehrsbüros -->
+        <!-- 853  Reise- &amp; Verkehrsbüros -->
         <owl:NamedIndividual rdf:about="#BA_853">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Reise-, Verkehrsbüros und sonstige Hilfsdienste</rdfs:label>
-            <rdfs:label xml:lang="en">Travel Agencies, Traffic Offices & Other Services</rdfs:label>
+            <rdfs:label xml:lang="en">Travel Agencies, Traffic Offices &amp; Other Services</rdfs:label>
         </owl:NamedIndividual>
 
             <!-- 853.1  Reisebüros Incoming -->
@@ -3139,7 +3139,7 @@
                 <owl:NamedIndividual rdf:about="#BA_853_9_guides">
                     <rdf:type rdf:resource="#BusinessActivity"/>
                     <rdfs:label xml:lang="de">Fremdenführer / Bergführer</rdfs:label>
-                    <rdfs:label xml:lang="en">Tourist & Mountain Guides</rdfs:label>
+                    <rdfs:label xml:lang="en">Tourist &amp; Mountain Guides</rdfs:label>
                     <contributionGroupA rdf:datatype="xsd:integer">1</contributionGroupA>
                     <contributionGroupB rdf:datatype="xsd:integer">1</contributionGroupB>
                     <contributionGroupC rdf:datatype="xsd:integer">1</contributionGroupC>
@@ -3188,12 +3188,12 @@
         <contributionGroupZoneII rdf:datatype="xsd:integer">5</contributionGroupZoneII>
     </owl:NamedIndividual>
 
-<!-- ===== 9 A  GELD- & KREDITWESEN; PRIVATVERSICHERUNG; WIRTSCHAFTSDIENST ===== -->
+<!-- ===== 9 A  GELD- &amp; KREDITWESEN; PRIVATVERSICHERUNG; WIRTSCHAFTSDIENST ===== -->
 
     <owl:NamedIndividual rdf:about="#BA_9A">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">Geld- und Kreditwesen; Privatversicherung; Wirtschaftsdienste</rdfs:label>
-        <rdfs:label xml:lang="en">Finance, Insurance & Business Services</rdfs:label>
+        <rdfs:label xml:lang="en">Finance, Insurance &amp; Business Services</rdfs:label>
     </owl:NamedIndividual>
 
 <!-- === 91  Geld- und Kreditwesen === -->
@@ -3202,14 +3202,14 @@
     <owl:NamedIndividual rdf:about="#BA_91">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">Geld- und Kreditwesen</rdfs:label>
-        <rdfs:label xml:lang="en">Monetary & Credit Institutions</rdfs:label>
+        <rdfs:label xml:lang="en">Monetary &amp; Credit Institutions</rdfs:label>
     </owl:NamedIndividual>
 
-        <!-- 911  Banken & Hypothekenanstalten -->
+        <!-- 911  Banken &amp; Hypothekenanstalten -->
         <owl:NamedIndividual rdf:about="#BA_911">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Banken und Hypothekenanstalten</rdfs:label>
-            <rdfs:label xml:lang="en">Banks & Mortgage Institutions</rdfs:label>
+            <rdfs:label xml:lang="en">Banks &amp; Mortgage Institutions</rdfs:label>
             <contributionGroupA rdf:datatype="xsd:integer">3</contributionGroupA>
             <contributionGroupB rdf:datatype="xsd:integer">3</contributionGroupB>
             <contributionGroupC rdf:datatype="xsd:integer">3</contributionGroupC>
@@ -3248,7 +3248,7 @@
         <owl:NamedIndividual rdf:about="#BA_914">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Bausparkassen, Teilzahlungsinstitute und Pfandleihanstalten</rdfs:label>
-            <rdfs:label xml:lang="en">Building-societies, Instalment Credit & Pawnshops</rdfs:label>
+            <rdfs:label xml:lang="en">Building-societies, Instalment Credit &amp; Pawnshops</rdfs:label>
             <contributionGroupA rdf:datatype="xsd:integer">5</contributionGroupA>
             <contributionGroupB rdf:datatype="xsd:integer">5</contributionGroupB>
             <contributionGroupC rdf:datatype="xsd:integer">5</contributionGroupC>
@@ -3257,11 +3257,11 @@
             <contributionGroupZoneII rdf:datatype="xsd:integer">5</contributionGroupZoneII>
         </owl:NamedIndividual>
 
-            <!-- 914.9  Sonstige Geld- & Krediteinrichtungen -->
+            <!-- 914.9  Sonstige Geld- &amp; Krediteinrichtungen -->
             <owl:NamedIndividual rdf:about="#BA_914_9">
                 <rdf:type rdf:resource="#BusinessActivity"/>
                 <rdfs:label xml:lang="de">Sonstige Geld- und Krediteinrichtungen</rdfs:label>
-                <rdfs:label xml:lang="en">Other Financial & Credit Institutions</rdfs:label>
+                <rdfs:label xml:lang="en">Other Financial &amp; Credit Institutions</rdfs:label>
                 <contributionGroupA rdf:datatype="xsd:integer">3</contributionGroupA>
                 <contributionGroupB rdf:datatype="xsd:integer">3</contributionGroupB>
                 <contributionGroupC rdf:datatype="xsd:integer">3</contributionGroupC>
@@ -3323,19 +3323,19 @@
             <contributionGroupZoneII rdf:datatype="xsd:integer">7</contributionGroupZoneII>
         </owl:NamedIndividual>
 
-<!-- === 93  Realitäten-, Rechts- & Wirtschaftsdienste === -->
+<!-- === 93  Realitäten-, Rechts- &amp; Wirtschaftsdienste === -->
 
     <owl:NamedIndividual rdf:about="#BA_93">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">Realitätenwesen; Rechts- und Wirtschaftsdienste</rdfs:label>
-        <rdfs:label xml:lang="en">Real-Estate, Legal & Business Services</rdfs:label>
+        <rdfs:label xml:lang="en">Real-Estate, Legal &amp; Business Services</rdfs:label>
     </owl:NamedIndividual>
 
         <!-- 931  Realitätenwesen / Vermietung / Verwaltung -->
         <owl:NamedIndividual rdf:about="#BA_931">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Realitäten-, Vermögens-, Wohnungs- und Siedlungswesen</rdfs:label>
-            <rdfs:label xml:lang="en">Real-Estate & Property Management</rdfs:label>
+            <rdfs:label xml:lang="en">Real-Estate &amp; Property Management</rdfs:label>
             <contributionGroupA rdf:datatype="xsd:integer">5</contributionGroupA>
             <contributionGroupB rdf:datatype="xsd:integer">5</contributionGroupB>
             <contributionGroupC rdf:datatype="xsd:integer">5</contributionGroupC>
@@ -3400,7 +3400,7 @@
         <owl:NamedIndividual rdf:about="#BA_933">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Wirtschaftsberatung</rdfs:label>
-            <rdfs:label xml:lang="en">Business & Management Consulting</rdfs:label>
+            <rdfs:label xml:lang="en">Business &amp; Management Consulting</rdfs:label>
             <contributionGroupA rdf:datatype="xsd:integer">5</contributionGroupA>
             <contributionGroupB rdf:datatype="xsd:integer">5</contributionGroupB>
             <contributionGroupC rdf:datatype="xsd:integer">5</contributionGroupC>
@@ -3426,7 +3426,7 @@
         <owl:NamedIndividual rdf:about="#BA_935_ad">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Werbe- und Messewesen</rdfs:label>
-            <rdfs:label xml:lang="en">Advertising & Trade-fair Services</rdfs:label>
+            <rdfs:label xml:lang="en">Advertising &amp; Trade-fair Services</rdfs:label>
             <contributionGroupA rdf:datatype="xsd:integer">4</contributionGroupA>
             <contributionGroupB rdf:datatype="xsd:integer">4</contributionGroupB>
             <contributionGroupC rdf:datatype="xsd:integer">4</contributionGroupC>
@@ -3492,7 +3492,7 @@
     <owl:NamedIndividual rdf:about="#BA_938">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">Vermietung (Leasing) diverser Gegenstände</rdfs:label>
-        <rdfs:label xml:lang="en">Leasing & Rental of Equipment</rdfs:label>
+        <rdfs:label xml:lang="en">Leasing &amp; Rental of Equipment</rdfs:label>
     </owl:NamedIndividual>
 
             <!-- 938.1  Landmaschinen -->
@@ -3508,11 +3508,11 @@
                 <contributionGroupZoneII rdf:datatype="xsd:integer">7</contributionGroupZoneII>
             </owl:NamedIndividual>
 
-            <!-- 938.2  Bau-, Industrie- & Büromaschinen -->
+            <!-- 938.2  Bau-, Industrie- &amp; Büromaschinen -->
             <owl:NamedIndividual rdf:about="#BA_938_2">
                 <rdf:type rdf:resource="#BusinessActivity"/>
                 <rdfs:label xml:lang="de">Leasing von Bau-, Industrie- und Büromaschinen</rdfs:label>
-                <rdfs:label xml:lang="en">Leasing of Construction, Industrial & Office Machinery</rdfs:label>
+                <rdfs:label xml:lang="en">Leasing of Construction, Industrial &amp; Office Machinery</rdfs:label>
                 <contributionGroupA rdf:datatype="xsd:integer">6</contributionGroupA>
                 <contributionGroupB rdf:datatype="xsd:integer">6</contributionGroupB>
                 <contributionGroupC rdf:datatype="xsd:integer">6</contributionGroupC>
@@ -3591,7 +3591,7 @@
     <owl:NamedIndividual rdf:about="#BA_9B">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">Persönliche, soziale und öffentliche Dienste; Haushaltung</rdfs:label>
-        <rdfs:label xml:lang="en">Personal, Social & Public Services; Household Activities</rdfs:label>
+        <rdfs:label xml:lang="en">Personal, Social &amp; Public Services; Household Activities</rdfs:label>
     </owl:NamedIndividual>
 
 <!-- === 94  Körperpflege, Reinigung, Bestattung === -->
@@ -3662,7 +3662,7 @@
     <owl:NamedIndividual rdf:about="#BA_942">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">Wäscherei, Putzerei und Büglerei</rdfs:label>
-        <rdfs:label xml:lang="en">Laundry & Dry-cleaning Services</rdfs:label>
+        <rdfs:label xml:lang="en">Laundry &amp; Dry-cleaning Services</rdfs:label>
         <contributionGroupA rdf:datatype="xsd:integer">5</contributionGroupA>
         <contributionGroupB rdf:datatype="xsd:integer">5</contributionGroupB>
         <contributionGroupC rdf:datatype="xsd:integer">5</contributionGroupC>
@@ -3675,7 +3675,7 @@
     <owl:NamedIndividual rdf:about="#BA_943">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">Reinigungsanstalten, Rauchfangkehrergewerbe</rdfs:label>
-        <rdfs:label xml:lang="en">Cleaning Establishments & Chimney Sweeps</rdfs:label>
+        <rdfs:label xml:lang="en">Cleaning Establishments &amp; Chimney Sweeps</rdfs:label>
         <contributionGroupA rdf:datatype="xsd:integer">5</contributionGroupA>
         <contributionGroupB rdf:datatype="xsd:integer">5</contributionGroupB>
         <contributionGroupC rdf:datatype="xsd:integer">5</contributionGroupC>
@@ -3688,7 +3688,7 @@
     <owl:NamedIndividual rdf:about="#BA_944">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">Kanal-, Straßen- und sonstige Reinigung</rdfs:label>
-        <rdfs:label xml:lang="en">Sewer, Street & Other Cleaning Services</rdfs:label>
+        <rdfs:label xml:lang="en">Sewer, Street &amp; Other Cleaning Services</rdfs:label>
         <contributionGroupA rdf:datatype="xsd:integer">6</contributionGroupA>
         <contributionGroupB rdf:datatype="xsd:integer">6</contributionGroupB>
         <contributionGroupC rdf:datatype="xsd:integer">6</contributionGroupC>
@@ -3715,7 +3715,7 @@
     <owl:NamedIndividual rdf:about="#BA_95">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">Kunst; Unterhaltung und Sport</rdfs:label>
-        <rdfs:label xml:lang="en">Arts, Entertainment & Sport</rdfs:label>
+        <rdfs:label xml:lang="en">Arts, Entertainment &amp; Sport</rdfs:label>
         <contributionGroupA rdf:datatype="xsd:integer">7</contributionGroupA>
         <contributionGroupB rdf:datatype="xsd:integer">7</contributionGroupB>
         <contributionGroupC rdf:datatype="xsd:integer">7</contributionGroupC>
@@ -3728,7 +3728,7 @@
         <owl:NamedIndividual rdf:about="#BA_951_1">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Theater und Musik</rdfs:label>
-            <rdfs:label xml:lang="en">Theatre & Music Performances</rdfs:label>
+            <rdfs:label xml:lang="en">Theatre &amp; Music Performances</rdfs:label>
             <contributionGroupA rdf:datatype="xsd:integer">4</contributionGroupA>
             <contributionGroupB rdf:datatype="xsd:integer">4</contributionGroupB>
             <contributionGroupC rdf:datatype="xsd:integer">4</contributionGroupC>
@@ -3740,7 +3740,7 @@
         <owl:NamedIndividual rdf:about="#BA_951_2">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Rundfunk und Fernsehen</rdfs:label>
-            <rdfs:label xml:lang="en">Broadcasting (Radio & TV)</rdfs:label>
+            <rdfs:label xml:lang="en">Broadcasting (Radio &amp; TV)</rdfs:label>
             <contributionGroupA rdf:datatype="xsd:integer">3</contributionGroupA>
             <contributionGroupB rdf:datatype="xsd:integer">3</contributionGroupB>
             <contributionGroupC rdf:datatype="xsd:integer">3</contributionGroupC>
@@ -3779,7 +3779,7 @@
         <owl:NamedIndividual rdf:about="#BA_953_1">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Filmproduktion und -verleih</rdfs:label>
-            <rdfs:label xml:lang="en">Film Production & Distribution</rdfs:label>
+            <rdfs:label xml:lang="en">Film Production &amp; Distribution</rdfs:label>
             <contributionGroupA rdf:datatype="xsd:integer">5</contributionGroupA>
             <contributionGroupB rdf:datatype="xsd:integer">5</contributionGroupB>
             <contributionGroupC rdf:datatype="xsd:integer">5</contributionGroupC>
@@ -3804,7 +3804,7 @@
         <owl:NamedIndividual rdf:about="#BA_954_1_main">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Zirkusse, Varietés und verwandte Unterhaltungseinrichtungen</rdfs:label>
-            <rdfs:label xml:lang="en">Circuses, Varietés & Similar Entertainment</rdfs:label>
+            <rdfs:label xml:lang="en">Circuses, Varietés &amp; Similar Entertainment</rdfs:label>
             <contributionGroupA rdf:datatype="xsd:integer">2</contributionGroupA>
             <contributionGroupB rdf:datatype="xsd:integer">2</contributionGroupB>
             <contributionGroupC rdf:datatype="xsd:integer">3</contributionGroupC>
@@ -3840,7 +3840,7 @@
             <owl:NamedIndividual rdf:about="#BA_954_1_fair">
                 <rdf:type rdf:resource="#BusinessActivity"/>
                 <rdfs:label xml:lang="de">Vergnügungsbetriebe pratermäßiger Art (Schausteller)</rdfs:label>
-                <rdfs:label xml:lang="en">Fairground & Amusement Operators</rdfs:label>
+                <rdfs:label xml:lang="en">Fairground &amp; Amusement Operators</rdfs:label>
                 <contributionGroupA rdf:datatype="xsd:integer">4</contributionGroupA>
                 <contributionGroupB rdf:datatype="xsd:integer">4</contributionGroupB>
                 <contributionGroupC rdf:datatype="xsd:integer">4</contributionGroupC>
@@ -3853,7 +3853,7 @@
         <owl:NamedIndividual rdf:about="#BA_954_2_main">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Spielbanken, Wettbüros und Lotterien</rdfs:label>
-            <rdfs:label xml:lang="en">Casinos, Betting Offices & Lotteries</rdfs:label>
+            <rdfs:label xml:lang="en">Casinos, Betting Offices &amp; Lotteries</rdfs:label>
             <contributionGroupA rdf:datatype="xsd:integer">4</contributionGroupA>
             <contributionGroupB rdf:datatype="xsd:integer">4</contributionGroupB>
             <contributionGroupC rdf:datatype="xsd:integer">4</contributionGroupC>
@@ -3875,11 +3875,11 @@
                 <contributionGroupZoneII rdf:datatype="xsd:integer">1</contributionGroupZoneII>
             </owl:NamedIndividual>
 
-        <!-- 955  Museen & Zoologische Gärten -->
+        <!-- 955  Museen &amp; Zoologische Gärten -->
         <owl:NamedIndividual rdf:about="#BA_955_main">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Museen, zoologische und botanische Gärten</rdfs:label>
-            <rdfs:label xml:lang="en">Museums, Zoos & Botanical Gardens</rdfs:label>
+            <rdfs:label xml:lang="en">Museums, Zoos &amp; Botanical Gardens</rdfs:label>
             <contributionGroupA rdf:datatype="xsd:integer">2</contributionGroupA>
             <contributionGroupB rdf:datatype="xsd:integer">2</contributionGroupB>
             <contributionGroupC rdf:datatype="xsd:integer">2</contributionGroupC>
@@ -3892,7 +3892,7 @@
             <owl:NamedIndividual rdf:about="#BA_955_showmine">
                 <rdf:type rdf:resource="#BusinessActivity"/>
                 <rdfs:label xml:lang="de">Schaubergwerke (Höhlen)</rdfs:label>
-                <rdfs:label xml:lang="en">Show Mines & Caves</rdfs:label>
+                <rdfs:label xml:lang="en">Show Mines &amp; Caves</rdfs:label>
                 <contributionGroupA rdf:datatype="xsd:integer">1</contributionGroupA>
                 <contributionGroupB rdf:datatype="xsd:integer">1</contributionGroupB>
                 <contributionGroupC rdf:datatype="xsd:integer">2</contributionGroupC>
@@ -3905,7 +3905,7 @@
         <owl:NamedIndividual rdf:about="#BA_956_1">
             <rdf:type rdf:resource="#BusinessActivity"/>
             <rdfs:label xml:lang="de">Sportplätze und Sporthallen (inkl. Tennisanlagen)</rdfs:label>
-            <rdfs:label xml:lang="en">Sports Grounds & Halls (incl. Tennis)</rdfs:label>
+            <rdfs:label xml:lang="en">Sports Grounds &amp; Halls (incl. Tennis)</rdfs:label>
             <contributionGroupA rdf:datatype="xsd:integer">3</contributionGroupA>
             <contributionGroupB rdf:datatype="xsd:integer">3</contributionGroupB>
             <contributionGroupC rdf:datatype="xsd:integer">3</contributionGroupC>
@@ -4092,7 +4092,7 @@
     <owl:NamedIndividual rdf:about="#BA_961_1">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">Ärztliche Ordinationen und medizinische Laboratorien</rdfs:label>
-        <rdfs:label xml:lang="en">Medical Practices & Laboratories</rdfs:label>
+        <rdfs:label xml:lang="en">Medical Practices &amp; Laboratories</rdfs:label>
         <contributionGroupA rdf:datatype="xsd:integer">6</contributionGroupA>
         <contributionGroupB rdf:datatype="xsd:integer">6</contributionGroupB>
         <contributionGroupC rdf:datatype="xsd:integer">6</contributionGroupC>
@@ -4135,7 +4135,7 @@
     <owl:NamedIndividual rdf:about="#BA_961_2">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">Private Kranken-, Heil- und Pflegeanstalten</rdfs:label>
-        <rdfs:label xml:lang="en">Private Hospitals, Clinics & Care Homes</rdfs:label>
+        <rdfs:label xml:lang="en">Private Hospitals, Clinics &amp; Care Homes</rdfs:label>
         <contributionGroupA rdf:datatype="xsd:integer">6</contributionGroupA>
         <contributionGroupB rdf:datatype="xsd:integer">6</contributionGroupB>
         <contributionGroupC rdf:datatype="xsd:integer">6</contributionGroupC>
@@ -4174,7 +4174,7 @@
     <owl:NamedIndividual rdf:about="#BA_961_3_spa">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">Heilbade- und Kuranstalten</rdfs:label>
-        <rdfs:label xml:lang="en">Spa & Health Resorts</rdfs:label>
+        <rdfs:label xml:lang="en">Spa &amp; Health Resorts</rdfs:label>
         <contributionGroupA rdf:datatype="xsd:integer">2</contributionGroupA>
         <contributionGroupB rdf:datatype="xsd:integer">2</contributionGroupB>
         <contributionGroupC rdf:datatype="xsd:integer">2</contributionGroupC>
@@ -4238,7 +4238,7 @@
     <owl:NamedIndividual rdf:about="#BA_963">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">Fürsorge- und karitative Einrichtungen</rdfs:label>
-        <rdfs:label xml:lang="en">Welfare & Charitable Institutions</rdfs:label>
+        <rdfs:label xml:lang="en">Welfare &amp; Charitable Institutions</rdfs:label>
         <contributionGroupA rdf:datatype="xsd:integer">7</contributionGroupA>
         <contributionGroupB rdf:datatype="xsd:integer">7</contributionGroupB>
         <contributionGroupC rdf:datatype="xsd:integer">7</contributionGroupC>
