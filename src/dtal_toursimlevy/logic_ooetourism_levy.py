@@ -142,16 +142,23 @@ def calculate_tax_endpoint():
     
     taxpayer = payload["taxpayer"]
     revenue = payload["revenue"]
-    municipality_class = payload["municipality_class"]
+    municipality_name = payload["municipality_name"]
     contribution_group =  payload["contribution_group"]
+    #business_activity =  payload["business_activity"]
+    
+    
+    municipality_class = get_municipality_class(municipality_name)
+    if municipality_class is None:
+        raise HTTPException(status_code=404, detail="Municipality not found")
+    
+    #contribution_group = get_contribution_group(business_activity)
+    #if contribution_group is None:
+    #    raise HTTPException(status_code=404, detail="Business Activity not found")
     
      # Example usage
     taxpayer_info = calculate_tourism_levy(taxpayer, revenue, municipality_class, contribution_group)
 
     print(taxpayer_info)
-    
-    municipality_class_print = get_municipality_class("Aichkirchen")
-    print(municipality_class_print)
     
     return jsonify(taxpayer_info)
 

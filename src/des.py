@@ -16,7 +16,7 @@ count = 0
 sample = {
     "taxpayer": "Sample Business",
     "revenue": 500000, 
-    "municipality_class": "A",
+    "municipality_name": "Adlwang",
     "contribution_group": 2}
     
 
