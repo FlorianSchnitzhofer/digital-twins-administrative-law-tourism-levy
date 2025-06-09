@@ -180,8 +180,8 @@ def get_contribution_group(business_activity_label: str, municipality_class: str
                     except ValueError:
                         # Fallback in case the literal is encoded as float
                         return int(float(str(group_val)))
-
-
+    
+    
 # Route for calculating ooetourism levy based on JSON payload
 @app.route('/dtal/calculate_ooetourism_levy', methods=['POST'])
 def calculate_tax_endpoint():
@@ -193,14 +193,14 @@ def calculate_tax_endpoint():
     municipality_name = payload["municipality_name"]
     contribution_group =  payload["contribution_group"]
     #business_activity =  payload["business_activity"]
-    business_activity = "Wildparks"
+    #business_activity = "Wildparks"
     
     
     municipality_class = get_municipality_class(municipality_name)
     if municipality_class is None:
         raise HTTPException(status_code=404, detail="Municipality not found")
     
-    contribution_group_temp = get_contribution_group(business_activity, municipality_class)
+    #contribution_group_temp = get_contribution_group(business_activity, municipality_class)
     #if contribution_group is None:
     #    raise HTTPException(status_code=404, detail="Business Activity not found")
     
@@ -209,7 +209,7 @@ def calculate_tax_endpoint():
 
     print(taxpayer_info)
     
-    print("CONTRI_GROUP: "+str(contribution_group_temp))
+   # print("CONTRI_GROUP: "+str(contribution_group_temp))
     
     return jsonify(taxpayer_info)
 
