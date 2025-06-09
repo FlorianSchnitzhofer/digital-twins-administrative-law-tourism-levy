@@ -1,0 +1,16 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "OOE Tourism Levy API",
+  "name_for_model": "ooe_tourism_levy",
+  "description_for_human": "Calculate the Upper Austrian tourism levy for a business.",
+  "description_for_model": "Provides an endpoint to compute the tourism levy. Use the POST /dtal/calculate_ooetourism_levy endpoint with fields: taxpayer, revenue, municipality_name, contribution_group.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "openapi.yaml"
+  },
+  "contact_email": "noreply@example.com",
+  "legal_info_url": "https://example.com/legal"
+}
