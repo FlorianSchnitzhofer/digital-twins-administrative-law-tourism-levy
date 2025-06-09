@@ -67,6 +67,34 @@ def load_ontology_parameters():
     
     return contribution_rates, min_contributions, max_revenue_cap
     
+
+def get_municipality_class(municipality_name: str) -> str:
+    """Return the municipality class for a given municipality name using SPARQL."""
+    g = Graph()
+
+    ontology_path = os.path.join(os.path.dirname(__file__), 
+                                 "model_municipality_class_mapping.owl")
+    g.parse(ontology_path)
+    
+    escaped_name = json.dumps(municipality_name)
+    query = f"""
+        PREFIX ex: <http://example.org/ontology#>
+        SELECT ?clazz WHERE {{
+            ?entry ex:municipalityName ?name ;
+                   ex:municipalityClass ?clazz .
+            FILTER(LCASE(STR(?name)) = LCASE({escaped_name}))
+        }}
+    """
+
+    res = list(g.query(query))
+    if not res:
+        raise ValueError(
+            f"Municipality '{municipality_name}' not found in municipality ontology"
+        )
+
+    return str(res[0][0])
+
+  
 """
 Calculate the tourism levy based on the Upper Austrian Tourism Law Ontology.
 
@@ -122,6 +150,9 @@ def calculate_tax_endpoint():
     taxpayer_info = calculate_tourism_levy(taxpayer, revenue, municipality_class, contribution_group)
 
     print(taxpayer_info)
+    
+    municipality_class_print = get_municipality_class("Aichkirchen")
+    print(municipality_class_print)
     
     return jsonify(taxpayer_info)
 
