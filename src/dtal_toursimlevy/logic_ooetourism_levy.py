@@ -4,6 +4,7 @@ from rdflib import Graph, Namespace, Literal
 from rdflib.namespace import RDF, RDFS, XSD
 from typing import List, Tuple
 import json
+import os
 
 # Flask-Initialisierung
 app = Flask(__name__)
@@ -14,7 +15,12 @@ def load_ontology_parameters():
     Load tourism levy configuration parameters from the OWL ontology.
     """
     g = Graph()
-    g.parse("model_ooetourism_levy.owl")  # Load the ontology file
+   
+    # Load the ontology file from the package directory so the
+    # application can be run from any working directory
+    ontology_path = os.path.join(os.path.dirname(__file__),
+                                "model_ooetourism_levy.owl")
+    g.parse(ontology_path)
     
     # Extract contribution rates
     contribution_rates_query = """

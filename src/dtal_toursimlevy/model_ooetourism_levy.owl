@@ -1,12 +1,14 @@
 <?xml version="1.0"?>
-<owl:Ontology xmlns="http://www.w3.org/2002/07/owl#"
-          xmlns:owl="http://www.w3.org/2002/07/owl#"
-          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-          xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-          xml:base="http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_ontology">
-    <rdfs:comment>Axioms and configuration parameters for the Upper Austrian Tourism Law 2018</rdfs:comment>
-	    
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xml:base="http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_axioms">
+
+    <owl:Ontology rdf:about="http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_axioms">
+        <rdfs:comment>Axioms and configuration parameters for the Upper Austrian Tourism Law 2018</rdfs:comment>
+    </owl:Ontology>
+
     <!-- Axioms and Rules -->
     <owl:DatatypeProperty rdf:about="#maxContributionBase">
         <rdfs:domain rdf:resource="#TourismContribution"/>
@@ -14,36 +16,36 @@
         <rdfs:comment>Maximum taxable base for tourism contribution: 4,280,000 EUR</rdfs:comment>
         <rdf:value>4280000</rdf:value>
     </owl:DatatypeProperty>
-    
+
     <owl:DatatypeProperty rdf:about="#minimumContribution">
         <rdfs:domain rdf:resource="#TourismContribution"/>
         <rdfs:range rdf:resource="xsd:decimal"/>
         <rdfs:comment>Minimum contribution values based on municipality class</rdfs:comment>
     </owl:DatatypeProperty>
-    
+
     <owl:ObjectProperty rdf:about="#appliesToMunicipalityClass">
         <rdfs:domain rdf:resource="#TourismContribution"/>
         <rdfs:range rdf:resource="#TourismMunicipality"/>
     </owl:ObjectProperty>
-    
+
     <owl:DatatypeProperty rdf:about="#taxPercentage">
         <rdfs:domain rdf:resource="#TourismContribution"/>
         <rdfs:range rdf:resource="xsd:decimal"/>
         <rdfs:comment>Different percentage rates based on business classification and location</rdfs:comment>
     </owl:DatatypeProperty>
-    
+
     <owl:DatatypeProperty rdf:about="#indexAdjustmentFactor">
         <rdfs:domain rdf:resource="#TourismContribution"/>
         <rdfs:range rdf:resource="xsd:decimal"/>
         <rdfs:comment>Adjustment factor based on consumer price index</rdfs:comment>
     </owl:DatatypeProperty>
-    
+
     <owl:DatatypeProperty rdf:about="#contributionDeclarationDeadline">
         <rdfs:domain rdf:resource="#TourismFeeDeclaration"/>
         <rdfs:range rdf:resource="xsd:date"/>
         <rdfs:comment>Annual declaration deadline for tourism contribution: September 30</rdfs:comment>
     </owl:DatatypeProperty>
-    
+
     <!-- Contribution Rates based on Municipality Class and Group -->
     <owl:DatatypeProperty rdf:about="#contributionRates">
         <rdfs:domain rdf:resource="#TourismMunicipality"/>
@@ -56,7 +58,7 @@
              "St": [0.40, 0.20, 0.10, 0.05, 0.025, 0.00, 0.00]}
         </rdf:value>
     </owl:DatatypeProperty>
-    
+
     <!-- Minimum Contribution Values -->
     <owl:DatatypeProperty rdf:about="#minimumContributions">
         <rdfs:domain rdf:resource="#TourismMunicipality"/>
@@ -69,4 +71,5 @@
              "St": [34.50, 34.50, 34.50, 34.50, 34.50, 0.00, 0.00]}
         </rdf:value>
     </owl:DatatypeProperty>
-</owl:Ontology>
+
+</rdf:RDF>
