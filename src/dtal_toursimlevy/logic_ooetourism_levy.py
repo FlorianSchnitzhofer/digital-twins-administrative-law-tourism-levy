@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from rdflib import Graph, Namespace, Literal
+from rdflib import Graph, Namespace, Literal, URIRef
 from rdflib.namespace import RDF, RDFS, XSD
 from typing import List, Tuple
 import json
@@ -154,24 +154,32 @@ def get_contribution_group(business_activity_label: str, municipality_class: str
     if municipality_class not in prop_map:
         raise ValueError(f"Unsupported municipality class '{municipality_class}'")
 
-    property_uri = f"<http://tourismlevy.lawdigitaltwin.com/dtal_tourismlevy/ooe_tourism_axioms#{prop_map[municipality_class]}>"
-    escaped_label = json.dumps(business_activity_label)
-    query = f"""
-        SELECT ?group WHERE {{
-            ?BusinessActivity rdfs:label ?label ;
-                      {property_uri} ?group .
-            FILTER(LCASE(STR(?label)) = LCASE({escaped_label}))
-        }}
-    """
+    #property_uri = f"<http://tourismlevy.lawdigitaltwin.com/dtal_tourismlevy/ooe_tourism_axioms#{prop_map[municipality_class]}>"
+    #scaped_label = json.dumps(business_activity_label)
+    #query = f"""
+    #    SELECT ?group WHERE {{
+    #        ?BusinessActivity rdfs:label ?label ;
+    #                  {property_uri} ?group .
+    #        FILTER(LCASE(STR(?label)) = LCASE({escaped_label}))
+    #    }}
+    #"""
+    
+    base = "http://tourismlevy.lawdigitaltwin.com/dtal_tourismlevy/ooe_tourism_axioms#"
+    prop_uri = URIRef(base + prop_map[municipality_class])
+    activity_class = URIRef(base + "BusinessActivity")
 
-    res = list(g.query(query))
-    if not res:
-        raise ValueError(
-            f"Business activity '{business_activity_label}' not found in contribution group ontology"
-        )
+    search_label = business_activity_label.strip().lower()
 
-    return int(res[0][0])
-
+    for subj in g.subjects(RDF.type, activity_class):
+        for label in g.objects(subj, RDFS.label):
+            if str(label).strip().lower() == search_label:
+                group_val = g.value(subject=subj, predicate=prop_uri)
+                if group_val is not None:
+                    try:
+                        return int(str(group_val))
+                    except ValueError:
+                        # Fallback in case the literal is encoded as float
+                        return int(float(str(group_val)))
 
 
 # Route for calculating ooetourism levy based on JSON payload
@@ -192,7 +200,7 @@ def calculate_tax_endpoint():
     if municipality_class is None:
         raise HTTPException(status_code=404, detail="Municipality not found")
     
-    contribution_group = get_contribution_group(business_activity, municipality_class)
+    contribution_group_temp = get_contribution_group(business_activity, municipality_class)
     #if contribution_group is None:
     #    raise HTTPException(status_code=404, detail="Business Activity not found")
     
@@ -200,6 +208,8 @@ def calculate_tax_endpoint():
     taxpayer_info = calculate_tourism_levy(taxpayer, revenue, municipality_class, contribution_group)
 
     print(taxpayer_info)
+    
+    print("CONTRI_GROUP: "+str(contribution_group_temp))
     
     return jsonify(taxpayer_info)
 
