@@ -22,27 +22,31 @@ def load_ontology_parameters():
     g.parse(ontology_path)
     
     # Extract contribution rates
-    contribution_rates_query = """
-    SELECT ?value WHERE {
-        <http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_axioms#contributionRates>
-            <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> ?value .
-    """
-    
+    contribution_rates_query = (
+        """
+        SELECT ?value WHERE {
+            ?s <http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_axioms#contributionRates> ?value .
+        }
+        """.strip()
+    ) 
+ 
     # Extract minimum contributions
-    min_contributions_query = """
-    SELECT ?value WHERE { 
-        ?s <http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_axioms#minimumContributions> 
-         <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> ?value .
-    }
-    """
+    min_contributions_query = (
+        """
+        SELECT ?value WHERE {
+            ?s <http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_axioms#minimumContributions> ?value .
+        }
+        """.strip()
+    )
     
     # Extract max revenue cap
-    max_revenue_query = """
-    SELECT ?value WHERE { 
-        ?s <http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_axioms#maxContributionBase> 
-         <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> ?value .
-    }
-    """
+    max_revenue_query = (
+        """
+        SELECT ?value WHERE {
+            ?s <http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_axioms#maxContributionBase> ?value .
+        }
+        """.strip()
+    )
     
     # Execute queries
     contribution_rates = json.loads(list(g.query(contribution_rates_query))[0][0])
