@@ -1,4 +1,3 @@
-
 from flask import Flask, request, jsonify
 from rdflib import Graph, Namespace, Literal
 from rdflib.namespace import RDF, RDFS, XSD
