@@ -157,9 +157,8 @@ def get_contribution_group(business_activity_label: str, municipality_class: str
     property_uri = f"<http://tourismlevy.lawdigitaltwin.com/dtal_tourismlevy/ooe_tourism_axioms#{prop_map[municipality_class]}>"
     escaped_label = json.dumps(business_activity_label)
     query = f"""
-        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         SELECT ?group WHERE {{
-            ?activity rdfs:label ?label ;
+            ?BusinessActivity rdfs:label ?label ;
                       {property_uri} ?group .
             FILTER(LCASE(STR(?label)) = LCASE({escaped_label}))
         }}
