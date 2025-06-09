@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xml:base="http://tourismlevy.lawdigitaltwin.com/dtal_tourismlevy/ooe_contribution_ontology"
+         xmlns:ex="http://tourismlevy.lawdigitaltwin.com/dtal_tourismlevy/ooe_contribution_ontology#">
+
+    <owl:Ontology rdf:about=""/>
+
+    <!-- Classes -->
+    <owl:Class rdf:about="ex:BusinessActivity"/>
+    <owl:Class rdf:about="ex:MunicipalityClass"/>
+    <owl:Class rdf:about="ex:ContributionGroup"/>
+
+    <!-- Datatype properties -->
+    <owl:DatatypeProperty rdf:about="ex:activityCode">
+        <rdfs:domain rdf:resource="ex:BusinessActivity"/>
+        <rdfs:range  rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="ex:contributionArray">
+        <rdfs:domain rdf:resource="ex:BusinessActivity"/>
+        <rdfs:range  rdf:resource="&xsd;string"/>
+        <rdfs:comment>
+            Six values – order: [A, B, C, Statutarstadt-Zone I, Statutarstadt-Zone II, D]
+        </rdfs:comment>
+    </owl:DatatypeProperty>
+
+    <!-- Municipality-class individuals -->
+    <owl:NamedIndividual rdf:about="ex:A"><rdf:type rdf:resource="ex:MunicipalityClass"/></owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="ex:B"><rdf:type rdf:resource="ex:MunicipalityClass"/></owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="ex:C"><rdf:type rdf:resource="ex:MunicipalityClass"/></owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="ex:Statutarstadt_I"><rdf:type rdf:resource="ex:MunicipalityClass"/></owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="ex:Statutarstadt_II"><rdf:type rdf:resource="ex:MunicipalityClass"/></owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="ex:D"><rdf:type rdf:resource="ex:MunicipalityClass"/></owl:NamedIndividual>
+
+    <!-- Contribution-group individuals (Grp1 … Grp7) -->
+    <owl:NamedIndividual rdf:about="ex:Grp1"><rdf:type rdf:resource="ex:ContributionGroup"/></owl:NamedIndividual>
+   

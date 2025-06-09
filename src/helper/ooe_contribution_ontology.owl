@@ -1,0 +1,1272 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xml:base="http://tourismlevy.lawdigitaltwin.com/dtal_tourismlevy/ooe_contribution_ontology"
+         xmlns:ex="http://tourismlevy.lawdigitaltwin.com/dtal_tourismlevy/ooe_contribution_ontology#">
+
+    <owl:Ontology rdf:about=""/>
+
+    <!-- Classes -->
+    <owl:Class rdf:about="ex:BusinessActivity"/>
+    <owl:Class rdf:about="ex:MunicipalityClass"/>
+    <owl:Class rdf:about="ex:ContributionGroup"/>
+
+    <!-- Datatype properties -->
+    <owl:DatatypeProperty rdf:about="ex:activityCode">
+        <rdfs:domain rdf:resource="ex:BusinessActivity"/>
+        <rdfs:range  rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="ex:contributionArray">
+        <rdfs:domain rdf:resource="ex:BusinessActivity"/>
+        <rdfs:range  rdf:resource="&xsd;string"/>
+        <rdfs:comment>
+            Six values – order: [A, B, C, Statutarstadt-Zone I, Statutarstadt-Zone II, D]
+        </rdfs:comment>
+    </owl:DatatypeProperty>
+
+    <!-- Municipality-class individuals -->
+    <owl:NamedIndividual rdf:about="ex:A"><rdf:type rdf:resource="ex:MunicipalityClass"/></owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="ex:B"><rdf:type rdf:resource="ex:MunicipalityClass"/></owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="ex:C"><rdf:type rdf:resource="ex:MunicipalityClass"/></owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="ex:Statutarstadt_I"><rdf:type rdf:resource="ex:MunicipalityClass"/></owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="ex:Statutarstadt_II"><rdf:type rdf:resource="ex:MunicipalityClass"/></owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="ex:D"><rdf:type rdf:resource="ex:MunicipalityClass"/></owl:NamedIndividual>
+
+    <!-- Contribution-group individuals (Grp1 … Grp7) -->
+    <owl:NamedIndividual rdf:about="ex:Grp1"><rdf:type rdf:resource="ex:ContributionGroup"/></owl:NamedIndividual>
+    <!-- BusinessActivity individuals -->
+
+<owl:NamedIndividual rdf:about="ex:0">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">0</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[7, 7, 7, 7, 7, 7]</contributionArray>
+    <rdfs:label xml:lang="de">LAND- UND FORSTWIRTSCHAFT</rdfs:label>
+    <rdfs:label xml:lang="en">Agriculture and forestry</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:01">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">01</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">LANDWIRTSCHAFT; FISCHEREI 015 Gewerblicher Gartenbau und gewerbliche Tierhaltung</rdfs:label>
+    <rdfs:label xml:lang="en">AGRICULTURE; Fishing 015 Commercial horticulture and commercial animal husbandry</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:018">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">018</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[7, 7, 7, 7, 7, 7]</contributionArray>
+    <rdfs:label xml:lang="de">Fischerei und Teichwirtschaft</rdfs:label>
+    <rdfs:label xml:lang="en">Fishing and pond management</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:02">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">02</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[7, 7, 7, 7, 7, 7]</contributionArray>
+    <rdfs:label xml:lang="de">FORSTWIRTSCHAFT; JAGD</rdfs:label>
+    <rdfs:label xml:lang="en">FORESTRY; HUNTING</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:1">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">1</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 4, 4, 4, 5]</contributionArray>
+    <rdfs:label xml:lang="de">ENERGIE- UND WASSERVERSORGUNG</rdfs:label>
+    <rdfs:label xml:lang="en">Energy and water supply</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:2">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">2</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[7, 7, 7, 7, 7, 7]</contributionArray>
+    <rdfs:label xml:lang="de">BERGBAU; STEINE- UND ERDEN-GEWINNUNG</rdfs:label>
+    <rdfs:label xml:lang="en">MINING; Stone and earth acquisition</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:311.1">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">311.1</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[4, 4, 4, 4, 4, 4]</contributionArray>
+    <rdfs:label xml:lang="de">Schlachthäuser und Fleischwarenfabriken</rdfs:label>
+    <rdfs:label xml:lang="en">Slaughterhouses and meat flaring factories</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:311.2">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">311.2</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[4, 4, 4, 4, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Fleischhauereien</rdfs:label>
+    <rdfs:label xml:lang="en">Meat</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:311.9">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">311.9</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Sonstige Fleischverwertung</rdfs:label>
+    <rdfs:label xml:lang="en">Other meat recycling</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:312">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">312</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Obst- und Gemüseverwertung (ausgenommen Erzeugung von Tiefkühlwaren) 4 4 4 4 4 4 313 Erzeugung von Mahl- und Schälmühlenprodukten</rdfs:label>
+    <rdfs:label xml:lang="en">Obst and vegetable recycling (except for the production of frozen goods) 4 4 4 4 4 313 Creation of grinding and peeling mill products</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:314">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">314</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[4, 4, 4, 4, 4, 4]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von Back- und Zuckerbäckerwaren 4 4 4 4 6 5 - Brotfabriken</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of baking and sugar bakers 4 4 4 6 5 - bread factories</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:315">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">315</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[4, 4, 4, 4, 4, 4]</contributionArray>
+    <rdfs:label xml:lang="de">Milchverwertung</rdfs:label>
+    <rdfs:label xml:lang="en">Milk recycling</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:316">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">316</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[4, 4, 4, 4, 4, 4]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von Zucker</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of sugar</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:317">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">317</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[4, 4, 4, 4, 4, 4]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von Schokolade- und Zuckerwaren 4 4 4 4 6 5 - Schokoladefabriken</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of chocolate and sugar goods 4 4 4 6 5 - chocolate factories</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:319">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">319</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[4, 4, 4, 4, 4, 4]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von übrigen Nahrungs- und Genußmitteln</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of other food and luxury foods</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:319.8">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">319.8</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[7, 7, 7, 7, 7, 7]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von Futtermitteln</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of feed</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:322.2">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">322.2</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von Spiritus und Hefe</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of alcohol and yeast</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:33">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">33</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">ERZEUGUNG VON TEXTILIEN UND TEXTILWAREN</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of textiles and textile goods</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:34">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">34</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">ERZEUGUNG VON BEKLEIDUNG UND BETTWAREN</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of clothing and bedding</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:343">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">343</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von Pelzbekleidung und Pelzwaren; Rauhwarenzurichtung</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of fur clothing and peldom; Rauhwarenz show</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:360.1">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">360.1</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung und Zurichtung von Leder und Lederersatzstoffen</rdfs:label>
+    <rdfs:label xml:lang="en">Creation and covering of leather and leather substitutes</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:360.2">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">360.2</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von Koffern und Galanteriewaren aus Leder und Lederersatzstoffen</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of suitcases and galantry goods made of leather and leather substitutes</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:360.3">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">360.3</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von technischen Artikeln aus Leder und Lederersatzstoffen</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of technical articles made of leather and leather substitutes</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:360.4">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">360.4</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von Sattlerwaren</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of saddler goods</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:37">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">37</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">BEARBEITUNG VON HOLZ; HOLZPLATTENERZEUGUNG 7 7 7 7 7 7 38 VERARBEITUNG VON HOLZ 381 Erzeugung von Bautischlerwaren und Holzmöbeln</rdfs:label>
+    <rdfs:label xml:lang="en">Processing of wood; Wooden panel production 7 7 7 7 7 38 Processing of wood 381 Creation of building notchers and wooden furniture</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:382">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">382</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Tapeziererei</rdfs:label>
+    <rdfs:label xml:lang="en">Wallpapering</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:383">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">383</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von Verpackungen aus Holz</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of wooden packaging</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:384.1">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">384.1</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[4, 4, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von gedrechselten und geschnitzten Waren, Vergolderei</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of turned and carved goods, gilding</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:384.2">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">384.2</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von Holzgeräten und sonstigen Holzwaren</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of wooden devices and other wooden goods</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:388">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">388</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von Korb-, Flecht-, Kork- und Bürstenwaren</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of basket, lichen, cork and brush goods</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:39">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">39</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">ERZEUGUNG VON MUSIKINSTRUMENTEN, SPORTARTIKELN UND SPIELWAREN 391 Erzeugung von Musikinstrumenten</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of musical instruments, sporting goods and toys 391 production of musical instruments</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:392.1">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">392.1</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[4, 4, 4, 4, 4, 4]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von Sportartikeln</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of sporting goods</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:392.2">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">392.2</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von Spielwaren</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of toys</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:41">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">41</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">ERZEUGUNG UND VERARBEITUNG VON PAPIER UND PAPPE</rdfs:label>
+    <rdfs:label xml:lang="en">Creation and processing of paper and cardboard</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:42">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">42</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">DRUCKEREI UND VERVIELFÄLTIGUNG</rdfs:label>
+    <rdfs:label xml:lang="en">Printing and duplication</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:423">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">423</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[4, 4, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Filmentwicklungs- und Kopieranstalten</rdfs:label>
+    <rdfs:label xml:lang="en">Film development and copier institutions</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:43">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">43</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">VERLAGSWESEN</rdfs:label>
+    <rdfs:label xml:lang="en">Publishing house</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:44">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">44</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">ERZEUGUNG VON WAREN AUS GUMMI UND KUNSTSTOFFEN</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of goods made of rubber and plastics</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:441">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">441</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung und Reparatur von Fahrzeugbereifung</rdfs:label>
+    <rdfs:label xml:lang="en">Creation and repair of vehicle tires</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:45">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">45</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[7, 7, 7, 7, 7, 7]</contributionArray>
+    <rdfs:label xml:lang="de">ERZEUGUNG VON CHEMIKALIEN UND CHEMISCHEN PRODUKTEN 451 Erzeugung von chemischen Grundstoffen und Kunstdünger</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of chemicals and chemical products 451 production of chemical basic substances and artificial fertilizers</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:452">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">452</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von Kunststoffen und Kunstfasern 6 6 6 6 6 6 453 Erzeugung von pharmazeutischen Rohstoffen und Fertigwaren</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of plastics and synthetic fibers 6 6 6 6 453 Creation of pharmaceutical raw materials and ready -made goods</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:454">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">454</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von kosmetischen Artikeln, Seifen, Wasch- und Reinigungsmitteln</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of cosmetic articles, soaps, detergents and cleaning agents</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:455">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">455</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von Farben, Druckfarben, Anstrichmitteln (Lacken) und Kitten</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of colors, printing colors, paintings (varnishes) and kittens</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:459">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">459</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von übrigen chemischen Endprodukten</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of other chemical end products</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:459.1">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">459.1</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von Haushaltsputz- und Pflegemitteln, Kerzen und Wachswaren</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of household cleaning and care products, candles and wax goods</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:46">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">46</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">VERARBEITUNG VON ERDÖL, ERDGAS UND KOHLE AUF DERIVATE</rdfs:label>
+    <rdfs:label xml:lang="en">Processing of oil, natural gas and coal on derivatives</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:47">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">47</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">ERZEUGUNG VON WAREN AUS STEINEN UND ERDEN 7 7 7 7 7 7 476 Erzeugung von feinkeramischen Waren</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of goods made of stones and earths 7 7 7 7 7 476 production of fine ceramic goods</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:48">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">48</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">ERZEUGUNG UND BEARBEITUNG VON GLAS</rdfs:label>
+    <rdfs:label xml:lang="en">Creation and processing of glass</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:480.1">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">480.1</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von Flachglas</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of flat glass</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:51">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">51</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[7, 7, 7, 7, 7, 7]</contributionArray>
+    <rdfs:label xml:lang="de">ERZEUGUNG VON EISEN UND NE-METALLEN (EINSCHLIESSLICH HALBZEUG)</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of iron and NE-metals (including semi-finished products)</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:52">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">52</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">BEARBEITUNG VON METALLEN; STAHL- UND LEICHTMETALLBAU</rdfs:label>
+    <rdfs:label xml:lang="en">Processing metals; Steel and light metal construction</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:53">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">53</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">ERZEUGUNG VON METALLWAREN</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of metal goods</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:54/55">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">54/55</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">ERZEUGUNG VON MASCHINEN (AUSGENOMMEN ELEKTROMASCHINEN)</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of machines (except electrical machines)</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:541">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">541</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[7, 7, 7, 7, 7, 7]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von landwirtschaftlichen Maschinen und Ackerschleppern</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of agricultural machines and arable tractors</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:542.1">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">542.1</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[7, 7, 7, 7, 7, 7]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von Bergbau und Hüttenmaschinen</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of mining and hut machines</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:552.1">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">552.1</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von Kältemaschinen</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of chillers</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:552.2">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">552.2</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[7, 7, 7, 7, 7, 7]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von nichtelektrischen Industrieöfen</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of non -electric industrial stoves</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:56/57">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">56/57</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">ERZEUGUNG VON ELEKTROTECHNISCHEN EINRICHTUNGEN</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of electrical engineering facilities</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:571">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">571</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von Elektrohaushaltsgeräten</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of electrical holding devices</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:572">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">572</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von Radio- und Fernsehempfängern, elektroakustischen Geräten und Bauelementen</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of radio and television receivers, electro-acoustic devices and components</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:58">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">58</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">ERZEUGUNG VON TRANSPORTMITTELN 581 Schiff- und Bootsbau</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of means of transport 581 ship and boat construction</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:582">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">582</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von Schienenfahrzeugen</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of rail vehicles</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:583">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">583</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von mehrspurigen Kraftfahrzeugen (ausgenommen Reparatur)</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of multi -lane motor vehicles (except repair)</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:584">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">584</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von Motorrädern und Fahrrädern (ausgenommen Reparatur)</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of motorcycles and bicycles (except repair)</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:585">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">585</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Reparatur von Kraftfahrzeugen und Fahrrädern</rdfs:label>
+    <rdfs:label xml:lang="en">Repair of motor vehicles and bicycles</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:586">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">586</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von Luftfahrzeugen (einschließlich Ausbildungs- und Sicherheitsgeräte)</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of aircraft (including training and safety devices)</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:589">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">589</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von übrigen Transportmitteln</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of other means of transport</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:59">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">59</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">ERZEUGUNG VON FEINMECHANISCHEN, MEDIZINISCHEN UND OPTISCHEN GERÄTEN, UHREN UND SCHMUCKWAREN 591 Erzeugung von feinmechanischen Geräten</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of fine mechanical, medical and optical devices, watches and jewelry 591 production of fine mechanical devices</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:592.1">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">592.1</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von medizinischen Instrumenten und Geräten</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of medical instruments and devices</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:592.2">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">592.2</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von orthopädischen Behelfen 7 7 7 7 7 7 593 Erzeugung von optischen Geräten und Sehbehelfen</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of orthopedic makeshift 7 7 7 7 7 593 generation of optical devices and visual aids</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:594.1">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">594.1</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung und Reparatur von Uhren</rdfs:label>
+    <rdfs:label xml:lang="en">Creation and repair of watches</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:594.2">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">594.2</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[4, 4, 4, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Erzeugung von Schmuckwaren aus Edelmetallen; Edelsteinbearbeitung</rdfs:label>
+    <rdfs:label xml:lang="en">Creation of jewelry from precious metals; Processing gemstone</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:6">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">6</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">BAUWESEN</rdfs:label>
+    <rdfs:label xml:lang="en">Construction</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:711.1">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">711.1</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[7, 7, 7, 7, 7, 7]</contributionArray>
+    <rdfs:label xml:lang="de">Großhandel mit landwirtschaftlichen Produkten und Düngemitteln</rdfs:label>
+    <rdfs:label xml:lang="en">Wholesale of agricultural products and fertilizers</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:711.2">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">711.2</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[7, 7, 7, 7, 7, 7]</contributionArray>
+    <rdfs:label xml:lang="de">Großhandel mit Schlacht- und Stechvieh 5 5 4 4 4 4 - Nutzviehgroßhandel</rdfs:label>
+    <rdfs:label xml:lang="en">Wholesale with battle and cattle 5 4 4 4 4 - User cattle wholesale</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:712">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">712</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Großhandel mit Textilien</rdfs:label>
+    <rdfs:label xml:lang="en">Wholesale with textiles</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:713">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">713</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Großhandel mit Häuten, Fellen und Leder 6 6 6 6 6 6 714 Großhandel mit Holz, Baumaterialien und Flachglas</rdfs:label>
+    <rdfs:label xml:lang="en">Wholesale with skins, skins and leather 6 6 6 6 714 wholesale with wood, building materials and flat glass</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:715">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">715</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Großhandel mit Eisen und NE-Metallen (einschließlich Halbzeug)</rdfs:label>
+    <rdfs:label xml:lang="en">Wholesale with iron and NE-metals (including semi-finished products)</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:716">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">716</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Großhandel mit festen Brennstoffen und Mineralölerzeugnissen</rdfs:label>
+    <rdfs:label xml:lang="en">Wholesale with solid fuels and mineral oil products</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:719">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">719</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Großhandel mit übrigen Rohstoffen und Halbwaren</rdfs:label>
+    <rdfs:label xml:lang="en">Wholesale with other raw materials and half -goods</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:721">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">721</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[4, 4, 4, 4, 4, 4]</contributionArray>
+    <rdfs:label xml:lang="de">Großhandel mit Nahrungs- und Genußmitteln 5 5 4 4 4 4 722 Großhandel mit Wein und Spirituosen</rdfs:label>
+    <rdfs:label xml:lang="en">Wholesale with food and luxury foods 5 5 4 4 4 722 wholesale with wine and spirits</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:723">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">723</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 4, 4, 4, 4]</contributionArray>
+    <rdfs:label xml:lang="de">Großhandel mit Tabakwaren</rdfs:label>
+    <rdfs:label xml:lang="en">Wholesale with tobacco products</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:724">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">724</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Großhandel mit Bekleidung, Strickwaren und Bettwäsche</rdfs:label>
+    <rdfs:label xml:lang="en">Wholesale of clothing, knitting and bed linen</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:725">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">725</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Großhandel mit Schuhen und Lederwaren</rdfs:label>
+    <rdfs:label xml:lang="en">Wholesale with shoes and leather goods</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:726.1">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">726.1</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Großhandel mit Heilmitteln</rdfs:label>
+    <rdfs:label xml:lang="en">Wholesale</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:726.2">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">726.2</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Großhandel mit kosmetischen Erzeugnissen, Wasch-, Reinigungs- und Putzmitteln</rdfs:label>
+    <rdfs:label xml:lang="en">Wholesale with cosmetic products, washing, cleaning and cleaning agents</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:731">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">731</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[7, 7, 7, 7, 7, 7]</contributionArray>
+    <rdfs:label xml:lang="de">Großhandel mit landwirtschaftlichen Maschinen und Ackerschleppern</rdfs:label>
+    <rdfs:label xml:lang="en">Wholesale with agricultural machines and arable tractors</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:732">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">732</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Großhandel mit elektrotechnischen Erzeugnissen</rdfs:label>
+    <rdfs:label xml:lang="en">Wholesale with electrical engineering products</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:733">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">733</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Großhandel mit Fahrzeugen</rdfs:label>
+    <rdfs:label xml:lang="en">Wholesale with vehicles</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:734.1">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">734.1</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Großhandel mit optischen und feinmechanischen Erzeugnissen</rdfs:label>
+    <rdfs:label xml:lang="en">Wholesale with optical and fine mechanical products</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:734.2">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">734.2</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Großhandel mit Baumaschinen</rdfs:label>
+    <rdfs:label xml:lang="en">Wholesale with construction machinery</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:734.9">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">734.9</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Großhandel mit sonstigen Maschinen, Apparaten und technischem Bedarf</rdfs:label>
+    <rdfs:label xml:lang="en">Wholesale with other machines, apparatus and technical needs</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:736.1">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">736.1</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Großhandel mit Metallwaren</rdfs:label>
+    <rdfs:label xml:lang="en">Wholesale with metal goods</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:736.2">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">736.2</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Großhandel mit Haushalts- und Küchengeräten, Glas-, Keramik- und Kunststoffwaren</rdfs:label>
+    <rdfs:label xml:lang="en">Wholesale with household and kitchen appliances, glass, ceramic and plastic goods</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:737">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">737</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Großhandel mit Papier und Papierwaren, Büro- und Schulbedarf</rdfs:label>
+    <rdfs:label xml:lang="en">Wholesale with paper and paper goods, office and school supplies</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:738">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">738</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Vermittlung von Handelswaren</rdfs:label>
+    <rdfs:label xml:lang="en">Mediation of merchandise</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:739.1">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">739.1</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Großhandel mit Büchern, Zeitungen, Zeitschriften und Musikalien</rdfs:label>
+    <rdfs:label xml:lang="en">Wholesale with books, newspapers, magazines and music</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:739.2">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">739.2</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Großhandel mit Spielwaren, Sportartikeln und Musikinstrumenten</rdfs:label>
+    <rdfs:label xml:lang="en">Wholesale with toys, sporting goods and musical instruments</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:739.9">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">739.9</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Großhandel mit sonstigen Waren</rdfs:label>
+    <rdfs:label xml:lang="en">Wholesale with other goods</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:74/75/76">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">74/75/76</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 5, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">EINZELHANDEL 741 Einzelhandel mit Nahrungs- und Genußmitteln (bis 250 m2 Verkaufsfläche) 5 5 5 6 6 5 (über 250 m2 Verkaufsfläche)</rdfs:label>
+    <rdfs:label xml:lang="en">Retail 741 Retail with food and luxury foods (up to 250 m2 of retail space) 5 5 5 6 6 5 (over 250 m2 of retail space)</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:742">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">742</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 5, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit Tabakwaren - selbständige Trafikanten</rdfs:label>
+    <rdfs:label xml:lang="en">Retail with tobacco products - independent tobacco shop</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:743">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">743</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 5, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit Textilwaren und Bekleidung</rdfs:label>
+    <rdfs:label xml:lang="en">Retail of textile goods and clothing</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:744">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">744</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 5, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit Schuhen</rdfs:label>
+    <rdfs:label xml:lang="en">Retail with shoes</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:745">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">745</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 5, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit Leder- und Lederersatzwaren</rdfs:label>
+    <rdfs:label xml:lang="en">Retail with leather and leather substitute goods</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:746">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">746</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit Heilmitteln (Apotheken) - außerhalb von Kurorten</rdfs:label>
+    <rdfs:label xml:lang="en">Retail with medicinal products (pharmacies) - outside of spa towns</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:747">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">747</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 5, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit kosmetischen Erzeugnissen, Wasch-, Reinigungs-, Putzmitteln und Chemikalien</rdfs:label>
+    <rdfs:label xml:lang="en">Retail of cosmetic products, washing, cleaning, cleaning agents and chemicals</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:751">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">751</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit Möbeln und Heimtextilien 5 5 5 6 6 5 752 Einzelhandel mit Metallwaren, Haushalts- und Küchengeräten, Glas- und Keramikwaren 5 5 5 6 6 5 753 Einzelhandel mit Gummi- und Kunststoffwaren (einschließlich Fußbodenbeläge)</rdfs:label>
+    <rdfs:label xml:lang="en">Retail with furniture and home textiles 5 5 6 5 752 Retail with metal goods, household and kitchen appliances, glass and ceramic goods 5 5 6 5 753 Retail with rubber and plastic goods (including floor coverings)</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:754.1">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">754.1</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit Kraftfahrzeugen</rdfs:label>
+    <rdfs:label xml:lang="en">Retail with motor vehicles</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:754.2">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">754.2</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 5, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit Fahrrädern und sonstigen Fahrzeugen</rdfs:label>
+    <rdfs:label xml:lang="en">Retail with bicycles and other vehicles</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:754.3">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">754.3</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit Fahrzeugzubehör und -reifen</rdfs:label>
+    <rdfs:label xml:lang="en">Retail with vehicle accessories and tires</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:755">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">755</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit Näh-, Strick- und Büromaschinen</rdfs:label>
+    <rdfs:label xml:lang="en">Retail with sewing, knitting and office machines</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:756.1">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">756.1</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 5, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit optischen Erzeugnissen 5 5 5 5 6 5 - Einzelhandel mit Fotoartikeln</rdfs:label>
+    <rdfs:label xml:lang="en">Retail with optical products 5 5 5 6 5 - retail with photo articles</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:756.2">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">756.2</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit feinmechanischen Erzeugnissen</rdfs:label>
+    <rdfs:label xml:lang="en">Retail with fine mechanical products</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:757">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">757</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit elektrotechnischen Erzeugnissen</rdfs:label>
+    <rdfs:label xml:lang="en">Retail with electrical engineering products</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:761">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">761</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit Papier- und Schreibwaren, Büro- und Schulbedarf</rdfs:label>
+    <rdfs:label xml:lang="en">Retail with paper and stationery, office and school supplies</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:762">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">762</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 5, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit Büchern, Zeitungen, Zeitschriften und Musikalien</rdfs:label>
+    <rdfs:label xml:lang="en">Retail with books, newspapers, magazines and music</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:764.1">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">764.1</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit Spielwaren</rdfs:label>
+    <rdfs:label xml:lang="en">Retail with toys</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:764.1">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">764.1</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 5, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit Sportartikeln</rdfs:label>
+    <rdfs:label xml:lang="en">Retail with sporting goods</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:764.2">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">764.2</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit Musikinstrumenten</rdfs:label>
+    <rdfs:label xml:lang="en">Retail with musical instruments</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:765">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">765</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit Brennstoffen</rdfs:label>
+    <rdfs:label xml:lang="en">Retail of fuels</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:766">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">766</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit Treibstoffen (Tankstellen)</rdfs:label>
+    <rdfs:label xml:lang="en">Retail of fuels (petrol stations)</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:767">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">767</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 5, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit Blumen und Pflanzen</rdfs:label>
+    <rdfs:label xml:lang="en">Retail with flowers and plants</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:768.1">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">768.1</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 5, 5, 4]</contributionArray>
+    <rdfs:label xml:lang="de">Waren- und Versandhäuser</rdfs:label>
+    <rdfs:label xml:lang="en">War and mail order companies</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:768.2">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">768.2</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 5, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit Gemischtwaren (bis 600 m2 Verkaufsfläche)</rdfs:label>
+    <rdfs:label xml:lang="en">Retail with general goods (up to 600 m2 of retail space)</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:768.2">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">768.2</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 5, 5, 4]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit Gemischtwaren (über 600 m2 Verkaufsfläche)</rdfs:label>
+    <rdfs:label xml:lang="en">Retail with general goods (over 600 m2 of retail space)</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:769.1">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">769.1</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 5, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit Kunstgegenständen und kunstgewerblichen Erzeugnissen</rdfs:label>
+    <rdfs:label xml:lang="en">Retail with works of art and artificial products</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:769.2">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">769.2</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit Sammlerbriefmarken</rdfs:label>
+    <rdfs:label xml:lang="en">Retail with collector's stamps</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:769.3">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">769.3</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit Waffen und Munition</rdfs:label>
+    <rdfs:label xml:lang="en">Retail with weapons and ammunition</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:769.4">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">769.4</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit Tieren, Sämereien und Futtermitteln</rdfs:label>
+    <rdfs:label xml:lang="en">Retail with animals, seeds and feed</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:769.9">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">769.9</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Einzelhandel mit sonstigen Waren</rdfs:label>
+    <rdfs:label xml:lang="en">Retail with other goods</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:77">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">77</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">LAGERUNG UND AUFBEWAHRUNG</rdfs:label>
+    <rdfs:label xml:lang="en">Storage and storage</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:7">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">7</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[1, 1, 1, 1, 1, 1]</contributionArray>
+    <rdfs:label xml:lang="de">B BEHERBERGUNGS- UND GASTSTÄTTENWESEN 781 Beherbergungswesen (einschließlich Frühstück)</rdfs:label>
+    <rdfs:label xml:lang="en">B accommodation and restaurants 781 accommodation (including breakfast)</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:781.3">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">781.3</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[4, 4, 4, 4, 4, 4]</contributionArray>
+    <rdfs:label xml:lang="de">Schutzhütten und Herbergen</rdfs:label>
+    <rdfs:label xml:lang="en">Protective huts and hostels</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:782">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">782</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[2, 2, 2, 2, 3, 3]</contributionArray>
+    <rdfs:label xml:lang="de">Gaststättenwesen</rdfs:label>
+    <rdfs:label xml:lang="en">Catering system</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:8">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">8</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[4, 4, 4, 4, 4, 5]</contributionArray>
+    <rdfs:label xml:lang="de">VERKEHR; NACHRICHTENÜBERMITTLUNG 81 STRASSENVERKEHR 811 Straßenbahn-, Obus- und Autobuslinienverkehr</rdfs:label>
+    <rdfs:label xml:lang="en">TRAFFIC; Message transmission 81 Road traffic 811 tram, trolley and bus lines traffic</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:813">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">813</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Lastfuhrwerksverkehr</rdfs:label>
+    <rdfs:label xml:lang="en">Loading</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:819.1">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">819.1</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[3, 3, 3, 4, 4, 4]</contributionArray>
+    <rdfs:label xml:lang="de">Garagen</rdfs:label>
+    <rdfs:label xml:lang="en">Garages</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:819.2">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">819.2</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[3, 3, 3, 4, 4, 4]</contributionArray>
+    <rdfs:label xml:lang="de">Vermietung von Kraftwagen</rdfs:label>
+    <rdfs:label xml:lang="en">Lossing of motor vehicles</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:819.9">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">819.9</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Sonstige Hilfseinrichtungen des Straßenverkehrs</rdfs:label>
+    <rdfs:label xml:lang="en">Other auxiliary devices of road traffic</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:82">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">82</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[4, 4, 4, 4, 4, 5]</contributionArray>
+    <rdfs:label xml:lang="de">EISENBAHN- UND SEILBAHNVERKEHR 821 Eisenbahnverkehr (Personenbeförderung)</rdfs:label>
+    <rdfs:label xml:lang="en">Railway and cable car traffic 821 rail traffic (passenger transport)</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:821">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">821</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Eisenbahnverkehr (Güterbeförderung)</rdfs:label>
+    <rdfs:label xml:lang="en">Railway traffic (goods transportation)</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:829.1">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">829.1</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[2, 2, 2, 2, 2, 2]</contributionArray>
+    <rdfs:label xml:lang="de">Betrieb von Schlaf- und Speisewagen</rdfs:label>
+    <rdfs:label xml:lang="en">Operation of sleeping and dining cars</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:831.1">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">831.1</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Stromschiffahrt (Güterbeförderung)</rdfs:label>
+    <rdfs:label xml:lang="en">Retailing (goods transportation)</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:831.2">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">831.2</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[1, 1, 1, 1, 1, 1]</contributionArray>
+    <rdfs:label xml:lang="de">Binnenseeschiffahrt</rdfs:label>
+    <rdfs:label xml:lang="en">Inland shipping</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:831.3">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">831.3</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[2, 2, 3, 3, 3, 3]</contributionArray>
+    <rdfs:label xml:lang="de">Fähr- und Überfuhrverkehr</rdfs:label>
+    <rdfs:label xml:lang="en">Ferry and overlay traffic</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:832">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">832</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Hafenbetrieb und sonstige Hilfseinrichtungen der Schiffahrt</rdfs:label>
+    <rdfs:label xml:lang="en">Port operation and other auxiliary facilities of shipping</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:84">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">84</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[3, 3, 3, 3, 3, 3]</contributionArray>
+    <rdfs:label xml:lang="de">LUFTVERKEHR</rdfs:label>
+    <rdfs:label xml:lang="en">Air traffic</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:842">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">842</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[3, 3, 3, 3, 3, 3]</contributionArray>
+    <rdfs:label xml:lang="de">Flugplatzbetrieb und sonstige Hilfseinrichtungen des Luftverkehrs</rdfs:label>
+    <rdfs:label xml:lang="en">Airfield operation and other aid facilities of air traffic</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:85">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">85</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[7, 7, 7, 7, 7, 7]</contributionArray>
+    <rdfs:label xml:lang="de">SPEDITION UND ÜBRIGE HILFSDIENSTE</rdfs:label>
+    <rdfs:label xml:lang="en">Spedition and other auxiliary services</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:852">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">852</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">Spedition</rdfs:label>
+    <rdfs:label xml:lang="en">Freight forwarder</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:853.1">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">853.1</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[1, 1, 1, 1, 1, 1]</contributionArray>
+    <rdfs:label xml:lang="de">Reise- und Verkehrsbüros - Incoming</rdfs:label>
+    <rdfs:label xml:lang="en">Travel and traffic offices - Incoming</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:853.9">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">853.9</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[6, 6, 6, 6, 6, 6]</contributionArray>
+    <rdfs:label xml:lang="de">Sonstige Hilfsdienste des Verkehrs</rdfs:label>
+    <rdfs:label xml:lang="en">Other auxiliary services of traffic</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:88">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">88</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[5, 5, 5, 6, 6, 5]</contributionArray>
+    <rdfs:label xml:lang="de">NACHRICHTENÜBERMITTLUNG</rdfs:label>
+    <rdfs:label xml:lang="en">Sending news</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ex:9">
+    <rdf:type rdf:resource="ex:BusinessActivity"/>
+    <activityCode rdf:datatype="xsd:string">9</activityCode>
+    <contributionArray rdf:datatype="xsd:string">[3, 3, 3, 4, 4, 5]</contributionArray>
+    <rdfs:label xml:lang="de">A GELD- UND KREDITWESEN; PRIVATVERSICHERUNG; WIRTSCHAFTSDIENST 91 GELD- UND KREDITWESEN 911 Banken und Hypothekenanstalten</rdfs:label>
+    <rdfs:label xml:lang="en">A money and credit; Private insurance; Economic service 91 money and credit system 911 banks and mortgage institutions</rdfs:label>
+</owl:NamedIndividual>

@@ -120,15 +120,7 @@ def calculate_tax_endpoint():
     
      # Example usage
     taxpayer_info = calculate_tourism_levy(taxpayer, revenue, municipality_class, contribution_group)
-    #taxpayer_info = {
-    #    "taxpayer": taxpayer,
-    #    "municipality_class": municipality_class,
-    #    "contribution_group": contribution_group,
-    #    "taxable_revenue": revenue,
-    #    "levy_percentage": 3,
-    #    "calculated_levy": 1234,
-    #    "final_levy": 74321
-    #}
+
     print(taxpayer_info)
     
     return jsonify(taxpayer_info)

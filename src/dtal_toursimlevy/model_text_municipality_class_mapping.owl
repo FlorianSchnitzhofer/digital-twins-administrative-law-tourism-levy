@@ -1,0 +1,1797 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:ex="http://example.org/ontology#">
+
+  <!-- ===== ontology header ===== -->
+  <owl:Ontology rdf:about="http://example.org/ontology"/>
+
+  <!-- classes -->
+  <owl:Class rdf:about="ex:MunicipalityClass"/>
+  <owl:Class rdf:about="ex:MunicipalityClassCollection"/>
+
+  <!-- datatype properties -->
+  <owl:DatatypeProperty rdf:about="ex:municipalityName">
+    <rdfs:domain rdf:resource="ex:MunicipalityClass"/>
+    <rdfs:range  rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="ex:ortsklasseCode">
+    <rdfs:domain rdf:resource="ex:MunicipalityClass"/>
+    <rdfs:range  rdf:resource="&xsd;string"/>
+  </owl:DatatypeProperty>
+
+  <!-- object property that will contain the “array” -->
+  <owl:ObjectProperty rdf:about="ex:hasEntry">
+    <rdfs:domain rdf:resource="ex:MunicipalityClassCollection"/>
+    <rdfs:range  rdf:resource="ex:MunicipalityClass"/>
+  </owl:ObjectProperty>
+
+  <!-- ========== one single individual that *contains the full array* ========== -->
+  <owl:NamedIndividual rdf:about="ex:UpperAustriaMunicipalityClasses">
+    <rdf:type rdf:resource="ex:MunicipalityClassCollection"/>
+
+    <!-- the array itself -->
+    <ex:hasEntry rdf:parseType="Collection">
+
+      <rdf:Description>
+        <ex:municipalityName>Adlwang</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Aichkirchen</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Aigen-Schlägl</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Aistersheim</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Alberndorf in der Riedmark</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Alkoven</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Allerheiligen im Mühlkreis</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Allhaming</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Altenberg bei Linz</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Altenfelden</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Altheim</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Altmünster</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Altschwendt</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Ampflwang im Hausruckwald</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Andorf</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Andrichsfurt</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Ansfelden</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Antiesenhofen</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Arbing</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Arnreit</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Aschach an der Donau</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Aschach an der Steyr</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Aspach</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Asten</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Attersee am Attersee</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Attnang-Puchheim</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Atzbach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Atzesberg</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Auberg</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Auerbach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Aurach am Hongar</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Aurolzmünster</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Bachmanning</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Bad Goisern am Hallstättersee</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Bad Hall</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Bad Ischl</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Bad Kreuzen</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Bad Leonfelden</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Bad Schallerbach</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Bad Wimsbach-Neydharting</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Bad Zell</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Baumgartenberg</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Berg im Attergau</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Braunau am Inn</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Brunnenthal</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Buchkirchen</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Burgkirchen</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Desselbrunn</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Diersbach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Dietach</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Dimbach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Dorf an der Pram</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Ebensee am Traunsee</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Eberschwang</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Eberstalzell</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Edlbach</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Edt bei Lambach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Eferding</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Eggelsberg</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Eggendorf im Traunkreis</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Eggerding</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Eidenberg</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Eitzing</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Engelhartszell an der Donau</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Engerwitzdorf</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Enns</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Enzenkirchen</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Eschenau im Hausruckkreis</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Esternberg</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Feldkirchen an der Donau</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Feldkirchen bei Mattighofen</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Fischlham</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Fornach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Fraham</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Frankenburg am Hausruck</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Frankenmarkt</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Franking</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Freinberg</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Freistadt</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Gaflenz</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Gallneukirchen</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Gallspach</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Gampern</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Garsten</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Gaspoltshofen</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Geboltskirchen</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Geiersberg</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Geinberg</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Geretsberg</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Gilgenberg am Weilhart</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Gmunden</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Goldwörth</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Gosau</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Gramastetten</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Grein</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Grieskirchen</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Großraming</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Grünau im Almtal</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Grünbach</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Grünburg</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Gschwandt</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Gunskirchen</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Gurten</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Gutau</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Haag am Hausruck</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Hagenberg im Mühlkreis</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Haibach im Mühlkreis</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Haibach ob der Donau</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Haigermoos</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Hallstatt</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Handenberg</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Hargelsberg</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Hartkirchen</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Haslach an der Mühl</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Heiligenberg</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Helfenberg</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Hellmonsödt</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Helpfau-Uttendorf</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Herzogsdorf</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Hinterstoder</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Hinzenbach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Hirschbach im Mühlkreis</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Hochburg-Ach</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Hofkirchen an der Trattnach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Hofkirchen im Mühlkreis</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Hofkirchen im Traunkreis</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Hohenzell</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Höhnhart</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Holzhausen</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Hörbich</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Hörsching</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Innerschwand am Mondsee</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Inzersdorf im Kremstal</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Jeging</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Julbach</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Kallham</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Kaltenberg</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Katsdorf</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Kefermarkt</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Kematen am Innbach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Kematen an der Krems</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Kirchberg bei Mattighofen</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Kirchberg ob der Donau</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Kirchberg-Thening</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Kirchdorf am Inn</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Kirchdorf an der Krems</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Kirchham</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Kirchheim im Innkreis</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Kirchschlag bei Linz</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Klaffer am Hochficht</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Klam</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Klaus an der Pyhrnbahn</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Kleinzell im Mühlkreis</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Kollerschlag</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Königswiesen</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Kopfing im Innkreis</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Kremsmünster</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Krenglbach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Kronstorf</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Laakirchen</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Lambach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Lambrechten</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Langenstein</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Lasberg</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Laussa</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Lembach im Mühlkreis</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Lengau</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Lenzing</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Leonding</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Leopoldschlag</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Lichtenau im Mühlkreis</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Lichtenberg</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Liebenau</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Linz</ex:municipalityName>
+        <ex:ortsklasseCode>St</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Lochen am See</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Lohnsburg am Kobernaußerwald</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Losenstein</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Luftenberg an der Donau</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Manning</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Marchtrenk</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Maria Neustift</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Maria Schmolln</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Mattighofen</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Mauerkirchen</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Mauthausen</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Mayrhof</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Meggenhofen</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Mehrnbach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Mettmach</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Michaelnbach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Micheldorf in Oberösterreich</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Mining</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Mitterkirchen im Machland</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Molln</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Mondsee</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Moosbach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Moosdorf</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Mörschwang</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Mühlheim am Inn</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Munderfing</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Münzbach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Münzkirchen</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Naarn im Machlande</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Natternbach</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Nebelberg</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Neufelden</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Neuhofen an der Krems</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Neuhofen im Innkreis</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Neukirchen am Walde</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Neukirchen an der Enknach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Neukirchen an der Vöckla</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Neukirchen bei Lambach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Neumarkt im Hausruckkreis</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Neumarkt im Mühlkreis</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Neustift im Mühlkreis</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Niederkappel</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Niederneukirchen</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Niederthalheim</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Niederwaldkirchen</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Nußbach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Nußdorf am Attersee</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Oberhofen am Irrsee</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Oberkappel</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Obernberg am Inn</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Oberndorf bei Schwanenstadt</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Oberneukirchen</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Oberschlierbach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Obertraun</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Oberwang</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Oepping</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Offenhausen</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Oftering</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Ohlsdorf</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Ort im Innkreis</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Ostermiething</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Ottenschlag im Mühlkreis</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Ottensheim</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Ottnang am Hausruck</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Pabneukirchen</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Palting</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Pasching</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Pattigham</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Peilstein im Mühlviertel</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Pennewang</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Perg</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Perwang am Grabensee</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Peterskirchen</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Pettenbach</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Peuerbach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Pfaffing</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Pfaffstätt</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Pfarrkirchen bei Bad Hall</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Pfarrkirchen im Mühlkreis</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Piberbach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Pichl bei Wels</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Pierbach</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Pilsbach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Pinsdorf</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Pischelsdorf am Engelbach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Pitzenberg</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Pollham</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Polling im Innkreis</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Pöndorf</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Pötting</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Pram</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Prambachkirchen</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Pramet</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Pregarten</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Puchenau</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Puchkirchen am Trattberg</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Pucking</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Pühret</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Pupping</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Putzleinsdorf</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Raab</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Rainbach im Innkreis</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Rainbach im Mühlkreis</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Rechberg</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Redleiten</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Redlham</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Regau</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Reichenau im Mühlkreis</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Reichenthal</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Reichersberg</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Reichraming</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Ried im Innkreis</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Ried im Traunkreis</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Ried in der Riedmark</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Riedau</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Rohr im Kremstal</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Rohrbach-Berg</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Roitham</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Rosenau am Hengstpaß</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Roßbach</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Roßleithen</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Rottenbach</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Rüstorf</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Rutzenham</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Sandl</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Sarleinsbach</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Sattledt</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Saxen</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Schalchen</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Schardenberg</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Schärding</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Scharnstein</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Scharten</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Schenkenfelden</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Schiedlberg</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Schildorn</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Schlatt</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Schleißheim</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Schlierbach</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Schlüßlberg</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Schönau im Mühlkreis</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Schörfling am Attersee</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Schwand im Innkreis</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Schwanenstadt</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Schwarzenberg am Böhmerwald</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Schwertberg</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Seewalchen am Attersee</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Senftenbach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Sierning</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Sigharting</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Sipbachzell</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Sonnberg im Mühlkreis</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Spital am Pyhrn</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Aegidi</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Agatha</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Florian</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Florian am Inn</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Georgen am Fillmannsbach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Georgen am Walde</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Georgen an der Gusen</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Georgen bei Grieskirchen</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Georgen bei Obernberg am Inn</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Georgen im Attergau</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Gotthard im Mühlkreis</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Johann am Walde</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Johann am Wimberg</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Konrad</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Leonhard bei Freistadt</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Lorenz</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Marien</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Marienkirchen am Hausruck</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Marienkirchen an der Polsenz</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Marienkirchen bei Schärding</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Martin im Innkreis</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Martin im Mühlkreis</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Nikola an der Donau</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Oswald bei Freistadt</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Oswald bei Haslach</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Pankraz</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Pantaleon</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Peter am Hart</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Peter am Wimberg</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Radegund</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Roman</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Stefan - Afiesl</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Thomas</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Thomas am Blasenstein</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Ulrich bei Steyr</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Ulrich im Mühlkreis</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Veit im Innkreis</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Veit im Mühlkreis</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Willibald</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>St. Wolfgang im Salzkammergut</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Stadl-Paura</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Steegen</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Steinbach am Attersee</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Steinbach am Ziehberg</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Steinbach an der Steyr</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Steinerkirchen an der Traun</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Steinhaus</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Steyr</ex:municipalityName>
+        <ex:ortsklasseCode>St</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Steyregg</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Straß im Attergau</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Stroheim</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Suben</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Taiskirchen im Innkreis</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Tarsdorf</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Taufkirchen an der Pram</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Taufkirchen an der Trattnach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Ternberg</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Thalheim bei Wels</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Tiefgraben</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Timelkam</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Tollet</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Tragwein</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Traun</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Traunkirchen</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Treubach</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Tumeltsham</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Überackern</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Ulrichsberg</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Ungenach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Unterach am Attersee</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Unterweißenbach</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Unterweitersdorf</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Utzenaich</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Vichtenstein</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Vöcklabruck</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Vöcklamarkt</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Vorchdorf</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Vorderstoder</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Vorderweißenbach</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Waizenkirchen</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Waldburg</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Waldhausen im Strudengau</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Walding</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Waldkirchen am Wesen</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Waldneukirchen</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Waldzell</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Wallern an der Trattnach</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Wartberg an der Krems</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Wartberg ob der Aist</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Weibern</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Weilbach</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Weißenkirchen im Attergau</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Weißkirchen an der Traun</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Weitersfelden</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Wels</ex:municipalityName>
+        <ex:ortsklasseCode>St</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Wendling</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Weng im Innkreis</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Wernstein am Inn</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Weyer</ex:municipalityName>
+        <ex:ortsklasseCode>B</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Weyregg am Attersee</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Wilhering</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Windhaag bei Freistadt</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Windhaag bei Perg</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Windischgarsten</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Wippenham</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Wolfern</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Wolfsegg am Hausruck</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Zell am Moos</ex:municipalityName>
+        <ex:ortsklasseCode>A</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Zell am Pettenfirst</ex:municipalityName>
+        <ex:ortsklasseCode>C</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Zell an der Pram</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+      <rdf:Description>
+        <ex:municipalityName>Zwettl an der Rodl</ex:municipalityName>
+        <ex:ortsklasseCode>D</ex:ortsklasseCode>
+      </rdf:Description>
+
+      <!-- ---------- end of collection ---------- -->
+
+    </ex:hasEntry>
+  </owl:NamedIndividual>
+
+</rdf:RDF>
