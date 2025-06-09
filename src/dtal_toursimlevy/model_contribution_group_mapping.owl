@@ -136,7 +136,7 @@
     </owl:NamedIndividual>
 
     <!-- —— Wildabschußerlöse -->
-    <owl:NamedIndividual rdf:about="#BA_02_gameShooting">
+    <owl:NamedIndividual rdf:about="#BA_02_1">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">Wildabschußerlöse</rdfs:label>
         <rdfs:label xml:lang="en">Game-Shooting Revenues</rdfs:label>
@@ -149,7 +149,7 @@
     </owl:NamedIndividual>
 
     <!-- —— Wildparks -->
-    <owl:NamedIndividual rdf:about="#BA_02_gameParks">
+    <owl:NamedIndividual rdf:about="#BA_02_2">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">Wildparks</rdfs:label>
         <rdfs:label xml:lang="en">Game Parks</rdfs:label>
@@ -175,7 +175,7 @@
     </owl:NamedIndividual>
 
     <!-- 2 BERGBAU; STEINE- UND ERDEN-GEWINNUNG -->
-    <owl:NamedIndividual rdf:about="#BA_2_main">
+    <owl:NamedIndividual rdf:about="#BA_2_1">
         <rdf:type rdf:resource="#BusinessActivity"/>
         <rdfs:label xml:lang="de">BERGBAU; STEINE- UND ERDEN-GEWINNUNG</rdfs:label>
         <rdfs:label xml:lang="en">Mining; Extraction of Stones and Earth</rdfs:label>

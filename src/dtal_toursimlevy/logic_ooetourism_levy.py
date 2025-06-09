@@ -134,6 +134,47 @@ def calculate_tourism_levy(taxpayer, revenue, municipality_class, contribution_g
     }
 
 
+def get_contribution_group(business_activity_label: str, municipality_class: str) -> int:
+    """Return the contribution group for a business activity and municipality class using SPARQL."""
+    g = Graph()
+
+    ontology_path = os.path.join(os.path.dirname(__file__),
+                                 "model_contribution_group_mapping.owl")
+    g.parse(ontology_path)
+
+    prop_map = {
+        "A": "contributionGroupA",
+        "B": "contributionGroupB",
+        "C": "contributionGroupC",
+        "St": "contributionGroupSt",
+        "ZoneI": "contributionGroupZoneI",
+        "ZoneII": "contributionGroupZoneII",
+    }
+
+    if municipality_class not in prop_map:
+        raise ValueError(f"Unsupported municipality class '{municipality_class}'")
+
+    property_uri = f"<http://tourismlevy.lawdigitaltwin.com/dtal_tourismlevy/ooe_tourism_axioms#{prop_map[municipality_class]}>"
+    escaped_label = json.dumps(business_activity_label)
+    query = f"""
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        SELECT ?group WHERE {{
+            ?activity rdfs:label ?label ;
+                      {property_uri} ?group .
+            FILTER(LCASE(STR(?label)) = LCASE({escaped_label}))
+        }}
+    """
+
+    res = list(g.query(query))
+    if not res:
+        raise ValueError(
+            f"Business activity '{business_activity_label}' not found in contribution group ontology"
+        )
+
+    return int(res[0][0])
+
+
+
 # Route for calculating ooetourism levy based on JSON payload
 @app.route('/dtal/calculate_ooetourism_levy', methods=['POST'])
 def calculate_tax_endpoint():
@@ -145,13 +186,14 @@ def calculate_tax_endpoint():
     municipality_name = payload["municipality_name"]
     contribution_group =  payload["contribution_group"]
     #business_activity =  payload["business_activity"]
+    business_activity = "Wildparks"
     
     
     municipality_class = get_municipality_class(municipality_name)
     if municipality_class is None:
         raise HTTPException(status_code=404, detail="Municipality not found")
     
-    #contribution_group = get_contribution_group(business_activity)
+    contribution_group = get_contribution_group(business_activity, municipality_class)
     #if contribution_group is None:
     #    raise HTTPException(status_code=404, detail="Business Activity not found")
     
