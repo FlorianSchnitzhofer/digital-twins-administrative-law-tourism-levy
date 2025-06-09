@@ -1,13 +1,12 @@
 <?xml version="1.0"?>
-<owl:Ontology rdf:about="http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_axioms"
-              xmlns:owl="http://www.w3.org/2002/07/owl#"
-              xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-              xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-              xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-              xml:base="http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_axioms">
+<owl:Ontology xmlns="http://www.w3.org/2002/07/owl#"
+          xmlns:owl="http://www.w3.org/2002/07/owl#"
+          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+          xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+          xml:base="http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_ontology">
     <rdfs:comment>Axioms and configuration parameters for the Upper Austrian Tourism Law 2018</rdfs:comment>
-
-    
+	    
     <!-- Axioms and Rules -->
     <owl:DatatypeProperty rdf:about="#maxContributionBase">
         <rdfs:domain rdf:resource="#TourismContribution"/>

@@ -1,14 +1,12 @@
 <?xml version="1.0"?>
-<Ontology xmlns="http://www.w3.org/2002/07/owl#" 
+<owl:Ontology rdf:about="http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_ontology"
           xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
           xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
           xml:base="http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_ontology">
     
-    <owl:Ontology rdf:about="http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_ontology">
         <rdfs:comment>Ontology representing the Upper Austrian Tourism Law 2018</rdfs:comment>
-    </owl:Ontology>
-    
+   
     <!-- Classes -->
     <owl:Class rdf:about="#TourismContribution"/>
     <owl:Class rdf:about="#TourismTax"/>
@@ -76,4 +74,4 @@
         <rdfs:domain rdf:resource="#TourismContribution"/>
         <rdfs:range rdf:resource="#AssessmentBoard"/>
     </owl:ObjectProperty>
-</Ontology>
+</owl:Ontology>
