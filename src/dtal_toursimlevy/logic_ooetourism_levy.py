@@ -18,22 +18,24 @@ def load_ontology_parameters():
     
     # Extract contribution rates
     contribution_rates_query = """
-    SELECT ?value WHERE { 
-        ?s <http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_axioms#contributionRates> ?value .
-    }
+    SELECT ?value WHERE {
+        <http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_axioms#contributionRates>
+            <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> ?value .
     """
     
     # Extract minimum contributions
     min_contributions_query = """
     SELECT ?value WHERE { 
-        ?s <http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_axioms#minimumContributions> ?value .
+        ?s <http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_axioms#minimumContributions> 
+         <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> ?value .
     }
     """
     
     # Extract max revenue cap
     max_revenue_query = """
     SELECT ?value WHERE { 
-        ?s <http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_axioms#maxContributionBase> ?value .
+        ?s <http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_axioms#maxContributionBase> 
+         <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> ?value .
     }
     """
     
