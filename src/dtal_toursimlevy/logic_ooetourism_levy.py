@@ -25,33 +25,45 @@ def load_ontology_parameters():
     contribution_rates_query = (
         """
         SELECT ?value WHERE {
-            ?s <http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_axioms#contributionRates> ?value .
+            <http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_axioms#contributionRates>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> ?value .
         }
         """.strip()
-    ) 
+    )
  
     # Extract minimum contributions
     min_contributions_query = (
         """
         SELECT ?value WHERE {
-            ?s <http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_axioms#minimumContributions> ?value .
+            <http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_axioms#minimumContributions>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> ?value .
         }
         """.strip()
     )
-    
-    # Extract max revenue cap
     max_revenue_query = (
         """
         SELECT ?value WHERE {
-            ?s <http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_axioms#maxContributionBase> ?value .
+            <http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_axioms#maxContributionBase>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> ?value .
         }
         """.strip()
     )
     
-    # Execute queries
-    contribution_rates = json.loads(list(g.query(contribution_rates_query))[0][0])
-    min_contributions = json.loads(list(g.query(min_contributions_query))[0][0])
-    max_revenue_cap = float(list(g.query(max_revenue_query))[0][0])
+    # Execute queries with basic error handling
+    contrib_res = list(g.query(contribution_rates_query))
+    if not contrib_res:
+        raise ValueError("Contribution rates not found in ontology")
+    contribution_rates = json.loads(str(contrib_res[0][0]))
+
+    min_res = list(g.query(min_contributions_query))
+    if not min_res:
+        raise ValueError("Minimum contributions not found in ontology")
+    min_contributions = json.loads(str(min_res[0][0]))
+
+    max_res = list(g.query(max_revenue_query))
+    if not max_res:
+        raise ValueError("Max revenue cap not found in ontology")
+    max_revenue_cap = float(max_res[0][0])
     
     return contribution_rates, min_contributions, max_revenue_cap
     
