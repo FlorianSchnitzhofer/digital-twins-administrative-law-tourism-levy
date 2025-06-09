@@ -1,0 +1,58 @@
+openapi: 3.0.0
+info:
+  title: OOE Tourism Levy API
+  version: '0.1.0'
+  description: API to calculate the Upper Austrian tourism levy.
+servers:
+  - url: http://localhost:5000
+paths:
+  /dtal/calculate_ooetourism_levy:
+    post:
+      summary: Calculate the tourism levy
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                taxpayer:
+                  type: string
+                  description: Name of the taxpayer or business.
+                revenue:
+                  type: number
+                  format: float
+                  description: Annual revenue in Euro.
+                municipality_name:
+                  type: string
+                  description: Name of the municipality.
+                contribution_group:
+                  type: integer
+                  description: Contribution group from 1 to 7.
+              required:
+                - taxpayer
+                - revenue
+                - municipality_name
+                - contribution_group
+      responses:
+        '200':
+          description: Calculated levy information
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  taxpayer:
+                    type: string
+                  municipality_class:
+                    type: string
+                  contribution_group:
+                    type: integer
+                  taxable_revenue:
+                    type: number
+                  levy_percentage:
+                    type: number
+                  calculated_levy:
+                    type: number
+                  final_levy:
+                    type: number
