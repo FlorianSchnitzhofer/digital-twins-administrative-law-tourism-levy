@@ -1,6 +1,6 @@
-# dtal
+# dtal - Digital Twin Administrative Law of Upper Austrian tourism levy
 
-Digital Twin Administrative Law
+Digital Twin Administrative Law of Upper Austrian tourism levy
 
 This repository contains the source code for calculating the Upper Austrian tourism levy.
 
