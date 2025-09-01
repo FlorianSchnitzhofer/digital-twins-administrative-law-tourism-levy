@@ -124,42 +124,42 @@
         <rdfs:label>contribution amount</rdfs:label>
         <rdfs:comment>Monetary amount of the tourism contribution.</rdfs:comment>
         <rdfs:domain rdf:resource="#TourismContribution"/>
-        <rdfs:range rdf:resource="xsd:decimal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </owl:DatatypeProperty>
 
     <owl:DatatypeProperty rdf:about="#taxableTurnover">
         <rdfs:label>taxable turnover</rdfs:label>
         <rdfs:comment>Turnover used as basis for calculating the contribution.</rdfs:comment>
         <rdfs:domain rdf:resource="#TourismBusiness"/>
-        <rdfs:range rdf:resource="xsd:decimal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </owl:DatatypeProperty>
 
     <owl:DatatypeProperty rdf:about="#declarationDeadline">
         <rdfs:label>declaration deadline</rdfs:label>
         <rdfs:comment>Annual deadline for submitting the contribution declaration.</rdfs:comment>
         <rdfs:domain rdf:resource="#ContributionDeclaration"/>
-        <rdfs:range rdf:resource="xsd:date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     </owl:DatatypeProperty>
 
     <owl:DatatypeProperty rdf:about="#revenueTwoYearsAgo">
         <rdfs:label>revenue two years ago</rdfs:label>
         <rdfs:comment>Annual revenue from two years ago used to calculate the levy.</rdfs:comment>
         <rdfs:domain rdf:resource="#TourismBusiness"/>
-        <rdfs:range rdf:resource="xsd:decimal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </owl:DatatypeProperty>
 
     <owl:DatatypeProperty rdf:about="#municipalityName">
         <rdfs:label>municipality name</rdfs:label>
         <rdfs:comment>Name of the municipality where the business operates.</rdfs:comment>
         <rdfs:domain rdf:resource="#TourismMunicipality"/>
-        <rdfs:range rdf:resource="xsd:string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
 
     <owl:DatatypeProperty rdf:about="#businessActivity">
         <rdfs:label>business activity</rdfs:label>
         <rdfs:comment>Economic activity or profession group of the business.</rdfs:comment>
         <rdfs:domain rdf:resource="#TourismBusiness"/>
-        <rdfs:range rdf:resource="xsd:string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
 
 </rdf:RDF>
