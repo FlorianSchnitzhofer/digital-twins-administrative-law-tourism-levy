@@ -1,0 +1,7 @@
+flask
+rdflib
+requests
+fastmcp
+flask-cors
+fastapi
+uvicorn

@@ -1,0 +1,2666 @@
+{
+  "LAND- UND FORSTWIRTSCHAFT": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "LANDWIRTSCHAFT; FISCHEREI": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Gewerblicher Gartenbau und gewerbliche Tierhaltung": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Fischerei und Teichwirtschaft": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Fischereilizenzen": {
+    "A": 3,
+    "B": 3,
+    "C": 3,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "FORSTWIRTSCHAFT; JAGD": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Wildabschußerlöse": {
+    "A": 3,
+    "B": 3,
+    "C": 3,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "Wildparks": {
+    "A": 2,
+    "B": 2,
+    "C": 2,
+    "St": 3,
+    "ZoneI": 3,
+    "ZoneII": 3
+  },
+  "ENERGIE- UND WASSERVERSORGUNG": {
+    "A": 5,
+    "B": 5,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 5
+  },
+  "BERGBAU; STEINE- UND ERDEN-GEWINNUNG": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "VERARBEITENDES GEWERBE; INDUSTRIE": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "Erzeugung von Nahrungs- und Genussmitteln": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "Fleischverwertung (ohne Tiefkühlwaren)": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "Schlachthäuser und Fleischwarenfabriken": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "Fleischhauereien": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Sonstige Fleischverwertung": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Obst- und Gemüseverwertung (ohne Tiefkühlwaren)": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "Erzeugung von Mahl- und Schälmühlenprodukten": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Futterschrot": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Erzeugung von Back- und Zuckerbäckerwaren": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Brotfabriken": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "Milchverwertung": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "Erzeugung von Zucker": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "Erzeugung von Schokolade- und Zuckerwaren": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Schokoladefabriken": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "Süßwarenfabriken": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "Erzeugung von übrigen Nahrungs- und Genussmitteln": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "Erzeugung von Stärke und Stärkeprodukten": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Erzeugung von Futtermitteln": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "ERZEUGUNG VON GETRÄNKEN; TABAKVERARBEITUNG": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "Erzeugung von Spiritus und Hefe": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "ERZEUGUNG VON TEXTILIEN UND TEXTILWAREN": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "ERZEUGUNG VON BEKLEIDUNG UND BETTWAREN": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Erzeugung von Pelzbekleidung und Pelzwaren; Rauhwarenzurichtung": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Erzeugung von Kopfbedeckungen, Schirmen, Handschuhen und sonstiger Bekleidung": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Erzeugung von Haushalts-, Bettwäsche und Bettwaren": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "ERZEUGUNG UND REPARATUR VON SCHUHEN": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "ERZEUGUNG UND VERARBEITUNG VON LEDER UND LEDERERSATZSTOFFEN": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "Erzeugung und Zurichtung von Leder und Lederersatzstoffen": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Erzeugung von Koffern und Galanteriewaren aus Leder und Lederersatzstoffen": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Erzeugung von technischen Artikeln aus Leder und Lederersatzstoffen": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Erzeugung von Sattlerwaren": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "BEARBEITUNG VON HOLZ; HOLZPLATTENERZEUGUNG": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "VERARBEITUNG VON HOLZ": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "Erzeugung von Bautischlerwaren und Holzmöbeln": {
+    "A": 6,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Tapeziererei": {
+    "A": 6,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Erzeugung von Verpackungen aus Holz": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Erzeugung von Drechslerwaren, Holzgeräten und sonstigen Holzwaren": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "Erzeugung von gedrechselten und geschnitzten Waren; Vergolderei": {
+    "A": 4,
+    "B": 4,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Erzeugung von Holzgeräten und sonstigen Holzwaren": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Erzeugung von Korb-, Flecht-, Kork- und Bürstenwaren": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "ERZEUGUNG VON MUSIKINSTRUMENTEN, SPORTARTIKELN UND SPIELWAREN": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "Erzeugung von Musikinstrumenten": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Erzeugung von Sportartikeln": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "Erzeugung von Spielwaren": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "ERZEUGUNG UND VERARBEITUNG VON PAPIER UND PAPPE": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "DRUCKEREI UND VERVIELFÄLTIGUNG": {
+    "A": 6,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Filmentwicklungs- und Kopieranstalten": {
+    "A": 4,
+    "B": 4,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "VERLAGSWESEN": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "ERZEUGUNG VON WAREN AUS GUMMI UND KUNSTSTOFFEN": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Erzeugung und Reparatur von Fahrzeugbereifung": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "ERZEUGUNG VON CHEMIKALIEN UND CHEMISCHEN PRODUKTEN": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "Erzeugung von chemischen Grundstoffen und Kunstdünger": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Erzeugung von Kunststoffen und Kunstfasern": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Erzeugung von pharmazeutischen Rohstoffen und Fertigwaren": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Erzeugung von kosmetischen Artikeln, Seifen, Wasch- und Reinigungsmitteln": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Erzeugung von Farben, Druckfarben, Anstrichmitteln und Kitten": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Erzeugung von übrigen chemischen Endprodukten": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Erzeugung von Haushaltsputz- und Pflegemitteln, Kerzen und Wachswaren": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "VERARBEITUNG VON ERDÖL, ERDGAS UND KOHLE AUF DERIVATE": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "ERZEUGUNG VON WAREN AUS STEINEN UND ERDEN": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Erzeugung von feinkeramischen Waren": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Figurenerzeuger": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "ERZEUGUNG UND BEARBEITUNG VON GLAS": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Erzeugung von Flachglas": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "ERZEUGUNG VON EISEN UND NE-METALLEN (einschließlich Halbzeug)": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "BEARBEITUNG VON METALLEN; STAHL- UND LEICHTMETALLBAU": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "ERZEUGUNG VON METALLWAREN": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "ERZEUGUNG VON MASCHINEN (ausgenommen Elektromaschinen)": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Erzeugung von landwirtschaftlichen Maschinen und Ackerschleppern": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Erzeugung von Bergbau- und Hüttenmaschinen": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Erzeugung von Seilbahnen und Liften": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "Erzeugung von Kältemaschinen": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Erzeugung von nichtelektrischen Industrieöfen": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Mechanische Werkstätten o.n.B.": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "ERZEUGUNG VON ELEKTROTECHNISCHEN EINRICHTUNGEN": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Erzeugung von Elektrohaushaltsgeräten": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Erzeugung von Radio- und Fernsehempfängern, elektroakustischen Geräten und Bauelementen": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "ERZEUGUNG VON TRANSPORTMITTELN": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "Schiff- und Bootsbau": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Bootsbau": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "Erzeugung von Schienenfahrzeugen": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Erzeugung von mehrspurigen Kraftfahrzeugen (ausgenommen Reparatur)": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Erzeugung von motorisierten Schneefahrzeugen (Pistengeräten)": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "Erzeugung von Motorrädern und Fahrrädern (ausgenommen Reparatur)": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Reparatur von Kraftfahrzeugen und Fahrrädern": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Erzeugung von Luftfahrzeugen (einschließlich Ausbildungs- und Sicherheitsgeräte)": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Erzeugung von übrigen Transportmitteln": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "ERZEUGUNG VON FEINMECHANISCHEN, MEDIZINISCHEN UND OPTISCHEN GERÄTEN, UHREN UND SCHMUCKWAREN": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "Erzeugung von feinmechanischen Geräten": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Erzeugung von medizinischen Instrumenten und Geräten": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Erzeugung von orthopädischen Behelfen": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Erzeugung von optischen Geräten und Sehbehelfen": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Erzeugung und Reparatur von Uhren": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Erzeugung von Schmuckwaren aus Edelmetallen; Edelsteinbearbeitung": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "BAUWESEN": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "HANDEL; LAGERUNG (Groß- & Einzelhandel, Lagerung)": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "GROSSHANDEL": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "Großhandel mit landwirtschaftlichen Produkten, Nutz- und Schlachtvieh": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Großhandel mit landwirtschaftlichen Produkten und Düngemitteln": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Obst- und Gemüsegroßhandel": {
+    "A": 5,
+    "B": 5,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "Großhandel mit Schlacht- und Stechvieh": {
+    "A": 5,
+    "B": 5,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "Nutzviehgroßhandel": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Großhandel mit Textilien": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Großhandel mit Häuten, Fellen und Leder": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Großhandel mit Holz, Baumaterialien und Flachglas": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Großhandel mit Eisen und NE-Metallen (einschließlich Halbzeug)": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Großhandel mit festen Brennstoffen und Mineralölerzeugnissen": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Großhandel mit übrigen Rohstoffen und Halbwaren": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Großhandel mit Nahrungs- und Genussmitteln": {
+    "A": 5,
+    "B": 5,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "Großhandel mit Wein und Spirituosen": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "Großhandel mit Tabakwaren": {
+    "A": 5,
+    "B": 5,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "Großhandel mit Bekleidung, Strickwaren und Bettwäsche": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Großhandel mit Schuhen und Lederwaren": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Großhandel mit Heilmitteln, kosmetischen Erzeugnissen, Wasch-, Reinigungs- und Putzmitteln": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "Großhandel mit Heilmitteln": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Großhandel mit kosmetischen Erzeugnissen, Wasch-, Reinigungs- und Putzmitteln": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Großhandel mit landwirtschaftlichen Maschinen und Ackerschleppern": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Großhandel mit elektrotechnischen Erzeugnissen": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Großhandel mit Fahrzeugen": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Großhandel mit Maschinen, feinmechanischen Erzeugnissen und technischem Bedarf": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Großhandel mit optischen und feinmechanischen Erzeugnissen": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Fotoartikelgroßhandel": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Großhandel mit Baumaschinen": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Großhandel mit sonstigen Maschinen, Apparaten und technischem Bedarf": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Großhandel mit Möbeln und Heimtextilien": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Großhandel mit Metallwaren, Haushalts- und Küchengeräten, Glas-, Keramik- und Kunststoffwaren": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "Großhandel mit Metallwaren": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Großhandel mit Haushalts- und Küchengeräten, Glas-, Keramik- und Kunststoffwaren": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Großhandel mit Papier und Papierwaren, Büro- und Schulbedarf": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Vermittlung von Handelswaren": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Großhandel mit übrigen Waren": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "Großhandel mit Büchern, Zeitungen, Zeitschriften und Musikalien": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Großhandel mit Spielwaren, Sportartikeln und Musikinstrumenten": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Andenkenartikelgroßhandel": {
+    "A": 2,
+    "B": 2,
+    "C": 2,
+    "St": 2,
+    "ZoneI": 2,
+    "ZoneII": 2
+  },
+  "Großhandel mit Uhren und Schmuckwaren": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Großhandel ohne ausgeprägten Schwerpunkt": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Großhandel mit sonstigen Waren": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Großhandel mit Antiquitäten": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Bijouteriewarengroßhandel": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "Einzelhandel mit Nahrungs- und Genussmitteln (≤ 250 m² Verkaufsfläche)": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit Nahrungs- und Genussmitteln (> 250 m² Verkaufsfläche)": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 5,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit Tabakwaren – selbständige Trafikanten": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 5,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit Tabakwaren – verbundene Trafikanten": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit Textilwaren und Bekleidung": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 5,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit Schuhen": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 5,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit Leder- und Lederersatzwaren": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 5,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit Heilmitteln – außerhalb von Kurorten": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit Heilmitteln – in Kurorten": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "Einzelhandel mit kosmetischen Erzeugnissen, Wasch-, Reinigungs-, Putzmitteln und Chemikalien": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 5,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit Möbeln und Heimtextilien": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit Metallwaren, Haushalts- und Küchengeräten, Glas- und Keramikwaren": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit Gummi- und Kunststoffwaren (einschließlich Fußbodenbeläge)": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit Kraftfahrzeugen": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Einzelhandel mit Ackerschleppern, landwirtschaftlichen Maschinen und Traktoren": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Einzelhandel mit Fahrrädern und sonstigen Fahrzeugen": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 5,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Kinderwageneinzelhandel": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Einzelhandel mit Fahrzeugzubehör und -reifen": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit Näh-, Strick- und Büromaschinen": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit optischen Erzeugnissen": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 5,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit Fotoartikeln": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 5,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit feinmechanischen Erzeugnissen": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Einzelhandel mit elektrotechnischen Erzeugnissen": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit Papier- und Schreibwaren, Büro- und Schulbedarf": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit Büchern, Zeitungen, Zeitschriften und Musikalien": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 5,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit Ansichtskarten": {
+    "A": 1,
+    "B": 1,
+    "C": 1,
+    "St": 1,
+    "ZoneI": 1,
+    "ZoneII": 1
+  },
+  "Einzelhandel mit Schulbüchern": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Einzelhandel mit Uhren und Schmuckwaren": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 5,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit Spielwaren": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit Sportartikeln": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 5,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit Musikinstrumenten": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit Brennstoffen": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit Treibstoffen (Tankstellen)": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit Blumen und Pflanzen": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 5,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Waren- und Versandhäuser": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 5,
+    "ZoneI": 5,
+    "ZoneII": 4
+  },
+  "Einzelhandel mit Gemischtwaren (≤ 600 m² Verkaufsfläche)": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 5,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit Gemischtwaren (> 600 m² Verkaufsfläche)": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 5,
+    "ZoneI": 5,
+    "ZoneII": 4
+  },
+  "Einzelhandel mit übrigen Waren": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "Einzelhandel mit Kunstgegenständen und kunstgewerblichen Erzeugnissen": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 5,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit Andenkenartikeln": {
+    "A": 1,
+    "B": 1,
+    "C": 1,
+    "St": 1,
+    "ZoneI": 1,
+    "ZoneII": 1
+  },
+  "Einzelhandel mit Sammlerbriefmarken": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit Waffen und Munition": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Einzelhandel mit Tieren, Sämereien und Futtermitteln": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Einzelhandel mit sonstigen Waren": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Lagerung und Aufbewahrung": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Garderobenaufbewahrung": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "Gepäckaufbewahrung": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "BEHERBERGUNGS- UND GASTSTÄTTENWESEN": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "Beherbergungswesen (einschließlich Frühstück)": {
+    "A": 1,
+    "B": 1,
+    "C": 1,
+    "St": 1,
+    "ZoneI": 1,
+    "ZoneII": 1
+  },
+  "Schutzhütten und Herbergen": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "Privatzimmervermieter": {
+    "A": 2,
+    "B": 2,
+    "C": 2,
+    "St": 2,
+    "ZoneI": 2,
+    "ZoneII": 2
+  },
+  "Gaststättenwesen": {
+    "A": 2,
+    "B": 2,
+    "C": 2,
+    "St": 2,
+    "ZoneI": 3,
+    "ZoneII": 3
+  },
+  "Buschenschank (Mostausschank)": {
+    "A": 2,
+    "B": 2,
+    "C": 2,
+    "St": 2,
+    "ZoneI": 3,
+    "ZoneII": 3
+  },
+  "Betriebs- und Werksküche (Kantine)": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Schülerausspeisung (Schulbuffet)": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "VERKEHR; NACHRICHTENÜBERMITTLUNG": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "STRASSENVERKEHR": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "Straßenbahn-, Obus- und Autobuslinienverkehr": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 5
+  },
+  "Taxi-, Mietwagenverkehr und sonstige Personenbeförderung": {
+    "A": 3,
+    "B": 3,
+    "C": 3,
+    "St": 3,
+    "ZoneI": 3,
+    "ZoneII": 3
+  },
+  "Beförderung von Schülern und Kindergartenkindern": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Beförderung von Arbeitnehmern zwischen Wohnort und Arbeitsstätte": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Lastfuhrwerksverkehr": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Hilfseinrichtungen des Straßenverkehrs": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "Garagen": {
+    "A": 3,
+    "B": 3,
+    "C": 3,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "Parkplätze": {
+    "A": 1,
+    "B": 1,
+    "C": 2,
+    "St": 3,
+    "ZoneI": 3,
+    "ZoneII": 3
+  },
+  "Vermietung von Kraftwagen": {
+    "A": 3,
+    "B": 3,
+    "C": 3,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "Sonstige Hilfseinrichtungen des Straßenverkehrs": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Betreiber von Brückenwaagen": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Mautstraßen": {
+    "A": 3,
+    "B": 3,
+    "C": 3,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 4
+  },
+  "EISENBAHN- UND SEILBAHNVERKEHR": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "Eisenbahnverkehr (Personenbeförderung)": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 5
+  },
+  "Zahnradbahnen": {
+    "A": 1,
+    "B": 1,
+    "C": 1,
+    "St": 1,
+    "ZoneI": 1,
+    "ZoneII": 1
+  },
+  "Eisenbahnverkehr (Güterbeförderung)": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Seilbahn-, Sessel- und Schleppliftverkehr": {
+    "A": 1,
+    "B": 1,
+    "C": 1,
+    "St": 1,
+    "ZoneI": 1,
+    "ZoneII": 1
+  },
+  "Hilfseinrichtungen des Eisenbahnverkehrs": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Betrieb von Schlaf- und Speisewagen": {
+    "A": 2,
+    "B": 2,
+    "C": 2,
+    "St": 2,
+    "ZoneI": 2,
+    "ZoneII": 2
+  },
+  "SCHIFFAHRT": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "Stromschiffahrt (Personenbeförderung)": {
+    "A": 1,
+    "B": 1,
+    "C": 1,
+    "St": 1,
+    "ZoneI": 1,
+    "ZoneII": 1
+  },
+  "Stromschiffahrt (Güterbeförderung)": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Binnenseeschiffahrt": {
+    "A": 1,
+    "B": 1,
+    "C": 1,
+    "St": 1,
+    "ZoneI": 1,
+    "ZoneII": 1
+  },
+  "Fähr- und Überfuhrverkehr": {
+    "A": 2,
+    "B": 2,
+    "C": 3,
+    "St": 3,
+    "ZoneI": 3,
+    "ZoneII": 3
+  },
+  "Hafenbetrieb und sonstige Hilfseinrichtungen der Schiffahrt": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "LUFTVERKEHR": {
+    "A": 3,
+    "B": 3,
+    "C": 3,
+    "St": 3,
+    "ZoneI": 3,
+    "ZoneII": 3
+  },
+  "Rundflugunternehmen": {
+    "A": 1,
+    "B": 1,
+    "C": 1,
+    "St": 1,
+    "ZoneI": 1,
+    "ZoneII": 1
+  },
+  "Luftfrachtverkehr": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Flugplatzbetrieb und sonstige Hilfseinrichtungen des Luftverkehrs": {
+    "A": 3,
+    "B": 3,
+    "C": 3,
+    "St": 3,
+    "ZoneI": 3,
+    "ZoneII": 3
+  },
+  "SPEDITION UND ÜBRIGE HILFSDIENSTE DES VERKEHRS": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Spedition": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Reise-, Verkehrsbüros und sonstige Hilfsdienste": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "Reise- und Verkehrsbüros – Incoming": {
+    "A": 1,
+    "B": 1,
+    "C": 1,
+    "St": 1,
+    "ZoneI": 1,
+    "ZoneII": 1
+  },
+  "Reise- und Verkehrsbüros – Outgoing": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Sonstige Hilfsdienste des Verkehrs": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Fremdenführer / Bergführer": {
+    "A": 1,
+    "B": 1,
+    "C": 1,
+    "St": 1,
+    "ZoneI": 1,
+    "ZoneII": 1
+  },
+  "Reiseleiter – Inland": {
+    "A": 1,
+    "B": 1,
+    "C": 1,
+    "St": 1,
+    "ZoneI": 1,
+    "ZoneII": 1
+  },
+  "Reiseleiter – Ausland": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "NACHRICHTENÜBERMITTLUNG": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Geld- und Kreditwesen; Privatversicherung; Wirtschaftsdienste": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "Geld- und Kreditwesen": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "Banken und Hypothekenanstalten": {
+    "A": 3,
+    "B": 3,
+    "C": 3,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 5
+  },
+  "Sparkassen": {
+    "A": 3,
+    "B": 3,
+    "C": 3,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 5
+  },
+  "Kreditgenossenschaften": {
+    "A": 3,
+    "B": 3,
+    "C": 3,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 5
+  },
+  "Bausparkassen, Teilzahlungsinstitute und Pfandleihanstalten": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Sonstige Geld- und Krediteinrichtungen": {
+    "A": 3,
+    "B": 3,
+    "C": 3,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 5
+  },
+  "Wechselstuben (nicht von Banken/Sparkassen betrieben)": {
+    "A": 3,
+    "B": 2,
+    "C": 2,
+    "St": 2,
+    "ZoneI": 2,
+    "ZoneII": 2
+  },
+  "Personalkreditvermittlung": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Privatversicherung": {
+    "A": 4,
+    "B": 5,
+    "C": 5,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 5
+  },
+  "Kleine bäuerliche Versicherungsvereine": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Realitätenwesen; Rechts- und Wirtschaftsdienste": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "Realitäten-, Vermögens-, Wohnungs- und Siedlungswesen": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Vermietung von Ferienwohnungen": {
+    "A": 2,
+    "B": 2,
+    "C": 2,
+    "St": 2,
+    "ZoneI": 2,
+    "ZoneII": 2
+  },
+  "Vermietung von Ferienwohnungen (Wochenpendler)": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Vermietung von Grundstücken für touristische Zwecke": {
+    "A": 1,
+    "B": 1,
+    "C": 2,
+    "St": 3,
+    "ZoneI": 3,
+    "ZoneII": 3
+  },
+  "Rechtsberatung": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Wirtschaftsberatung": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Technische Dienste": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Werbe- und Messewesen": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 5
+  },
+  "Sonstige Wirtschaftsdienste": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Journalist": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Zimmervermittlung": {
+    "A": 1,
+    "B": 1,
+    "C": 1,
+    "St": 1,
+    "ZoneI": 1,
+    "ZoneII": 1
+  },
+  "Fotografie": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Vermietung (Leasing) diverser Gegenstände": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "Leasing von Landmaschinen": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Leasing von Bau-, Industrie- und Büromaschinen": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Leasing von Gegenständen verschiedener Art (inkl. Automaten)": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Leihbibliotheken": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Sportgeräteverleih": {
+    "A": 1,
+    "B": 1,
+    "C": 1,
+    "St": 2,
+    "ZoneI": 2,
+    "ZoneII": 2
+  },
+  "Verleih von Spielautomaten": {
+    "A": 2,
+    "B": 2,
+    "C": 3,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 5
+  },
+  "Verleih von sonstigen Automaten": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Persönliche, soziale und öffentliche Dienste; Haushaltung": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "Körperpflege": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Dampfbäder": {
+    "A": 2,
+    "B": 2,
+    "C": 3,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 5
+  },
+  "Fitneßcenter": {
+    "A": 2,
+    "B": 2,
+    "C": 3,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 5
+  },
+  "Sauna": {
+    "A": 2,
+    "B": 2,
+    "C": 3,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 5
+  },
+  "Solarium": {
+    "A": 2,
+    "B": 2,
+    "C": 3,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 5
+  },
+  "Wäscherei, Putzerei und Büglerei": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Reinigungsanstalten, Rauchfangkehrergewerbe": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Kanal-, Straßen- und sonstige Reinigung": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Bestattungswesen": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Kunst; Unterhaltung und Sport": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Theater und Musik": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 5
+  },
+  "Rundfunk und Fernsehen": {
+    "A": 3,
+    "B": 3,
+    "C": 3,
+    "St": 3,
+    "ZoneI": 3,
+    "ZoneII": 3
+  },
+  "Freischaffende Kunst": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Galerie": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Filmproduktion und -verleih": {
+    "A": 5,
+    "B": 5,
+    "C": 5,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 5
+  },
+  "Kinos": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 5
+  },
+  "Zirkusse, Varietés und verwandte Unterhaltungseinrichtungen": {
+    "A": 2,
+    "B": 2,
+    "C": 3,
+    "St": 3,
+    "ZoneI": 3,
+    "ZoneII": 5
+  },
+  "Artistenagentur": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 5
+  },
+  "Varietevermittlung": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 5
+  },
+  "Vergnügungsbetriebe pratermäßiger Art (Schausteller)": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 5
+  },
+  "Spielbanken, Wettbüros und Lotterien": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 5
+  },
+  "Spielkasinos": {
+    "A": 1,
+    "B": 1,
+    "C": 1,
+    "St": 1,
+    "ZoneI": 1,
+    "ZoneII": 1
+  },
+  "Museen, zoologische und botanische Gärten": {
+    "A": 2,
+    "B": 2,
+    "C": 2,
+    "St": 3,
+    "ZoneI": 3,
+    "ZoneII": 3
+  },
+  "Schaubergwerke (Höhlen)": {
+    "A": 1,
+    "B": 1,
+    "C": 2,
+    "St": 3,
+    "ZoneI": 3,
+    "ZoneII": 3
+  },
+  "Sportplätze und Sporthallen (inkl. Tennisanlagen)": {
+    "A": 3,
+    "B": 3,
+    "C": 3,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 5
+  },
+  "Minigolfplätze": {
+    "A": 2,
+    "B": 2,
+    "C": 2,
+    "St": 3,
+    "ZoneI": 3,
+    "ZoneII": 4
+  },
+  "Golfplätze": {
+    "A": 2,
+    "B": 2,
+    "C": 2,
+    "St": 3,
+    "ZoneI": 3,
+    "ZoneII": 3
+  },
+  "Rodelbahnen": {
+    "A": 2,
+    "B": 2,
+    "C": 2,
+    "St": 3,
+    "ZoneI": 3,
+    "ZoneII": 3
+  },
+  "Schwimmbäder": {
+    "A": 2,
+    "B": 2,
+    "C": 3,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 5
+  },
+  "Strandbäder": {
+    "A": 1,
+    "B": 1,
+    "C": 2,
+    "St": 2,
+    "ZoneI": 2,
+    "ZoneII": 2
+  },
+  "Sonstige Sporteinrichtungen": {
+    "A": 2,
+    "B": 2,
+    "C": 3,
+    "St": 4,
+    "ZoneI": 4,
+    "ZoneII": 5
+  },
+  "Bergsteigerschulen": {
+    "A": 1,
+    "B": 1,
+    "C": 1,
+    "St": 1,
+    "ZoneI": 1,
+    "ZoneII": 1
+  },
+  "Bootsverleih": {
+    "A": 1,
+    "B": 1,
+    "C": 1,
+    "St": 1,
+    "ZoneI": 1,
+    "ZoneII": 1
+  },
+  "Skischulen": {
+    "A": 1,
+    "B": 1,
+    "C": 1,
+    "St": 1,
+    "ZoneI": 1,
+    "ZoneII": 1
+  },
+  "Tanzschulen": {
+    "A": 3,
+    "B": 4,
+    "C": 5,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Wasserschischulen": {
+    "A": 1,
+    "B": 1,
+    "C": 1,
+    "St": 1,
+    "ZoneI": 1,
+    "ZoneII": 1
+  },
+  "Vereinstrainer": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Reitsporteinrichtungen": {
+    "A": 1,
+    "B": 1,
+    "C": 2,
+    "St": 2,
+    "ZoneI": 2,
+    "ZoneII": 2
+  },
+  "Segelschulen": {
+    "A": 1,
+    "B": 1,
+    "C": 1,
+    "St": 1,
+    "ZoneI": 1,
+    "ZoneII": 1
+  },
+  "Ärztliche Ordinationen und medizinische Laboratorien": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Dentisten": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Kurärzte": {
+    "A": 3,
+    "B": 3,
+    "C": 3,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "Kurtherapeuten": {
+    "A": 3,
+    "B": 3,
+    "C": 3,
+    "St": null,
+    "ZoneI": null,
+    "ZoneII": null
+  },
+  "Private Kranken-, Heil- und Pflegeanstalten": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Pflegeanstalten": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Säuglingsheime": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Heilbade- und Kuranstalten": {
+    "A": 2,
+    "B": 2,
+    "C": 2,
+    "St": 2,
+    "ZoneI": 2,
+    "ZoneII": 2
+  },
+  "Medizinische Institute zur ambulanten Behandlung (außerhalb Kurorten)": {
+    "A": 6,
+    "B": 6,
+    "C": 6,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 6
+  },
+  "Sonstige Gesundheitseinrichtungen": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Masseure": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "St": 6,
+    "ZoneI": 6,
+    "ZoneII": 5
+  },
+  "Veterinärwesen": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Fürsorge- und karitative Einrichtungen": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Unterrichtswesen": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "St": 7,
+    "ZoneI": 7,
+    "ZoneII": 7
+  },
+  "Motorbootschulen": {
+    "A": 1,
+    "B": 1,
+    "C": 2,
+    "St": 3,
+    "ZoneI": 3,
+    "ZoneII": 3
+  }
+}

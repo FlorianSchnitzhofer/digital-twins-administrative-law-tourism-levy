@@ -1,77 +1,165 @@
 <?xml version="1.0"?>
-<owl:Ontology xmlns="http://www.w3.org/2002/07/owl#"
-          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
-          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
-          xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
-          xml:base="http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_ontology">
-    
-        <rdfs:comment>Ontology representing the Upper Austrian Tourism Law 2018</rdfs:comment>
-   
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:eli="http://data.europa.eu/eli/ontology#"
+         xmlns:wd="http://www.wikidata.org/entity/"
+         xml:base="http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_ontology">
+
+    <owl:Ontology rdf:about="http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_ontology">
+        <rdfs:comment>Ontology for the Upper Austrian Tourism Levy.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ris.bka.gv.at/eli/lgbl/LR-OO/2018/94"/>
+    </owl:Ontology>
+
     <!-- Classes -->
-    <owl:Class rdf:about="#TourismContribution"/>
-    <owl:Class rdf:about="#TourismTax"/>
-    <owl:Class rdf:about="#TaxAuthority"/>
-    <owl:Class rdf:about="#PrivateAccommodation"/>
-    <owl:Class rdf:about="#TourismBusiness"/>
-    <owl:Class rdf:about="#TourismMunicipality"/>
-    <owl:Class rdf:about="#AssessmentBoard"/>
-    <owl:Class rdf:about="#TourismAssociation"/>
-    <owl:Class rdf:about="#Taxpayer"/>
-    <owl:Class rdf:about="#TourismFeeDeclaration"/>
-    <owl:Class rdf:about="#TourismRegion"/>
-    <owl:Class rdf:about="#TourismBoard"/>
-    <owl:Class rdf:about="#AccommodationProvider"/>
-    <owl:Class rdf:about="#Visitor"/>
-    <owl:Class rdf:about="#TourismActivity"/>
-    
-    <!-- Properties -->
+    <owl:Class rdf:about="#TourismContribution">
+        <rdfs:label>Tourism Contribution</rdfs:label>
+        <rdfs:comment>Mandatory payment made by businesses to support tourism activities.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="#TaxAuthority">
+        <rdfs:label>Tax Authority</rdfs:label>
+        <rdfs:comment>Provincial office responsible for administering the tourism contribution.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="#TourismBusiness">
+        <rdfs:label>Tourism Business</rdfs:label>
+        <rdfs:comment>Entrepreneur or enterprise that may be liable for the tourism contribution.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q56342478"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="#PrivateAccommodation">
+        <rdfs:label>Private Accommodation</rdfs:label>
+        <rdfs:comment>Short-term lodging offered for a fee in a private dwelling.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="#TourismMunicipality">
+        <rdfs:label>Tourism Municipality</rdfs:label>
+        <rdfs:comment>Municipality classified for tourism levy purposes.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="#MunicipalityClass">
+        <rdfs:label>Municipality Class</rdfs:label>
+        <rdfs:comment>Classification of a municipality determining levy rates.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="#ContributionGroup">
+        <rdfs:label>Contribution Group</rdfs:label>
+        <rdfs:comment>Grouping of economic activities used to calculate the levy.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="#AssessmentBoard">
+        <rdfs:label>Assessment Board</rdfs:label>
+        <rdfs:comment>Expert board providing opinions on the contribution group regulation.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="#TourismAssociation">
+        <rdfs:label>Tourism Association</rdfs:label>
+        <rdfs:comment>Local association receiving the collected tourism contributions.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="#LocalTourismOrganization">
+        <rdfs:label>Local Tourism Organization</rdfs:label>
+        <rdfs:comment>Regional organization coordinating tourism activities.</rdfs:comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="#ContributionDeclaration">
+        <rdfs:label>Contribution Declaration</rdfs:label>
+        <rdfs:comment>Annual declaration submitted by businesses stating the taxable turnover for the levy.</rdfs:comment>
+    </owl:Class>
+
+    <!-- Object Properties -->
     <owl:ObjectProperty rdf:about="#isAdministeredBy">
+        <rdfs:label>is administered by</rdfs:label>
+        <rdfs:comment>Links a tourism contribution to the tax authority responsible for its collection.</rdfs:comment>
         <rdfs:domain rdf:resource="#TourismContribution"/>
         <rdfs:range rdf:resource="#TaxAuthority"/>
     </owl:ObjectProperty>
-    
-    <owl:ObjectProperty rdf:about="#isLiableFor">
-        <rdfs:domain rdf:resource="#Taxpayer"/>
-        <rdfs:range rdf:resource="#TourismTax"/>
-    </owl:ObjectProperty>
-    
+
     <owl:ObjectProperty rdf:about="#hasContributionGroup">
+        <rdfs:label>has contribution group</rdfs:label>
+        <rdfs:comment>Associates a tourism business with its contribution group.</rdfs:comment>
         <rdfs:domain rdf:resource="#TourismBusiness"/>
-        <rdfs:range rdf:resource="#TourismContribution"/>
+        <rdfs:range rdf:resource="#ContributionGroup"/>
     </owl:ObjectProperty>
-    
-    <owl:ObjectProperty rdf:about="#belongsToRegion">
+
+    <owl:ObjectProperty rdf:about="#locatedInMunicipality">
+        <rdfs:label>located in municipality</rdfs:label>
+        <rdfs:comment>States the municipality where a tourism business operates.</rdfs:comment>
+        <rdfs:domain rdf:resource="#TourismBusiness"/>
+        <rdfs:range rdf:resource="#TourismMunicipality"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#hasMunicipalityClass">
+        <rdfs:label>has municipality class</rdfs:label>
+        <rdfs:comment>Specifies the class of a tourism municipality.</rdfs:comment>
         <rdfs:domain rdf:resource="#TourismMunicipality"/>
-        <rdfs:range rdf:resource="#TourismRegion"/>
+        <rdfs:range rdf:resource="#MunicipalityClass"/>
     </owl:ObjectProperty>
-    
-    <owl:ObjectProperty rdf:about="#isManagedBy">
-        <rdfs:domain rdf:resource="#TourismRegion"/>
-        <rdfs:range rdf:resource="#TourismBoard"/>
-    </owl:ObjectProperty>
-    
-    <owl:ObjectProperty rdf:about="#providesAccommodationFor">
-        <rdfs:domain rdf:resource="#AccommodationProvider"/>
-        <rdfs:range rdf:resource="#Visitor"/>
-    </owl:ObjectProperty>
-    
-    <owl:ObjectProperty rdf:about="#participatesIn">
-        <rdfs:domain rdf:resource="#Visitor"/>
-        <rdfs:range rdf:resource="#TourismActivity"/>
-    </owl:ObjectProperty>
-    
-    <owl:DatatypeProperty rdf:about="#contributionAmount">
+
+    <owl:ObjectProperty rdf:about="#requiresDeclaration">
+        <rdfs:label>requires declaration</rdfs:label>
+        <rdfs:comment>Indicates that a tourism contribution must be declared via a contribution declaration.</rdfs:comment>
         <rdfs:domain rdf:resource="#TourismContribution"/>
-        <rdfs:range rdf:resource="xsd:decimal"/>
-    </owl:DatatypeProperty>
-    
-    <owl:DatatypeProperty rdf:about="#municipalityClass">
-        <rdfs:domain rdf:resource="#TourismMunicipality"/>
-        <rdfs:range rdf:resource="xsd:string"/>
-    </owl:DatatypeProperty>
-    
+        <rdfs:range rdf:resource="#ContributionDeclaration"/>
+    </owl:ObjectProperty>
+
     <owl:ObjectProperty rdf:about="#assessedBy">
+        <rdfs:label>assessed by</rdfs:label>
+        <rdfs:comment>Links a tourism contribution to the assessment board that evaluates regulations.</rdfs:comment>
         <rdfs:domain rdf:resource="#TourismContribution"/>
         <rdfs:range rdf:resource="#AssessmentBoard"/>
     </owl:ObjectProperty>
-</owl:Ontology>
+
+    <owl:ObjectProperty rdf:about="#disbursedTo">
+        <rdfs:label>disbursed to</rdfs:label>
+        <rdfs:comment>Indicates the tourism association that receives the collected contribution.</rdfs:comment>
+        <rdfs:domain rdf:resource="#TourismContribution"/>
+        <rdfs:range rdf:resource="#TourismAssociation"/>
+    </owl:ObjectProperty>
+
+    <!-- Data Properties -->
+    <owl:DatatypeProperty rdf:about="#contributionAmount">
+        <rdfs:label>contribution amount</rdfs:label>
+        <rdfs:comment>Monetary amount of the tourism contribution.</rdfs:comment>
+        <rdfs:domain rdf:resource="#TourismContribution"/>
+        <rdfs:range rdf:resource="xsd:decimal"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="#taxableTurnover">
+        <rdfs:label>taxable turnover</rdfs:label>
+        <rdfs:comment>Turnover used as basis for calculating the contribution.</rdfs:comment>
+        <rdfs:domain rdf:resource="#TourismBusiness"/>
+        <rdfs:range rdf:resource="xsd:decimal"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="#declarationDeadline">
+        <rdfs:label>declaration deadline</rdfs:label>
+        <rdfs:comment>Annual deadline for submitting the contribution declaration.</rdfs:comment>
+        <rdfs:domain rdf:resource="#ContributionDeclaration"/>
+        <rdfs:range rdf:resource="xsd:date"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="#revenueTwoYearsAgo">
+        <rdfs:label>revenue two years ago</rdfs:label>
+        <rdfs:comment>Annual revenue from two years ago used to calculate the levy.</rdfs:comment>
+        <rdfs:domain rdf:resource="#TourismBusiness"/>
+        <rdfs:range rdf:resource="xsd:decimal"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="#municipalityName">
+        <rdfs:label>municipality name</rdfs:label>
+        <rdfs:comment>Name of the municipality where the business operates.</rdfs:comment>
+        <rdfs:domain rdf:resource="#TourismMunicipality"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="#businessActivity">
+        <rdfs:label>business activity</rdfs:label>
+        <rdfs:comment>Economic activity or profession group of the business.</rdfs:comment>
+        <rdfs:domain rdf:resource="#TourismBusiness"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+    </owl:DatatypeProperty>
+
+</rdf:RDF>

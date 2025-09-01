@@ -1,12 +1,25 @@
-from flask import Flask, request, jsonify
-from rdflib import Graph, Namespace, Literal, URIRef
-from rdflib.namespace import RDF, RDFS, XSD
-from typing import List, Tuple
+from flask import (
+    Flask,
+    Response,
+    jsonify,
+    request,
+    send_from_directory,
+    stream_with_context,
+)
+from flask_cors import CORS
+from rdflib import Graph, URIRef
 import json
 import os
+import time
 
 # Flask-Initialisierung
 app = Flask(__name__)
+CORS(app)
+
+# Paths to project resources
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+WELL_KNOWN_DIR = os.path.join(ROOT_DIR, ".well-known")
+LAW_TEXT_FILE = os.path.join(os.path.dirname(__file__), "text_ooetourism_levy.txt")
 
 
 def load_ontology_parameters():
@@ -94,16 +107,14 @@ def get_municipality_class(municipality_name: str) -> str:
     return str(res[0][0])
 
   
-"""
-Calculate the tourism levy based on the Upper Austrian Tourism Law Ontology.
+"""Calculate the tourism levy based on the Upper Austrian Tourism Law Ontology.
 
-:param taxpayer: Name of the taxpayer
-:param revenue: Annual revenue of the business in EUR
+:param revenue: Annual revenue of the business in EUR (two years ago)
 :param municipality_class: Class of the municipality (A, B, C, D, etc.)
 :param contribution_group: Contribution group (1 to 7)
 :return: Calculated tourism levy amount
 """
-def calculate_tourism_levy(taxpayer, revenue, municipality_class, contribution_group):
+def calculate_tourism_levy(revenue, municipality_class, contribution_group):
     
     # Load ontology parameters
     contribution_rates, minimum_contributions, max_revenue_cap = load_ontology_parameters()
@@ -124,95 +135,70 @@ def calculate_tourism_levy(taxpayer, revenue, municipality_class, contribution_g
     final_levy = max(calculated_levy, min_levy)
     
     return {
-        "taxpayer": taxpayer,
         "municipality_class": municipality_class,
         "contribution_group": contribution_group,
         "taxable_revenue": taxable_revenue,
         "levy_percentage": levy_percentage,
         "calculated_levy": calculated_levy,
-        "final_levy": final_levy
+        "final_levy": final_levy,
     }
 
 
-def get_contribution_group(business_activity_label: str, municipality_class: str) -> int:
-    """Return the contribution group for a business activity and municipality class using SPARQL."""
-    g = Graph()
+_contribution_map = None
 
-    ontology_path = os.path.join(os.path.dirname(__file__),
-                                 "model_contribution_group_mapping.owl")
-    g.parse(ontology_path)
 
-    prop_map = {
-        "A": "contributionGroupA",
-        "B": "contributionGroupB",
-        "C": "contributionGroupC",
-        "St": "contributionGroupSt",
-        "ZoneI": "contributionGroupZoneI",
-        "ZoneII": "contributionGroupZoneII",
-    }
+def _load_contribution_map():
+    """Load contribution group mapping from the generated JSON file."""
+    global _contribution_map
+    if _contribution_map is None:
+        json_path = os.path.join(
+            os.path.dirname(__file__), "contribution_group_mapping.json"
+        )
+        with open(json_path, "r", encoding="utf-8") as f:
+            # store keys in lower case for case-insensitive lookup
+            _contribution_map = {k.lower(): v for k, v in json.load(f).items()}
+    return _contribution_map
 
-    if municipality_class not in prop_map:
+
+def get_contribution_group(
+    business_activity_label: str, municipality_class: str
+) -> int:
+    """Return the contribution group for a business activity and municipality class."""
+
+    mapping = _load_contribution_map()
+    key = business_activity_label.lower()
+    if key not in mapping:
+        raise ValueError(
+            f"Business activity '{business_activity_label}' not found in contribution group mapping"
+        )
+
+    groups = mapping[key]
+    if municipality_class not in groups:
         raise ValueError(f"Unsupported municipality class '{municipality_class}'")
 
-    #property_uri = f"<http://tourismlevy.lawdigitaltwin.com/dtal_tourismlevy/ooe_tourism_axioms#{prop_map[municipality_class]}>"
-    #scaped_label = json.dumps(business_activity_label)
-    #query = f"""
-    #    SELECT ?group WHERE {{
-    #        ?BusinessActivity rdfs:label ?label ;
-    #                  {property_uri} ?group .
-    #        FILTER(LCASE(STR(?label)) = LCASE({escaped_label}))
-    #    }}
-    #"""
-    
-    base = "http://tourismlevy.lawdigitaltwin.com/dtal_tourismlevy/ooe_tourism_axioms#"
-    prop_uri = URIRef(base + prop_map[municipality_class])
-    activity_class = URIRef(base + "BusinessActivity")
+    return int(groups[municipality_class])
 
-    search_label = business_activity_label.strip().lower()
-
-    for subj in g.subjects(RDF.type, activity_class):
-        for label in g.objects(subj, RDFS.label):
-            if str(label).strip().lower() == search_label:
-                group_val = g.value(subject=subj, predicate=prop_uri)
-                if group_val is not None:
-                    try:
-                        return int(str(group_val))
-                    except ValueError:
-                        # Fallback in case the literal is encoded as float
-                        return int(float(str(group_val)))
-    
-    
 # Route for calculating ooetourism levy based on JSON payload
 @app.route('/dtal/calculate_ooetourism_levy', methods=['POST'])
 def calculate_tax_endpoint():
     payload = request.get_json()
-    
-    
-    taxpayer = payload["taxpayer"]
-    revenue = payload["revenue"]
-    municipality_name = payload["municipality_name"]
-    contribution_group =  payload["contribution_group"]
-    #business_activity =  payload["business_activity"]
-    #business_activity = "Wildparks"
-    
-    
-    municipality_class = get_municipality_class(municipality_name)
-    if municipality_class is None:
-        raise HTTPException(status_code=404, detail="Municipality not found")
-    
-    #contribution_group_temp = get_contribution_group(business_activity, municipality_class)
-    #if contribution_group is None:
-    #    raise HTTPException(status_code=404, detail="Business Activity not found")
-    
-     # Example usage
-    taxpayer_info = calculate_tourism_levy(taxpayer, revenue, municipality_class, contribution_group)
 
-    print(taxpayer_info)
-    
-   # print("CONTRI_GROUP: "+str(contribution_group_temp))
-    
-    return jsonify(taxpayer_info)
+    revenue = payload["revenue_two_years_ago"]
+    municipality_name = payload["municipality_name"]
+    business_activity = payload["business_activity"]
+
+    try:
+        municipality_class = get_municipality_class(municipality_name)
+        contribution_group = get_contribution_group(business_activity, municipality_class)
+    except ValueError as exc:
+        return jsonify({"error": str(exc)}), 404
+
+    result = calculate_tourism_levy(revenue, municipality_class, contribution_group)
+    result["business_activity"] = business_activity
+
+    return jsonify(result)
+
 
 # Run Flask app
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=8000, debug=True)

@@ -9,6 +9,20 @@
         <rdfs:comment>Axioms and configuration parameters for the Upper Austrian Tourism Law 2018</rdfs:comment>
     </owl:Ontology>
 
+    <!-- DTAL Interface and Functionality -->
+    <owl:DatatypeProperty rdf:about="#dtalInterface">
+        <rdfs:domain rdf:resource="#DTALService"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+        <rdfs:comment>REST API endpoint for levy calculation: POST /dtal/calculate_ooetourism_levy with municipality_name, business_activity, and revenue_two_years_ago.</rdfs:comment>
+        <rdf:value>POST /dtal/calculate_ooetourism_levy</rdf:value>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="#dtalFunctionality">
+        <rdfs:domain rdf:resource="#DTALService"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+        <rdfs:comment>Calculates the Upper Austrian tourism levy and returns municipality class, contribution group, taxable revenue, levy percentage, calculated levy, and final levy.</rdfs:comment>
+    </owl:DatatypeProperty>
+
     <!-- Axioms and Rules -->
     <owl:DatatypeProperty rdf:about="#maxContributionBase">
         <rdfs:domain rdf:resource="#TourismContribution"/>
@@ -46,16 +60,24 @@
         <rdfs:comment>Annual declaration deadline for tourism contribution: September 30</rdfs:comment>
     </owl:DatatypeProperty>
 
+    <owl:DatatypeProperty rdf:about="#paymentDueDate">
+        <rdfs:domain rdf:resource="#TourismContribution"/>
+        <rdfs:range rdf:resource="xsd:string"/>
+        <rdfs:comment>Annual payment due date for tourism contribution: October 15</rdfs:comment>
+        <rdf:value>10-15</rdf:value>
+    </owl:DatatypeProperty>
+
     <!-- Contribution Rates based on Municipality Class and Group -->
     <owl:DatatypeProperty rdf:about="#contributionRates">
         <rdfs:domain rdf:resource="#TourismMunicipality"/>
         <rdfs:range rdf:resource="xsd:string"/>
-        <rdfs:comment>Contribution rates per municipality class (A, B, C, St)</rdfs:comment>
+        <rdfs:comment>Contribution rates per municipality class (A, B, C, St, D)</rdfs:comment>
         <rdf:value>
             {"A": [0.50, 0.35, 0.20, 0.15, 0.10, 0.05, 0.00],
              "B": [0.45, 0.30, 0.15, 0.10, 0.05, 0.00, 0.00],
              "C": [0.40, 0.20, 0.10, 0.05, 0.025, 0.00, 0.00],
-             "St": [0.40, 0.20, 0.10, 0.05, 0.025, 0.00, 0.00]}
+             "St": [0.40, 0.20, 0.10, 0.05, 0.025, 0.00, 0.00],
+             "D": [0.10, 0.05, 0.02, 0.01, 0.00, 0.00, 0.00]}
         </rdf:value>
     </owl:DatatypeProperty>
 
@@ -63,13 +85,21 @@
     <owl:DatatypeProperty rdf:about="#minimumContributions">
         <rdfs:domain rdf:resource="#TourismMunicipality"/>
         <rdfs:range rdf:resource="xsd:string"/>
-        <rdfs:comment>Minimum contribution values per municipality class (A, B, C, St)</rdfs:comment>
+        <rdfs:comment>Minimum contribution values per municipality class (A, B, C, St, D)</rdfs:comment>
         <rdf:value>
             {"A": [69.00, 51.00, 34.50, 34.50, 34.50, 34.50, 0.00],
              "B": [51.00, 34.50, 34.50, 34.50, 34.50, 0.00, 0.00],
              "C": [34.50, 34.50, 34.50, 34.50, 34.50, 0.00, 0.00],
-             "St": [34.50, 34.50, 34.50, 34.50, 34.50, 0.00, 0.00]}
+             "St": [34.50, 34.50, 34.50, 34.50, 34.50, 0.00, 0.00],
+             "D": [29.00, 29.00, 29.00, 29.00, 29.00, 29.00, 29.00]}
         </rdf:value>
+    </owl:DatatypeProperty>
+
+    <owl:DatatypeProperty rdf:about="#classDRevenueThreshold">
+        <rdfs:domain rdf:resource="#TourismContribution"/>
+        <rdfs:range rdf:resource="xsd:decimal"/>
+        <rdfs:comment>Revenue threshold in municipality class D for contribution obligation: 730,000 EUR</rdfs:comment>
+        <rdf:value>730000</rdf:value>
     </owl:DatatypeProperty>
 
 </rdf:RDF>

@@ -4,7 +4,7 @@ import json
 import os
 
 # Define the digital twin for administrative law API endpoint
-url = "http://localhost:5000/dtal/calculate_ooetourism_levy"
+url = "https://dtal-tourism-dvhvcqgye0fmeddr.germanywestcentral-01.azurewebsites.net/dtal/calculate_ooetourism_levy"
 
 
 # Set headers for both APIs
@@ -14,10 +14,10 @@ headers = {
 
 count = 0
 sample = {
-    "taxpayer": "Sample Business",
-    "revenue": 500000, 
     "municipality_name": "Adlwang",
-    "contribution_group": 2}
+    "business_activity": "Zimmervermittlung",
+    "revenue_two_years_ago": 500000,
+}
     
 
 # Send a POST request to the API
