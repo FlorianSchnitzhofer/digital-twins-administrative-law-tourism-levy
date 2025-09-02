@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Towards a Scalable Architecture for Legal Ontologies (DTAL)</title>
+  <meta name="description" content="SEMANTICS 2025 Developers Workshop – Towards a Scalable Architecture for Legal Ontologies Integrated into Digital Twins of Administrative Law (DTAL)">
+  <meta property="og:title" content="Towards a Scalable Architecture for Legal Ontologies (DTAL)">
+  <meta property="og:description" content="SEMANTICS 2025 Developers Workshop – DTAL">
+  <meta property="og:type" content="website">
+  <style>
+    :root{
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --panel-2: #f5f5f5;
+      --text: #1a1a1a;
+      --muted: #6b7280;
+      --brand: #2563eb;
+      --brand-2: #06b6d4;
+      --border: #e5e7eb;
+      --accent: #f8fafc;
+      --link: #2563eb;
+      --ok: #059669;
+      --warn: #d97706;
+      --err: #dc2626;
+      --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+    a{color:var(--link);text-decoration:none;transition:color 0.15s ease}
+    a:hover{color:#1d4ed8;text-decoration:underline}
+    .wrap{display:grid;grid-template-columns:280px 1fr;gap:0;min-height:100%}
+    nav{
+      position:sticky;top:0;height:100vh;overflow:auto;padding:24px;border-right:1px solid var(--border);background:var(--panel);
+    }
+    nav h1{font-size:18px;margin:0 0 8px 0;letter-spacing:-.025em;font-weight:600;color:var(--text)}
+    .subtitle{color:var(--muted);font-size:14px;margin-bottom:20px;line-height:1.5}
+    .nav-links{margin-top:8px}
+    .nav-links a{display:block;padding:10px 12px;border-radius:8px;color:var(--text);margin-bottom:2px;transition:all 0.15s ease;font-size:14px}
+    .nav-links a:hover{background:var(--accent);color:var(--brand);text-decoration:none}
+    .nav-links a.active{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:white;font-weight:500;box-shadow:var(--shadow)}
+    .cta{margin-top:20px;display:grid;gap:10px}
+    .cta button,.cta a.btn{appearance:none;border:1px solid var(--border);background:white;color:var(--text);padding:12px 16px;border-radius:8px;font-weight:500;cursor:pointer;transition:all 0.15s ease;font-size:14px;text-align:center;display:block;text-decoration:none}
+    .cta button:hover,.cta a.btn:hover{background:var(--accent);border-color:var(--brand);box-shadow:var(--shadow);text-decoration:none}
+
+    main{padding:32px 40px 100px;background:var(--bg)}
+    section{background:white;border:1px solid var(--border);border-radius:12px;padding:28px;margin-bottom:24px;box-shadow:var(--shadow)}
+    section h2{margin:0 0 16px 0;letter-spacing:-.025em;font-weight:600;color:var(--text);font-size:24px}
+    .tag{display:inline-block;padding:4px 12px;border:1px solid var(--border);border-radius:20px;background:var(--accent);color:var(--muted);font-size:12px;margin-right:8px;font-weight:500}
+    .grid{display:grid;gap:20px}
+    .cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .figure{border:1px solid var(--border);border-radius:10px;padding:16px;background:var(--panel);transition:all 0.15s ease}
+    .figure:hover{box-shadow:var(--shadow)}
+    .figure h4{margin:0 0 8px 0;font-weight:600;color:var(--text);font-size:16px}
+    .figure p{margin:8px 0 0 0;color:var(--muted);font-size:14px;line-height:1.5}
+    img,iframe{max-width:100%;border-radius:8px;border:1px solid var(--border)}
+    iframe{background:var(--panel)}
+    .hero{padding:40px;background:linear-gradient(135deg,#f8fafc,#e2e8f0);border:1px solid var(--border);border-radius:16px;margin-bottom:24px;box-shadow:var(--shadow-lg)}
+    .hero h2{font-size:32px;margin:0 0 12px;color:var(--text);font-weight:700;line-height:1.2}
+    .hero p{margin:8px 0;color:var(--muted);font-size:16px}
+    .authors{display:flex;gap:16px;flex-wrap:wrap;margin-top:16px}
+    .chip{padding:8px 16px;border:1px solid var(--border);border-radius:20px;background:white;font-size:14px;box-shadow:var(--shadow);color:var(--text)}
+    .kbd{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;background:var(--panel);border:1px solid var(--border);border-radius:4px;padding:2px 6px;font-size:12px;color:var(--muted)}
+
+    details{border:1px solid var(--border);border-radius:8px;padding:12px 16px;background:var(--panel);margin-top:12px}
+    details+details{margin-top:12px}
+    summary{cursor:pointer;font-weight:500;color:var(--text)}
+    details[open] summary{margin-bottom:8px}
+
+    .stack{display:flex;flex-wrap:wrap;gap:12px}
+    .pill{border:1px solid var(--border);background:white;padding:8px 16px;border-radius:20px;color:var(--text);box-shadow:var(--shadow);font-size:14px}
+
+    .ref-list li{margin:8px 0;color:var(--text);line-height:1.6}
+    .foot{margin-top:32px;color:var(--muted);text-align:center;font-size:14px}
+
+    /* Enhanced styling for better visual hierarchy */
+    section p{color:var(--text);line-height:1.7;margin:12px 0}
+    section ul{color:var(--text);line-height:1.7}
+    section li{margin:4px 0}
+    .muted{color:var(--muted) !important}
+    
+    /* Better button styling */
+    .cta button:active,.cta a.btn:active{transform:translateY(1px)}
+
+    /* Fullscreen image viewer */
+    .img-overlay{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:9999}
+    .img-overlay.open{display:flex}
+    .img-overlay img{max-width:95vw;max-height:95vh;border-radius:12px;border:none}
+    .img-overlay .close{position:absolute;top:16px;right:20px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:white;padding:10px 14px;border-radius:10px;cursor:pointer}
+    .img-overlay .hint{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);color:#e5e7eb;font-size:13px}
+
+    /* Smaller DTAL overview image (about 1/3 width) */
+    .dtal-overview-wrap{display:flex;justify-content:center}
+    .dtal-overview-wrap .figure{max-width:33%;min-width:280px}
+
+    @media (max-width: 960px){
+      .wrap{grid-template-columns:1fr}
+      nav{position:static;height:auto;border-right:0;border-bottom:1px solid var(--border);border-radius:0}
+      main{padding:24px 20px 80px}
+      .hero{padding:28px}
+      .hero h2{font-size:28px}
+      .grid.cols-4{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .grid.cols-3{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .dtal-overview-wrap .figure{max-width:100%}
+    }
+    
+    @media (max-width: 640px){
+      .grid.cols-2,.grid.cols-3,.grid.cols-4{grid-template-columns:1fr}
+      .authors{flex-direction:column}
+      .chip{font-size:13px;padding:6px 12px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <h1>DTAL @ SEMANTICS 2025</h1>
+      <div class="subtitle">Developers Workshop • <a href="https://semantics2025.semdev.org/" target="_blank" rel="noopener noreferrer">Event Site</a></div>
+      <div class="nav-links" id="toc">
+        <a href="#top" class="active">Overview</a>
+        <a href="#problem">Problem Context</a>
+        <a href="#rq">Research Question</a>
+        <a href="#approach">Approach</a>
+        <a href="#dtal">DTAL Architecture</a>
+        <a href="#tech">Technical Architecture</a>
+        <a href="#usecase">Use Case: Tourism Levy</a>
+        <a href="#demos">Live Demos</a>
+        <a href="#refs">References</a>
+        <a href="#future">Future Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="cta">
+        <button id="openAll">Open all demo links</button>
+        <a class="btn" href="#demos">Jump to Demos ↓</a>
+        <a class="btn" href="https://github.com/FlorianSchnitzhofer/digital-twins-administrative-law-tourism-levy" target="_blank" rel="noopener noreferrer">GitHub Repository →</a>
+      </div>
+      <div style="margin-top:16px;font-size:13px;color:var(--muted)">Tip: Press <span class="kbd">?</span> for keyboard help.</div>
+    </nav>
+
+    <main>
+      <a id="top"></a>
+
+      <!-- Paper + platform links at the very beginning of the page -->
+      <section class="hero" style="margin-bottom:20px">
+        <p style="margin:0 0 8px 0"><strong>Preprint & venue:</strong> 
+          <a href="https://openreview.net/attachment?id=EI2FGWoSC6&amp;name=PDF_optional" target="_blank" rel="noopener noreferrer">Download paper (PDF)</a> · 
+          <a href="https://openreview.net/forum?id=EI2FGWoSC6" target="_blank" rel="noopener noreferrer">OpenReview page</a>
+        </p>
+        <p style="margin:0">Code & artifacts: 
+          <a href="https://github.com/FlorianSchnitzhofer/digital-twins-administrative-law-tourism-levy" target="_blank" rel="noopener noreferrer">GitHub repository</a>
+        </p>
+      </section>
+
+      <section class="hero">
+        <h2>Towards a Scalable Architecture for Legal Ontologies<br>Integrated into Digital Twins of Administrative Law (DTAL)</h2>
+        <p style="margin-top:12px">SEMANTICS 2025 Developers Workshop</p>
+        <div class="authors">
+          <span class="chip">Florian Schnitzhofer — <a href="mailto:schnitzhofer@dke.uni-linz.ac.at">schnitzhofer@dke.uni-linz.ac.at</a></span>
+          <span class="chip">Christoph Schütz — <a href="mailto:schuetz@dke.uni-linz.ac.at">schuetz@dke.uni-linz.ac.at</a></span>
+        </div>
+      </section>
+
+      <section id="problem">
+        <h2>Problem Context</h2>
+        <p>
+          Laws are published in natural language and interpreted manually. Business software repeatedly re-implements legal logic, leading to inefficiencies, errors, and inconsistent outcomes—especially as legislation changes frequently. As automated decision-making grows in public administration and industry, we need architectures that keep automation aligned with the rule of law.
+        </p>
+        
+        <div class="grid cols-4">
+          <div class="figure">
+            <img src="web/Digestorum%20seu%20Pandectarum%20libri%20quinquaginta.jpg" alt="Digestorum seu Pandectarum (1581)" loading="lazy">
+            <h4>Historic legal texts</h4>
+            <p><a class="demo-link" href="https://en.wikipedia.org/wiki/File:Digesto_02.jpg" target="_blank" rel="noopener noreferrer">Digestorum seu Pandectarum (1581)</a></p>
+          </div>
+          <div class="figure">
+            <img src="web/Statue%20of%20Martin%20Luther.png" alt="Statue of Martin Luther" loading="lazy">
+            <h4>Legal culture</h4>
+            <p><a class="demo-link" href="https://pixabay.com/de/photos/martin-luther-reformation-2763458/" target="_blank" rel="noopener noreferrer">Statue of Martin Luther</a></p>
+          </div>
+          <div class="figure">
+            <img src="web/Austrian%20Income%20Tax%20Law.png" alt="Austrian Income Tax Law cover" loading="lazy">
+            <h4>Modern statutes</h4>
+            <p><a class="demo-link" href="https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2024_I_12/BGBLA_2024_I_12.pdfsig" target="_blank" rel="noopener noreferrer">Austrian Income Tax Law</a></p>
+          </div>
+          <div class="figure">
+            <img src="web/Law%20as%20Code.png" alt="EU Academy: Understanding Law as Code" loading="lazy">
+            <h4>Law as Code?</h4>
+            <p><a class="demo-link" href="https://academy.europa.eu/courses/understanding-law-as-code" target="_blank" rel="noopener noreferrer">EU Academy: Understanding "Law as Code"</a></p>
+          </div>
+        </div>
+        
+        <details style="margin-top:16px">
+          <summary>Law as Code?</summary>
+          <p>See Lessig (1999), Prakken & Sartor (1997), and the <a class="demo-link" href="https://academy.europa.eu/courses/understanding-law-as-code" target="_blank" rel="noopener noreferrer">EU Academy: Understanding "Law as Code"</a>.</p>
+        </details>
+      </section>
+
+      <section id="rq">
+        <h2>Research Question</h2>
+        <p class="tag">Rule-of-Law</p>
+        <p class="tag">Ontology</p>
+        <p class="tag">Decision Support</p>
+        <p><strong>RQ:</strong> Which software-architecture choices best support hierarchical decision-support systems grounded in ontology-based digital representations of administrative law?</p>
+        <p class="muted">Selected background: Raz (1977), Schartum (2020), Finck (2022), Citron & Pasquale (2014), Kelsen (1945).</p>
+      </section>
+
+      <section id="approach">
+        <h2>Approach: Smart Contracts × Legal Ontologies × Digital Twins</h2>
+        <p>We integrate concepts from <em>smart legal contracts</em>, <em>domain tax ontologies</em>, and <em>digital-twin engineering</em> to create machine-interpretable legal twins that remain faithful to the original legal text while enabling computation.</p>
+        
+        <div class="grid cols-3">
+          <div class="figure">
+            <img src="web/smart_contracts.png" alt="Structure of smart contracts (Text/Model/Logic)" loading="lazy">
+            <h4>Smart legal contracts</h4>
+            <p><a class="demo-link" href="https://docs.accordproject.org/docs/accordproject-concepts.html" target="_blank" rel="noopener noreferrer">Accord Project Concepts</a></p>
+          </div>
+          <div class="figure">
+            <img src="web/Summary%20of%20Legal%20Ontologies%20El%20Ghosh.png" alt="Summary of Legal Ontologies (El Ghosh 2017)" loading="lazy">
+            <h4>Legal ontologies</h4>
+            <p>El&nbsp;Ghosh (2017): Automation of Legal Reasoning and Decision Based on Ontologies</p>
+          </div>
+          <div class="figure">
+            <img src="web/taxonomy_of_digital_twins.png" alt="Taxonomy of Digital Twins (Tao/Kritzinger)" loading="lazy">
+            <h4>Digital twin literature</h4>
+            <p>Tao et&nbsp;al. (2019) • Kritzinger et&nbsp;al. (2018)</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="dtal">
+        <h2>DTAL Architecture</h2>
+        <p>Digital Twin for Administrative Law (DTAL) organizes legislation into four layers, inspired by smart-contract design (Allen, 2022):</p>
+        <div class="dtal-overview-wrap">
+          <div class="figure" style="margin-bottom:20px">
+            <img src="web/Structure%20of%20Digital%20Twin%20for%20Administrative%20Law.png" alt="Structure of Digital Twin for Administrative Law" loading="lazy">
+            <p class="muted">Overview of DTAL layers inspired by smart‑contract design.</p>
+          </div>
+        </div>
+
+        <div class="grid cols-2">
+          <div class="figure">
+            <h4>1. Text (Law)</h4>
+            <p>Preserves the natural-language legal source with its historical character and integrity.</p>
+          </div>
+          <div class="figure">
+            <h4>2. Ontology</h4>
+            <p>Semantic context: stakeholders, legal objects, and relations.</p>
+          </div>
+          <div class="figure">
+            <h4>3. Model (Axioms)</h4>
+            <p>Configuration parameters (e.g., thresholds, rates) inheriting ontology semantics.</p>
+          </div>
+          <div class="figure">
+            <h4>4. Logic</h4>
+            <p>Executable decision logic including exceptions and special cases.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="tech">
+        <h2>Technical Architecture</h2>
+        <p><strong>Hypothesis:</strong> DTALs add value when connected to large language models via the <abbr title="Model Context Protocol">MCP</abbr>, enabling agents to explain and operationalize rule-of-law decisions for citizens and organizations.</p>
+        <div class="figure" style="margin:16px 0 20px">
+          <img src="web/Technical%20Architecture%20of%20a%20DTAL.png" alt="Technical Architecture of a DTAL" loading="lazy">
+          <p class="muted">DTAL connected to LLMs via MCP; DES executes DTALs and exposes REST & MCP interfaces.</p>
+        </div>
+
+        <ul>
+          <li>LLM ↔ MCP ↔ DTAL execution layer</li>
+          <li>Explanatory chains: the LLM explains results produced by DTAL logic</li>
+          <li>Interfaces: REST + MCP; form-based execution; search & discovery</li>
+        </ul>
+      </section>
+
+      <section id="usecase">
+        <h2>Use Case: Upper Austria Tourism Contribution</h2>
+        
+        <div class="figure" style="margin-bottom:20px">
+          <img src="web/use_case_all_infos.png" alt="Use case: Upper Austria Tourism Contribution – Text, Ontology, Model, Logic" loading="lazy">
+          <p class="muted">Overview of text → ontology/model → logic pipeline for the tourism levy.</p>
+        </div>
+        <div class="grid cols-2" style="margin-top:12px">
+          <div class="figure">
+            <img class="enlargeable" src="web/LLM_no_MCP.png" alt="AI chat without DTAL/MCP (hallucinated levy)" loading="lazy">
+            <h4>LLM without DTAL</h4>
+            <p class="muted">No connection to DTAL → model may guess values.</p>
+          </div>
+          <div class="figure">
+            <img class="enlargeable" src="web/LLM_with_MCP.png" alt="AI chat with MCP-connected DTAL (computed levy)" loading="lazy">
+            <h4>LLM with MCP + DTAL</h4>
+            <p class="muted">DTAL computes result; LLM explains output.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="demos">
+        <h2>Live Demos & Platform</h2>
+        <div class="grid cols-2">
+          <div class="figure">
+            <h4>DTAL platform (search & execute)</h4>
+            <p>
+              <a class="demo-link" href="https://lawdigitaltwin.com/" target="_blank" rel="noopener noreferrer">lawdigitaltwin.com</a>
+            </p>
+            <details>
+              <summary>Try embedded preview (may be blocked by site policy)</summary>
+              <iframe src="https://lawdigitaltwin.com/" title="DTAL Platform" width="100%" height="420" loading="lazy" referrerpolicy="no-referrer-when-downgrade" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+              <p class="muted">If the embed is blocked, use the link above (opens in a new tab).</p>
+            </details>
+          </div>
+          <div class="figure">
+            <h4>Event</h4>
+            <p><a class="demo-link" href="https://semantics2025.semdev.org/" target="_blank" rel="noopener noreferrer">SEMANTICS 2025 Developers Workshop</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="refs">
+        <h2>References & Further Reading</h2>
+        <ul class="ref-list">
+          <li>Allen, J. (2022). <em>Wrapped and Stacked: 'Smart Contracts' and the Interaction of Natural and Formal Language</em> in <em>Smart Legal Contracts</em>. OUP.</li>
+          <li>Lessig, L. (1999). <em>Code and Other Laws of Cyberspace</em>. Basic Books.</li>
+          <li>Prakken, H., & Sartor, G. (1997). <em>Logical Models of Legal Argumentation</em>. Kluwer.</li>
+          <li>Raz, J. (1977). The Rule of Law and Its Virtue.</li>
+          <li>Schartum, D. W. (2020). <em>From Legal Sources to Programming Code</em>.</li>
+          <li>Finck, M. (2022). <em>Automated Decision‑making and Administrative Law</em>.</li>
+          <li>Citron, D. K., & Pasquale, F. (2014). <em>The Scored Society</em>.</li>
+          <li>Kelsen, H. (1945). <em>General Theory of Law and State</em>.</li>
+          <li>Tao, F. et al. (2019). Digital Twins & CPS. <em>Engineering</em> 5(4).</li>
+          <li>Kritzinger, W. et al. (2018). Digital Twin in manufacturing. <em>IFAC‑PapersOnLine</em> 51(11).</li>
+          <li>El Ghosh, M. (2017). Automation of Legal Reasoning and Decision Based on Ontologies. <em>ICAIL Doctoral Consortium</em>.</li>
+        </ul>
+        <details>
+          <summary>Primary sources & images</summary>
+          <ul>
+            <li><a class="demo-link" href="https://en.wikipedia.org/wiki/File:Digesto_02.jpg" target="_blank" rel="noopener noreferrer">Digestorum (image page)</a></li>
+            <li><a class="demo-link" href="https://pixabay.com/de/photos/martin-luther-reformation-2763458/" target="_blank" rel="noopener noreferrer">Statue of Martin Luther (Pixabay)</a></li>
+            <li><a class="demo-link" href="https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2024_I_12/BGBLA_2024_I_12.pdfsig" target="_blank" rel="noopener noreferrer">Austrian Income Tax Law</a></li>
+            <li><a class="demo-link" href="https://academy.europa.eu/courses/understanding-law-as-code" target="_blank" rel="noopener noreferrer">EU Academy: Understanding "Law as Code"</a></li>
+            <li><a class="demo-link" href="https://docs.accordproject.org/docs/accordproject-concepts.html" target="_blank" rel="noopener noreferrer">Accord Project: Concepts</a></li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Citations to authored work (2025)</summary>
+          <ul>
+            <li>Schnitzhofer, F. (2025) 'The Self‑Driving State: Automated Decision‑Making in Modern Governance'. <em>International Symposium for Law and IT 2025</em>, Vienna, 19–22 Feb 2025.</li>
+            <li>Schnitzhofer, F. (2025) 'Integrating Legal Ontologies and Digital Twin Technology…'. <em>ESWC 2025 PhD Symposium</em>, Portorož, 1–5 June 2025. <a class="demo-link" href="https://2025.eswc-conferences.org/phd-symposium-program/" target="_blank" rel="noopener noreferrer">Program</a></li>
+          </ul>
+        </details>
+      </section>
+
+      <section id="future">
+        <h2>Future Work & Timeline</h2>
+        <ul>
+          <li>Evaluate first design decisions (Q4 25)</li>
+          <li>Systematic mapping study of legal ontologies</li>
+          <li>Qualitative research on ADM within administrative law</li>
+          <li>Developing open-source framework</li>
+          <li>Evaluate DTAL design via focus group sessions.</li>
+          <li>Cross-jurisdictional applicability</li>
+        </ul>
+        <div class="figure">
+          <img src="web/future_work.png" alt="Timeline 2023–2027 and research agenda" loading="lazy">
+          <p class="muted">Roadmap for DTAL research and open‑source framework development.</p>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact & Logistics</h2>
+        <div class="stack">
+          <span class="pill">Email: <a href="mailto:schnitzhofer@dke.uni-linz.ac.at">schnitzhofer@dke.uni-linz.ac.at</a></span>
+          <span class="pill">Event: <a href="https://semantics2025.semdev.org/" target="_blank" rel="noopener noreferrer">SEMANTICS 2025 Developers Workshop</a></span>
+          <span class="pill">Code: <a href="https://github.com/FlorianSchnitzhofer/digital-twins-administrative-law-tourism-levy" target="_blank" rel="noopener noreferrer">GitHub repository</a></span>
+        </div>
+        <p class="foot">© 2025 – Prepared for live presentation at SEMANTICS 2025 Developers Workshop.</p>
+      </section>
+    </main>
+  </div>
+
+  <!-- Fullscreen image overlay -->
+  <div class="img-overlay" id="imgOverlay" aria-hidden="true">
+    <button class="close" id="overlayClose" aria-label="Close">Close ✕</button>
+    <img alt="Expanded view" id="overlayImg">
+    <div class="hint">Click anywhere or press <span class="kbd">Esc</span> to close</div>
+  </div>
+
+  <script>
+    // Active section highlighting
+    const links = Array.from(document.querySelectorAll('#toc a'));
+    const sections = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+    const byId = Object.fromEntries(links.map(a=>[a.getAttribute('href'), a]));
+    const obs = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){
+          links.forEach(el=>el.classList.remove('active'));
+          const id = '#' + e.target.id;
+          const el = byId[id];
+          if(el) el.classList.add('active');
+        }
+      });
+    },{rootMargin:'-40% 0px -55% 0px',threshold:[0,1]});
+    sections.forEach(s=>obs.observe(s));
+
+    // Open all demo links quickly (respecting popup blockers when user triggers)
+    document.getElementById('openAll').addEventListener('click',()=>{
+      const demos = document.querySelectorAll('a.demo-link');
+      demos.forEach((a,i)=>{ setTimeout(()=>window.open(a.href,'_blank','noopener'), i*60); });
+    });
+
+    // Keyboard shortcuts
+    window.addEventListener('keydown', (e)=>{
+      if(e.key === '?'){
+        alert('Shortcuts:\n  g then d  → jump to Demos\n  g then r  → jump to References\n  g then t  → to Top');
+      }
+    });
+    let seq = '';
+    window.addEventListener('keydown', (e)=>{
+      seq = (seq + e.key).slice(-2);
+      if(seq==='gd') location.hash = '#demos';
+      if(seq==='gr') location.hash = '#refs';
+      if(seq==='gt') location.hash = '#top';
+    });
+
+    // Image fullscreen overlay for specific images
+    const overlay = document.getElementById('imgOverlay');
+    const overlayImg = document.getElementById('overlayImg');
+    const overlayClose = document.getElementById('overlayClose');
+
+    function openOverlay(src, alt){
+      overlayImg.src = src;
+      overlayImg.alt = alt || '';
+      overlay.classList.add('open');
+      overlay.setAttribute('aria-hidden','false');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeOverlay(){
+      overlay.classList.remove('open');
+      overlay.setAttribute('aria-hidden','true');
+      overlayImg.removeAttribute('src');
+      document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('img.enlargeable').forEach(img=>{
+      img.style.cursor = 'zoom-in';
+      img.addEventListener('click', ()=> openOverlay(img.src, img.alt));
+      img.setAttribute('role','button');
+      img.setAttribute('tabindex','0');
+      img.setAttribute('aria-label','Open full-screen');
+      img.addEventListener('keydown', (e)=>{ if(e.key==='Enter' || e.key===' ') openOverlay(img.src, img.alt); });
+    });
+
+    overlay.addEventListener('click', closeOverlay);
+    overlayClose.addEventListener('click', (e)=>{ e.stopPropagation(); closeOverlay(); });
+    window.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeOverlay(); });
+  </script>
+</body>
+</html>
