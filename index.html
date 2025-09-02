@@ -97,6 +97,14 @@
     .dtal-overview-wrap{display:flex;justify-content:center}
     .dtal-overview-wrap .figure{max-width:33%;min-width:280px}
 
+    /* Copy widgets */
+    .copy-wrap{display:grid;gap:10px;margin-top:12px}
+    .copy-row{display:flex;gap:8px;align-items:center}
+    .copy-row input{flex:1;min-width:0;padding:10px 12px;border:1px solid var(--border);border-radius:8px;background:white}
+    .copy-row button{appearance:none;border:1px solid var(--border);background:var(--panel-2);padding:10px 12px;border-radius:8px;cursor:pointer}
+    .copy-row button:hover{background:var(--accent)}
+    .copy-hint{font-size:13px;color:var(--muted)}
+
     @media (max-width: 960px){
       .wrap{grid-template-columns:1fr}
       nav{position:static;height:auto;border-right:0;border-bottom:1px solid var(--border);border-radius:0}
@@ -144,7 +152,17 @@
     <main>
       <a id="top"></a>
 
-      <!-- Paper + platform links at the very beginning of the page -->
+      <!-- MAIN HERO (kept first) -->
+      <section class="hero">
+        <h2>Towards a Scalable Architecture for Legal Ontologies<br>Integrated into Digital Twins of Administrative Law (DTAL)</h2>
+        <p style="margin-top:12px">SEMANTICS 2025 Developers Workshop</p>
+        <div class="authors">
+          <span class="chip">Florian Schnitzhofer — <a href="mailto:schnitzhofer@dke.uni-linz.ac.at">schnitzhofer@dke.uni-linz.ac.at</a></span>
+          <span class="chip">Christoph Schütz — <a href="mailto:schuetz@dke.uni-linz.ac.at">schuetz@dke.uni-linz.ac.at</a></span>
+        </div>
+      </section>
+
+      <!-- MOVED: Preprint & platform links now directly under main hero and BEFORE Problem -->
       <section class="hero" style="margin-bottom:20px">
         <p style="margin:0 0 8px 0"><strong>Preprint & venue:</strong> 
           <a href="https://openreview.net/attachment?id=EI2FGWoSC6&amp;name=PDF_optional" target="_blank" rel="noopener noreferrer">Download paper (PDF)</a> · 
@@ -153,15 +171,6 @@
         <p style="margin:0">Code & artifacts: 
           <a href="https://github.com/FlorianSchnitzhofer/digital-twins-administrative-law-tourism-levy" target="_blank" rel="noopener noreferrer">GitHub repository</a>
         </p>
-      </section>
-
-      <section class="hero">
-        <h2>Towards a Scalable Architecture for Legal Ontologies<br>Integrated into Digital Twins of Administrative Law (DTAL)</h2>
-        <p style="margin-top:12px">SEMANTICS 2025 Developers Workshop</p>
-        <div class="authors">
-          <span class="chip">Florian Schnitzhofer — <a href="mailto:schnitzhofer@dke.uni-linz.ac.at">schnitzhofer@dke.uni-linz.ac.at</a></span>
-          <span class="chip">Christoph Schütz — <a href="mailto:schuetz@dke.uni-linz.ac.at">schuetz@dke.uni-linz.ac.at</a></span>
-        </div>
       </section>
 
       <section id="problem">
@@ -283,6 +292,10 @@
           <img src="web/use_case_all_infos.png" alt="Use case: Upper Austria Tourism Contribution – Text, Ontology, Model, Logic" loading="lazy">
           <p class="muted">Overview of text → ontology/model → logic pipeline for the tourism levy.</p>
         </div>
+
+        <!-- NEW SUBHEADING BEFORE THE LLM COMPARISON IMAGES -->
+        <h3 style="margin-top:4px">Use case of tourism levy: AI-Chats with an without a MCP DTAL Interface</h3>
+
         <div class="grid cols-2" style="margin-top:12px">
           <div class="figure">
             <img class="enlargeable" src="web/LLM_no_MCP.png" alt="AI chat without DTAL/MCP (hallucinated levy)" loading="lazy">
@@ -293,6 +306,26 @@
             <img class="enlargeable" src="web/LLM_with_MCP.png" alt="AI chat with MCP-connected DTAL (computed levy)" loading="lazy">
             <h4>LLM with MCP + DTAL</h4>
             <p class="muted">DTAL computes result; LLM explains output.</p>
+          </div>
+        </div>
+
+        <!-- REQUIRED LINKS AND COPY WIDGETS UNDER THE IMAGES -->
+        <div class="figure" style="margin-top:14px">
+          <p style="margin:0 0 8px 0"><strong>Try it yourself:</strong> 
+            <a class="demo-link" href="https://playground.ai.cloudflare.com/" target="_blank" rel="noopener noreferrer">Cloudflare AI Playground (opens in new tab)</a>
+          </p>
+          <div class="copy-wrap">
+            <div class="copy-row">
+              <label for="mcpUrl" style="min-width:140px">MCP URL</label>
+              <input id="mcpUrl" type="text" readonly value="https://dtal-tourism-dvhvcqgye0fmeddr.germanywestcentral-01.azurewebsites.net/dtal/mcp/sse" aria-label="MCP URL">
+              <button type="button" data-copy="mcpUrl">Copy</button>
+            </div>
+            <div class="copy-row">
+              <label for="promptText" style="min-width:140px">Prompt</label>
+              <input id="promptText" type="text" readonly value="How many Euros do I have to pay for the Upper Austriam tourism levy for a &quot;Zimmervermittlung&quot; in Adlwang with Revenue of half a Million Euros a year?" aria-label="Prompt text">
+              <button type="button" data-copy="promptText">Copy</button>
+            </div>
+            <div class="copy-hint">Click <em>Copy</em> and paste into your AI chat. Ensure MCP is enabled and points to the URL above.</div>
           </div>
         </div>
       </section>
@@ -456,6 +489,25 @@
     overlay.addEventListener('click', closeOverlay);
     overlayClose.addEventListener('click', (e)=>{ e.stopPropagation(); closeOverlay(); });
     window.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeOverlay(); });
+
+    // Copy-to-clipboard buttons
+    document.querySelectorAll('button[data-copy]').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        const id = btn.getAttribute('data-copy');
+        const el = document.getElementById(id);
+        if(!el) return;
+        el.select?.();
+        el.setSelectionRange?.(0, 99999);
+        navigator.clipboard?.writeText(el.value).then(()=>{
+          const original = btn.textContent;
+          btn.textContent = 'Copied!';
+          setTimeout(()=>{ btn.textContent = original; }, 1200);
+        }).catch(()=>{
+          // Fallback: try execCommand
+          try{ document.execCommand('copy'); }catch(e){}
+        });
+      });
+    });
   </script>
 </body>
 </html>
