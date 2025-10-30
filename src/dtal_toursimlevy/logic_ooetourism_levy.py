@@ -144,7 +144,7 @@ def calculate_tourism_levy(revenue, municipality_class, contribution_group):
     taxable_revenue = min(revenue, max_revenue_cap)
     
     if municipality_class == "D":
-        if class_d_threshold <= taxable_revenue:              
+        if taxable_revenue <= class_d_threshold:              
              return {
                 "municipality_class": municipality_class,
                 "contribution_group": contribution_group,
