@@ -95,7 +95,7 @@ def load_ontology_parameters():
     
 
     
-    return contribution_rates, min_contributions, max_revenue_cap
+    return contribution_rates, min_contributions, max_revenue_cap, class_d_threshold
     
 
 def get_municipality_class(municipality_name: str) -> str:
@@ -134,7 +134,7 @@ def get_municipality_class(municipality_name: str) -> str:
 def calculate_tourism_levy(revenue, municipality_class, contribution_group):
     
     # Load ontology parameters
-    contribution_rates, minimum_contributions, max_revenue_cap = load_ontology_parameters()
+    contribution_rates, minimum_contributions, max_revenue_cap, class_d_threshold = load_ontology_parameters()
     
     # Ensure contribution group is within valid range
     if contribution_group < 1 or contribution_group > 7:
