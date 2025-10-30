@@ -71,7 +71,7 @@ def load_ontology_parameters():
     min_res = list(g.query(min_contributions_query))
     if not min_res:
         raise ValueError("Minimum contributions not found in ontology")
-    min_contributions = json.loads(str(min_res[0][0]))
+    min_contributions = float(min_res[0][0]))
 
     max_res = list(g.query(max_revenue_query))
     if not max_res:
