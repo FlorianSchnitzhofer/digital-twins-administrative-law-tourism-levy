@@ -62,6 +62,16 @@ def load_ontology_parameters():
         """.strip()
     )
     
+    class_d_threshold_query = (
+        """
+        SELECT ?value WHERE {
+            <http://tourismlevy.lawdigitaltwin.com/dtal_toursimlevy/ooe_tourism_axioms#classDRevenueThreshold>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> ?value .
+        }
+        """.strip()
+    )
+    
+    
     # Execute queries with basic error handling
     contrib_res = list(g.query(contribution_rates_query))
     if not contrib_res:
@@ -77,6 +87,13 @@ def load_ontology_parameters():
     if not max_res:
         raise ValueError("Max revenue cap not found in ontology")
     max_revenue_cap = float(max_res[0][0])
+    
+    d_threshold = list(g.query(class_d_threshold_query))
+    if not d_threshold:
+        raise ValueError("Class d threshold not found in ontology")
+    class_d_threshold = float(d_threshold[0][0])
+    
+
     
     return contribution_rates, min_contributions, max_revenue_cap
     
@@ -125,6 +142,17 @@ def calculate_tourism_levy(revenue, municipality_class, contribution_group):
     
     # Cap revenue if necessary
     taxable_revenue = min(revenue, max_revenue_cap)
+    
+    if municipality_class == "D":
+        if class_d_threshold <= taxable_revenue:              
+             return {
+                "municipality_class": municipality_class,
+                "contribution_group": contribution_group,
+                "taxable_revenue": 0.0,
+                "levy_percentage": 0.0,
+                "calculated_levy": 0.0,
+                "final_levy": 0.0,
+            }    
     
     # Determine levy based on the applicable percentage
     levy_percentage = contribution_rates[municipality_class][contribution_group - 1]
